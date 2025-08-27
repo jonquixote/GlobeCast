@@ -55,7 +55,7 @@ function App() {
     <div className="w-screen h-screen overflow-hidden bg-black relative">
       <Globe />
       <ErrorBoundary>
-        <MediaPlayer />
+        <MediaPlayer key={Date.now()} />
       </ErrorBoundary>
       <GlobeControls />
       <StationInfo />

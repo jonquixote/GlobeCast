@@ -13,6 +13,7 @@ const MediaPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
   const [error, setError] = useState(null);
+  const [currentStation, setCurrentStation] = useState(null);
   
   const {
     selectedStation,
@@ -95,12 +96,6 @@ const MediaPlayer = () => {
   const cleanupPlayer = () => {
     if (playerRef.current) {
       try {
-        // Check if the player's tech element is still in the DOM
-        const techEl = playerRef.current.tech?.el();
-        if (techEl && !document.contains(techEl)) {
-          console.warn('Player tech element is not in DOM');
-        }
-        
         // Remove all event listeners before disposing
         playerRef.current.off('play');
         playerRef.current.off('pause');
@@ -118,27 +113,38 @@ const MediaPlayer = () => {
     }
   };
 
+  // Handle station change
+  useEffect(() => {
+    // If no station or player not visible, cleanup
+    if (!selectedStation || !isPlayerVisible) {
+      cleanupPlayer();
+      setCurrentStation(null);
+      return;
+    }
+
+    // If station changed, update player
+    if (selectedStation !== currentStation) {
+      setCurrentStation(selectedStation);
+      cleanupPlayer();
+    }
+  }, [selectedStation, isPlayerVisible, currentStation]);
+
   // Initialize Video.js player
   useEffect(() => {
+    // Only initialize if we have a station and the player is visible
+    if (!selectedStation || !isPlayerVisible || !videoRef.current) {
+      return;
+    }
+
     // Cleanup function
     let initPlayer;
-    
-    const initializePlayer = () => {
-      // Ensure the video element is in the DOM before initializing
-      if (!videoRef.current || !selectedStation || !isPlayerVisible) {
-        return;
-      }
 
+    const initializePlayer = () => {
       // Additional check to ensure element is mounted
-      if (!videoRef.current.isConnected) {
+      if (!videoRef.current || !videoRef.current.isConnected) {
         console.warn('Video element is not connected to DOM');
         return;
       }
-
-      // Debug information
-      console.log('Video element:', videoRef.current);
-      console.log('Video element parent:', videoRef.current.parentElement);
-      console.log('Video element dimensions:', videoRef.current.offsetWidth, 'x', videoRef.current.offsetHeight);
 
       try {
         // Configure Video.js options
@@ -171,7 +177,6 @@ const MediaPlayer = () => {
         // Event listeners
         player.ready(() => {
           console.log('Player ready for:', selectedStation.name);
-          console.log('Player dimensions:', player.currentWidth(), 'x', player.currentHeight());
           setError(null);
         });
 
@@ -201,25 +206,15 @@ const MediaPlayer = () => {
       }
     };
 
-    // Only initialize if we have a station and the player is visible
-    if (selectedStation && isPlayerVisible) {
-      // Use a small delay to ensure DOM is fully ready
-      initPlayer = setTimeout(initializePlayer, 100);
-    }
+    // Use a small delay to ensure DOM is fully ready
+    initPlayer = setTimeout(initializePlayer, 100);
 
     return () => {
       if (initPlayer) {
         clearTimeout(initPlayer);
       }
     };
-  }, [selectedStation, isPlayerVisible]); // Removed isPlayerFullscreen from dependencies
-
-  // Handle player cleanup when component unmounts or when dependencies change
-  useEffect(() => {
-    return () => {
-      cleanupPlayer();
-    };
-  }, [selectedStation, isPlayerVisible]);
+  }, [selectedStation, isPlayerVisible, currentStation]); // Depend on currentStation instead of selectedStation
 
   // Handle fullscreen changes
   useEffect(() => {
@@ -229,6 +224,13 @@ const MediaPlayer = () => {
       playerRef.current.height(isPlayerFullscreen ? window.innerHeight : (selectedStation?.type === 'radio' ? 100 : 225));
     }
   }, [isPlayerFullscreen, selectedStation?.type]);
+
+  // Cleanup player on unmount
+  useEffect(() => {
+    return () => {
+      cleanupPlayer();
+    };
+  }, []);
 
   // Handle mute toggle
   const handleMuteToggle = () => {

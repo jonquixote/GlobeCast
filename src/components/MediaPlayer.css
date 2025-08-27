@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .video-container.audio {
@@ -45,6 +46,7 @@
   width: 100vw !important;
   height: 100vh !important;
   z-index: 9999;
+  background-color: #000;
 }
 
 /* Ensure video container fills parent */
@@ -57,4 +59,9 @@ div[data-vjs-player] {
 .vjs-fullscreen .video-js {
   width: 100vw !important;
   height: 100vh !important;
+}
+
+/* Responsive video */
+.video-js {
+  aspect-ratio: 16/9;
 }
