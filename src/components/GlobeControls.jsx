@@ -1,0 +1,192 @@
+import React, { useState } from 'react';
+import { Search, Home, Layers, Filter, MapPin } from 'lucide-react';
+import { Button } from 'react-aria-components'; // Placeholder for Button
+import { Input } from 'react-aria-components'; // Placeholder for Input
+import useGlobeStore from '../store/useGlobeStore';
+
+const GlobeControls = () => {
+  const [searchQuery, setSearchQuery] = useState('');
+  const [showFilters, setShowFilters] = useState(false);
+  
+  const {
+    viewer,
+    allStations,
+    setCameraFocusTarget,
+    radioStations,
+    tvStations,
+  } = useGlobeStore();
+
+  // Reset camera to home position
+  const handleHomeClick = () => {
+    if (viewer) {
+      viewer.camera.flyTo({
+        destination: viewer.scene.globe.ellipsoid.cartographicToCartesian({
+          longitude: 0,
+          latitude: 0,
+          height: 20000000,
+        }),
+        duration: 2.0,
+      });
+    }
+  };
+
+  // Search for stations
+  const handleSearch = (query) => {
+    if (!query.trim()) return;
+    
+    const matchingStation = allStations.find(station =>
+      station.name.toLowerCase().includes(query.toLowerCase()) ||
+      station.country.toLowerCase().includes(query.toLowerCase())
+    );
+    
+    if (matchingStation && matchingStation.geo_lat && matchingStation.geo_long) {
+      setCameraFocusTarget({
+        longitude: parseFloat(matchingStation.geo_long),
+        latitude: parseFloat(matchingStation.geo_lat),
+        height: 1000000,
+      });
+    }
+  };
+
+  // Focus on a specific country
+  const focusOnCountry = (countryCode) => {
+    const countryStations = allStations.filter(station => 
+      station.countrycode === countryCode
+    );
+    
+    if (countryStations.length > 0) {
+      const station = countryStations[0];
+      setCameraFocusTarget({
+        longitude: parseFloat(station.geo_long),
+        latitude: parseFloat(station.geo_lat),
+        height: 5000000,
+      });
+    }
+  };
+
+  const popularCountries = [
+    { code: 'US', name: 'United States' },
+    { code: 'GB', name: 'United Kingdom' },
+    { code: 'DE', name: 'Germany' },
+    { code: 'FR', name: 'France' },
+    { code: 'BR', name: 'Brazil' },
+    { code: 'JP', name: 'Japan' },
+    { code: 'AU', name: 'Australia' },
+    { code: 'CA', name: 'Canada' },
+  ];
+
+  return (
+    <div className="absolute top-4 right-4 flex flex-col space-y-2 z-30">
+      {/* Search */}
+      <div className="bg-black/80 backdrop-blur-sm rounded-lg p-3 min-w-[280px]">
+        <div className="flex space-x-2">
+          <div className="flex-1 relative">
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
+            <Input
+              type="text"
+              placeholder="Search stations or countries..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              onKeyPress={(e) => {
+                if (e.key === 'Enter') {
+                  handleSearch(searchQuery);
+                }
+              }}
+              className="pl-10 bg-white/10 border-white/20 text-white placeholder-gray-400 text-sm"
+            />
+          </div>
+          <Button
+            onClick={() => handleSearch(searchQuery)}
+            size="sm"
+            className="bg-blue-600 hover:bg-blue-700 text-white"
+          >
+            <Search className="w-4 h-4" />
+          </Button>
+        </div>
+      </div>
+
+      {/* Navigation Controls */}
+      <div className="bg-black/80 backdrop-blur-sm rounded-lg p-2">
+        <div className="flex space-x-1">
+          <Button
+            onClick={handleHomeClick}
+            size="sm"
+            variant="ghost"
+            className="text-white hover:bg-white/10"
+            title="Home View"
+          >
+            <Home className="w-4 h-4" />
+          </Button>
+          
+          <Button
+            onClick={() => setShowFilters(!showFilters)}
+            size="sm"
+            variant="ghost"
+            className="text-white hover:bg-white/10"
+            title="Filters"
+          >
+            <Filter className="w-4 h-4" />
+          </Button>
+          
+          <Button
+            size="sm"
+            variant="ghost"
+            className="text-white hover:bg-white/10"
+            title="Layers"
+          >
+            <Layers className="w-4 h-4" />
+          </Button>
+        </div>
+      </div>
+
+      {/* Station Statistics */}
+      <div className="bg-black/80 backdrop-blur-sm rounded-lg p-3 text-white text-sm">
+        <div className="flex items-center space-x-2 mb-2">
+          <MapPin className="w-4 h-4 text-cyan-400" />
+          <span className="font-medium">Stations</span>
+        </div>
+        <div className="space-y-1 text-xs">
+          <div className="flex justify-between">
+            <span className="text-cyan-400">📻 Radio:</span>
+            <span>{radioStations.length}</span>
+          </div>
+          <div className="flex justify-between">
+            <span className="text-orange-400">📺 TV:</span>
+            <span>{tvStations.length}</span>
+          </div>
+          <div className="flex justify-between font-medium">
+            <span>Total:</span>
+            <span>{allStations.length}</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Quick Country Navigation */}
+      {showFilters && (
+        <div className="bg-black/80 backdrop-blur-sm rounded-lg p-3 text-white text-sm max-w-[280px]">
+          <h3 className="font-medium mb-2 text-xs uppercase tracking-wide">Quick Navigation</h3>
+          <div className="grid grid-cols-2 gap-1">
+            {popularCountries.map((country) => {
+              const stationCount = allStations.filter(s => s.countrycode === country.code).length;
+              return (
+                <Button
+                  key={country.code}
+                  onClick={() => focusOnCountry(country.code)}
+                  size="sm"
+                  variant="ghost"
+                  className="text-white hover:bg-white/10 justify-between text-xs p-2 h-auto"
+                  disabled={stationCount === 0}
+                >
+                  <span className="truncate">{country.name}</span>
+                  <span className="text-gray-400 ml-1">({stationCount})</span>
+                </Button>
+              );
+            })}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default GlobeControls;

@@ -1,0 +1,107 @@
+/* Mobile-specific styles for Globe Media Streamer */
+
+/* Ensure full viewport usage on mobile */
+@media screen and (max-width: 768px) {
+  /* Hide address bar on mobile browsers */
+  html, body {
+    height: 100vh;
+    height: -webkit-fill-available;
+    overflow: hidden;
+  }
+  
+  #root {
+    height: 100vh;
+    height: -webkit-fill-available;
+  }
+  
+  /* Adjust UI elements for mobile */
+  .absolute.top-4.right-4 {
+    top: 1rem;
+    right: 1rem;
+    max-width: calc(100vw - 2rem);
+  }
+  
+  .absolute.bottom-4.right-4 {
+    bottom: 1rem;
+    right: 1rem;
+    max-width: calc(100vw - 2rem);
+    font-size: 0.75rem;
+  }
+  
+  .absolute.bottom-4.left-4 {
+    bottom: 1rem;
+    left: 1rem;
+    max-width: calc(100vw - 2rem);
+  }
+  
+  .absolute.bottom-6.left-6 {
+    bottom: 1.5rem;
+    left: 1.5rem;
+  }
+  
+  /* Make search input more touch-friendly */
+  input[type="text"] {
+    min-height: 44px;
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
+  
+  /* Adjust button sizes for touch */
+  button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Media player adjustments for mobile */
+  .z-40 {
+    max-width: calc(100vw - 2rem);
+    max-height: calc(100vh - 4rem);
+  }
+  
+  /* Welcome overlay adjustments */
+  .fixed.inset-0 .max-w-md {
+    max-width: calc(100vw - 2rem);
+    margin: 1rem;
+  }
+}
+
+/* Touch-specific improvements */
+@media (hover: none) and (pointer: coarse) {
+  /* Increase touch targets */
+  .hover\:bg-white\/10:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Remove hover effects that don't work on touch */
+  .transition-all {
+    transition: none;
+  }
+  
+  /* Make sure Cesium canvas handles touch properly */
+  canvas {
+    touch-action: none;
+  }
+}
+
+/* Landscape orientation on mobile */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .absolute.top-4.left-4,
+  .absolute.top-4.right-4 {
+    top: 0.5rem;
+  }
+  
+  .absolute.bottom-4.left-4,
+  .absolute.bottom-4.right-4,
+  .absolute.bottom-6.left-6 {
+    bottom: 0.5rem;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Ensure crisp rendering on retina displays */
+  canvas {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+

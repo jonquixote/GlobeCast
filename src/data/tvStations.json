@@ -1,0 +1,227 @@
+[
+  {
+    "id": "BBCOne.uk",
+    "name": "BBC One",
+    "city": "London",
+    "country": "UK",
+    "latitude": 51.5074,
+    "longitude": -0.1278,
+    "categories": "general"
+  },
+  {
+    "id": "CBSTV.us",
+    "name": "CBS",
+    "city": "New York",
+    "country": "US",
+    "latitude": 40.7128,
+    "longitude": -74.0060,
+    "categories": "general"
+  },
+  {
+    "id": "ARD.de",
+    "name": "ARD",
+    "city": "Berlin",
+    "country": "DE",
+    "latitude": 52.5200,
+    "longitude": 13.4050,
+    "categories": "general"
+  },
+  {
+    "id": "TF1.fr",
+    "name": "TF1",
+    "city": "Paris",
+    "country": "FR",
+    "latitude": 48.8566,
+    "longitude": 2.3522,
+    "categories": "general"
+  },
+  {
+    "id": "RaiUno.it",
+    "name": "Rai Uno",
+    "city": "Rome",
+    "country": "IT",
+    "latitude": 41.9028,
+    "longitude": 12.4964,
+    "categories": "general"
+  },
+  {
+    "id": "NHK.jp",
+    "name": "NHK",
+    "city": "Tokyo",
+    "country": "JP",
+    "latitude": 35.6762,
+    "longitude": 139.6503,
+    "categories": "general"
+  },
+  {
+    "id": "CTV.ca",
+    "name": "CTV",
+    "city": "Toronto",
+    "country": "CA",
+    "latitude": 43.6532,
+    "longitude": -79.3832,
+    "categories": "general"
+  },
+  {
+    "id": "SevenNetwork.au",
+    "name": "Seven Network",
+    "city": "Sydney",
+    "country": "AU",
+    "latitude": -33.8688,
+    "longitude": 151.2093,
+    "categories": "general"
+  },
+  {
+    "id": "TVGlobo.br",
+    "name": "TV Globo",
+    "city": "Rio de Janeiro",
+    "country": "BR",
+    "latitude": -22.9068,
+    "longitude": -43.1729,
+    "categories": "general"
+  },
+  {
+    "id": "RTVE.es",
+    "name": "RTVE",
+    "city": "Madrid",
+    "country": "ES",
+    "latitude": 40.4168,
+    "longitude": -3.7038,
+    "categories": "general"
+  },
+  {
+    "id": "SVT.se",
+    "name": "SVT",
+    "city": "Stockholm",
+    "country": "SE",
+    "latitude": 59.3293,
+    "longitude": 18.0686,
+    "categories": "general"
+  },
+  {
+    "id": "NRK.no",
+    "name": "NRK",
+    "city": "Oslo",
+    "country": "NO",
+    "latitude": 59.9139,
+    "longitude": 10.7522,
+    "categories": "general"
+  },
+  {
+    "id": "YLE.fi",
+    "name": "YLE",
+    "city": "Helsinki",
+    "country": "FI",
+    "latitude": 60.1699,
+    "longitude": 24.9384,
+    "categories": "general"
+  },
+  {
+    "id": "DR.dk",
+    "name": "DR",
+    "city": "Copenhagen",
+    "country": "DK",
+    "latitude": 55.6761,
+    "longitude": 12.5683,
+    "categories": "general"
+  },
+  {
+    "id": "VPRO.nl",
+    "name": "VPRO",
+    "city": "Hilversum",
+    "country": "NL",
+    "latitude": 52.2397,
+    "longitude": 5.1710,
+    "categories": "general"
+  },
+  {
+    "id": "RTBF.be",
+    "name": "RTBF",
+    "city": "Brussels",
+    "country": "BE",
+    "latitude": 50.8503,
+    "longitude": 4.3517,
+    "categories": "general"
+  },
+  {
+    "id": "RTS.ch",
+    "name": "RTS",
+    "city": "Geneva",
+    "country": "CH",
+    "latitude": 46.2044,
+    "longitude": 6.1432,
+    "categories": "general"
+  },
+  {
+    "id": "ORF.at",
+    "name": "ORF",
+    "city": "Vienna",
+    "country": "AT",
+    "latitude": 48.2082,
+    "longitude": 16.3738,
+    "categories": "general"
+  },
+  {
+    "id": "RTV.si",
+    "name": "RTV",
+    "city": "Ljubljana",
+    "country": "SI",
+    "latitude": 46.0569,
+    "longitude": 14.5058,
+    "categories": "general"
+  },
+  {
+    "id": "Ceskatelevize.cz",
+    "name": "Česká televize",
+    "city": "Prague",
+    "country": "CZ",
+    "latitude": 50.0755,
+    "longitude": 14.4378,
+    "categories": "general"
+  },
+  {
+    "id": "AlJazeera.qa",
+    "name": "Al Jazeera",
+    "city": "Doha",
+    "country": "QA",
+    "latitude": 25.2854,
+    "longitude": 51.5310,
+    "categories": "news"
+  },
+  {
+    "id": "CNN.us",
+    "name": "CNN",
+    "city": "Atlanta",
+    "country": "US",
+    "latitude": 33.7490,
+    "longitude": -84.3880,
+    "categories": "news"
+  },
+  {
+    "id": "DW.de",
+    "name": "DW",
+    "city": "Berlin",
+    "country": "DE",
+    "latitude": 52.5200,
+    "longitude": 13.4050,
+    "categories": "news"
+  },
+  {
+    "id": "France24.fr",
+    "name": "France 24",
+    "city": "Paris",
+    "country": "FR",
+    "latitude": 48.8566,
+    "longitude": 2.3522,
+    "categories": "news"
+  },
+  {
+    "id": "Euronews.fr",
+    "name": "Euronews",
+    "city": "Lyon",
+    "country": "FR",
+    "latitude": 45.7640,
+    "longitude": 4.8357,
+    "categories": "news"
+  }
+]

@@ -1,0 +1,60 @@
+/* MediaPlayer specific styles */
+.video-container {
+  width: 100%;
+  height: 225px; /* Default height for TV */
+  background-color: #000; /* Black background for video */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-container.audio {
+  height: 100px; /* Height for radio */
+}
+
+.video-container.fullscreen {
+  height: 100vh;
+}
+
+.video-js.vjs-default-skin {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.video-js.vjs-default-skin .vjs-tech {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-js.vjs-default-skin video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Maintain aspect ratio */
+}
+
+/* Fullscreen styles */
+.vjs-fullscreen {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 9999;
+}
+
+/* Ensure video container fills parent */
+div[data-vjs-player] {
+  width: 100%;
+  height: 100%;
+}
+
+/* Fix for fullscreen */
+.vjs-fullscreen .video-js {
+  width: 100vw !important;
+  height: 100vh !important;
+}
