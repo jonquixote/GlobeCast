@@ -1,0 +1,200 @@
+import React, { useState } from 'react';
+import useGlobeStore from '../store/useGlobeStore';
+
+const RetroStationMenu = () => {
+  const { 
+    isStationMenuOpen, 
+    toggleStationMenu,
+    isRadioMenuOpen,
+    isTVMenuOpen,
+    toggleRadioMenu,
+    toggleTVMenu,
+    selectedCity,
+    selectedStation
+  } = useGlobeStore();
+
+  // Filter stations by type for the selected city/cluster
+  const radioStations = selectedCity?.stations?.filter(station => station.type === 'radio') || [];
+  const tvStations = selectedCity?.stations?.filter(station => station.type === 'tv') || [];
+
+  // If no city is selected but a station is selected, show that station
+  if (!selectedCity && selectedStation) {
+    return null; // Don't show menu for individual stations
+  }
+
+  // If no city is selected, don't show the menu
+  if (!selectedCity) {
+    return null;
+  }
+
+  return (
+    <>
+      {/* Retro TV Remote Control Menu */}
+      <div className={`fixed bottom-4 right-4 transition-all duration-300 z-30 ${isStationMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full pointer-events-none'}`}>
+        {/* Remote Control Body */}
+        <div className="bg-gray-800 border-4 border-gray-900 rounded-lg shadow-2xl w-64">
+          {/* Remote Control Screen/Header */}
+          <div className="bg-gray-900 p-3 border-b-4 border-gray-900 flex justify-between items-center">
+            <div className="text-green-400 font-bold text-xs tracking-wider truncate">
+              {selectedCity.city === 'Cluster' ? 'NEARBY STATIONS' : selectedCity.city.toUpperCase()}
+            </div>
+            <button 
+              onClick={toggleStationMenu}
+              className="text-red-500 hover:text-red-400 transition-colors"
+              title="Close Menu"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+              </svg>
+            </button>
+          </div>
+
+          {/* Remote Control Buttons */}
+          <div className="p-4">
+            {/* Power Button */}
+            <div className="flex justify-center mb-4">
+              <button 
+                className="w-12 h-12 rounded-full bg-red-600 border-2 border-red-800 flex items-center justify-center shadow-md hover:bg-red-700 transition-colors"
+                title="Power"
+              >
+                <span className="text-white text-xs font-bold">PWR</span>
+              </button>
+            </div>
+
+            {/* Channel Buttons */}
+            <div className="mb-4">
+              <div className="flex justify-between items-center mb-2">
+                <h4 className="text-cyan-400 font-bold text-xs flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 0 0.293 0.707 2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
+                  </svg>
+                  RADIO ({radioStations.length})
+                </h4>
+                <button
+                  onClick={toggleRadioMenu}
+                  className="bg-gray-700 hover:bg-gray-600 text-white rounded-full w-6 h-6 flex items-center justify-center"
+                  title={isRadioMenuOpen ? "Close Radio" : "Open Radio"}
+                >
+                  <span className="text-xs">{isRadioMenuOpen ? '-' : '+'}</span>
+                </button>
+              </div>
+              
+              {isRadioMenuOpen && (
+                <div className="max-h-32 overflow-y-auto bg-gray-900/50 p-2 rounded mb-2">
+                  {radioStations.length > 0 ? (
+                    radioStations.map((station, index) => (
+                      <div 
+                        key={`${station.id}-${index}`} 
+                        className="p-2 hover:bg-gray-700/50 transition-colors cursor-pointer border-b border-gray-700 last:border-0"
+                        onClick={() => useGlobeStore.getState().setSelectedStation(station)}
+                      >
+                        <div className="flex items-center">
+                          <div className="flex-shrink-0 w-2 h-2 rounded-full bg-cyan-500 mr-2"></div>
+                          <div className="flex-1 min-w-0">
+                            <p className="text-white text-xs font-medium truncate">{station.name}</p>
+                            <p className="text-gray-400 text-xs truncate">{station.country}</p>
+                          </div>
+                        </div>
+                      </div>
+                    ))
+                  ) : (
+                    <div className="p-2 text-gray-400 text-xs text-center">
+                      NO RADIO STATIONS
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+
+            {/* TV Buttons */}
+            <div className="mb-4">
+              <div className="flex justify-between items-center mb-2">
+                <h4 className="text-orange-400 font-bold text-xs flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v8a2 2 0 01-2 2h-2a2 2 0 01-2-2V6z" />
+                  </svg>
+                  TV ({tvStations.length})
+                </h4>
+                <button
+                  onClick={toggleTVMenu}
+                  className="bg-gray-700 hover:bg-gray-600 text-white rounded-full w-6 h-6 flex items-center justify-center"
+                  title={isTVMenuOpen ? "Close TV" : "Open TV"}
+                >
+                  <span className="text-xs">{isTVMenuOpen ? '-' : '+'}</span>
+                </button>
+              </div>
+              
+              {isTVMenuOpen && (
+                <div className="max-h-32 overflow-y-auto bg-gray-900/50 p-2 rounded">
+                  {tvStations.length > 0 ? (
+                    tvStations.map((station, index) => (
+                      <div 
+                        key={`${station.id}-${index}`} 
+                        className="p-2 hover:bg-gray-700/50 transition-colors cursor-pointer border-b border-gray-700 last:border-0"
+                        onClick={() => useGlobeStore.getState().setSelectedStation(station)}
+                      >
+                        <div className="flex items-center">
+                          <div className="flex-shrink-0 w-2 h-2 rounded-full bg-orange-500 mr-2"></div>
+                          <div className="flex-1 min-w-0">
+                            <p className="text-white text-xs font-medium truncate">{station.name}</p>
+                            <p className="text-gray-400 text-xs truncate">{station.country}</p>
+                          </div>
+                        </div>
+                      </div>
+                    ))
+                  ) : (
+                    <div className="p-2 text-gray-400 text-xs text-center">
+                      NO TV STATIONS
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+
+            {/* Number Pad */}
+            <div className="grid grid-cols-3 gap-2 mb-4">
+              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 0].map(num => (
+                <button
+                  key={num}
+                  className="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 rounded border-2 border-gray-900 shadow-md transition-colors"
+                  title={`Channel ${num}`}
+                >
+                  {num}
+                </button>
+              ))}
+            </div>
+
+            {/* Volume and Channel Controls */}
+            <div className="flex justify-between">
+              <button className="bg-gray-700 hover:bg-gray-600 text-white py-1 px-3 rounded border-2 border-gray-900 shadow-md transition-colors text-xs" title="Volume Down">
+                VOL -
+              </button>
+              <button className="bg-gray-700 hover:bg-gray-600 text-white py-1 px-3 rounded border-2 border-gray-900 shadow-md transition-colors text-xs" title="Channel Down">
+                CH -
+              </button>
+              <button className="bg-gray-700 hover:bg-gray-600 text-white py-1 px-3 rounded border-2 border-gray-900 shadow-md transition-colors text-xs" title="Channel Up">
+                CH +
+              </button>
+              <button className="bg-gray-700 hover:bg-gray-600 text-white py-1 px-3 rounded border-2 border-gray-900 shadow-md transition-colors text-xs" title="Volume Up">
+                VOL +
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Collapsed Menu Button - Looks like a remote control */}
+      <button
+        onClick={toggleStationMenu}
+        className={`fixed bottom-4 right-4 bg-gray-800 hover:bg-gray-700 text-white rounded-lg shadow-lg flex items-center justify-center transition-all duration-300 z-20 border-2 border-gray-900 ${isStationMenuOpen ? 'w-10 h-10 opacity-0 pointer-events-none' : 'w-12 h-12 opacity-100'}`}
+        title="Show station menu"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+        </svg>
+      </button>
+    </>
+  );
+};
+
+export default RetroStationMenu;

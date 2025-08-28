@@ -1,7 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useCallback, useMemo } from 'react';
 import * as Cesium from 'cesium';
 import useGlobeStore from '../store/useGlobeStore';
-import useMediaStations from '../hooks/useMediaStations';
+import mediaService from '../services/mediaService';
 
 // Set Cesium Ion access token
 Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI3OTA4NDgwNC1kY2U0LTQwZDgtOTkzYi1iNDcwNjYzYzQ4MzkiLCJpZCI6MzMyOTY2LCJpYXQiOjE3NTU1MTgwMTh9.NG_8CiTTqadGIjdOctXOV83eSZWpN_w6a8RgtlSQX_k';
@@ -19,12 +19,96 @@ const Globe = () => {
     toggleStationMenu
   } = useGlobeStore();
   
-  const { radioStations, tvStations, clusterStationsByGrid } = useMediaStations();
-  const [visibleMarkers, setVisibleMarkers] = useState([]);
+  const [mediaStations, setMediaStations] = useState([]);
   const [zoomLevel, setZoomLevel] = useState(0);
 
+  // Load media station data
+  useEffect(() => {
+    const loadMediaStations = async () => {
+      try {
+        console.log('Loading media stations from API...');
+        
+        // Load stations from API
+        const response = await mediaService.getAllStations({ limit: 2000 });
+        
+        if (response.success) {
+          console.log('Raw station data:', response.data.slice(0, 5)); // Log first 5 stations
+          
+          const stations = response.data.map(station => {
+            // Better detection of station type
+            let type = 'radio'; // Default to radio
+            if (station.type) {
+              type = station.type;
+            } else if (station.categories && station.categories.toLowerCase().includes('tv')) {
+              type = 'tv';
+            } else if (station.name && station.name.toLowerCase().includes('tv')) {
+              type = 'tv';
+            } else if (station.url && (station.url.includes('.m3u8') || station.url.includes('.smil'))) {
+              type = 'tv';
+            }
+            
+            const processedStation = {
+              id: station.id,
+              name: station.name || station.id || 'Unknown Station',
+              country: station.country || 'Unknown',
+              city: station.city || 'Unknown City',
+              geo_lat: parseFloat(station.geo_lat || station.latitude),
+              geo_long: parseFloat(station.geo_long || station.longitude),
+              type: type,
+              url: station.url || '',
+              tags: Array.isArray(station.tags) ? station.tags : 
+                    typeof station.tags === 'string' ? station.tags.split(',') : 
+                    station.tags || [],
+              clickcount: station.clickcount || 0
+            };
+            
+            // Log stations that might be misclassified
+            if (response.data.indexOf(station) < 3) {
+              console.log('Processed station:', processedStation);
+            }
+            
+            return processedStation;
+          }).filter(station => {
+            const isValid = station.geo_lat && 
+              station.geo_long && 
+              !isNaN(station.geo_lat) && 
+              !isNaN(station.geo_long) &&
+              station.geo_lat >= -90 && station.geo_lat <= 90 &&
+              station.geo_long >= -180 && station.geo_long <= 180 &&
+              station.url && 
+              station.url.length > 0 && 
+              !station.url.includes('radio-'); // Filter out test URLs
+              
+            if (!isValid) {
+              if (response.data.indexOf(station) < 5) {
+                console.log('Filtered out station:', station);
+              }
+            }
+            
+            return isValid;
+          });
+          
+          setMediaStations(stations);
+          console.log(`Loaded ${stations.length} valid media stations`);
+          
+          // Log counts by type
+          const tvCount = stations.filter(s => s.type === 'tv').length;
+          const radioCount = stations.filter(s => s.type === 'radio').length;
+          console.log(`TV stations: ${tvCount}, Radio stations: ${radioCount}`);
+        } else {
+          throw new Error(response.error || 'Failed to load stations');
+        }
+      } catch (error) {
+        console.error('Error loading media stations:', error);
+        setError('Failed to load media station data: ' + error.message);
+      }
+    };
+    
+    loadMediaStations();
+  }, []);
+
   // Handle cluster click interactions
-  const handleClusterClick = (cluster) => {
+  const handleClusterClick = useCallback((cluster) => {
     // Get the current viewer from the store state
     const currentViewer = useGlobeStore.getState().viewer;
     
@@ -57,6 +141,7 @@ const Globe = () => {
             material: Cesium.Color.BLUE.withAlpha(0.3),
             outline: true,
             outlineColor: Cesium.Color.WHITE,
+            height: 0, // Ensure geometry is above terrain but not clamped
             outlineWidth: 2
           }
         });
@@ -98,7 +183,7 @@ const Globe = () => {
     
     // Open the station menu
     toggleStationMenu();
-  };
+  }, [toggleStationMenu]);
 
   useEffect(() => {
     if (!cesiumContainer.current) return;
@@ -197,13 +282,22 @@ const Globe = () => {
       setViewer(cesiumViewer);
       
       // Setup camera move end handler for dynamic clustering
-      cesiumViewer.camera.moveEnd.addEventListener(() => {
+      const cameraMoveEndHandler = () => {
         const position = cesiumViewer.camera.positionCartographic;
         const height = position.height;
         // Convert height to zoom level (rough approximation)
         const newZoomLevel = Math.max(0, Math.min(20, Math.log(50000000 / height) / Math.log(2)));
-        setZoomLevel(newZoomLevel);
-      });
+        
+        // Only update if significantly different to prevent infinite loops
+        setZoomLevel(prevZoomLevel => {
+          if (Math.abs(prevZoomLevel - newZoomLevel) > 0.01) {
+            return newZoomLevel;
+          }
+          return prevZoomLevel;
+        });
+      };
+      
+      cesiumViewer.camera.moveEnd.addEventListener(cameraMoveEndHandler);
       
       // Cleanup
       return () => {
@@ -218,7 +312,7 @@ const Globe = () => {
       console.error('Error initializing Cesium:', err);
       setError(err.message);
     }
-  }, [setViewer, toggleStationMenu]);
+  }, [setViewer, handleClusterClick]);
   
   // Handle camera focus changes
   useEffect(() => {
@@ -232,11 +326,119 @@ const Globe = () => {
     }
   }, [viewer, cameraFocusTarget, setCameraFocusTarget]);
 
-  // Dynamic clustering based on zoom level
-  useEffect(() => {
-    if (!viewer || (radioStations.length === 0 && tvStations.length === 0)) return;
+  // Cluster stations by grid for dynamic clustering
+  const clusterStationsByGrid = useCallback((stations, gridSize = 1.0) => {
+    if (!stations || stations.length === 0) return [];
     
-    const allStations = [...radioStations, ...tvStations];
+    // Create a map to hold grid cells
+    const grid = new Map();
+    
+    // Place stations in grid cells
+    stations.forEach(station => {
+      // Debug log for stations with missing or invalid coordinates
+      if (!station.geo_lat || !station.geo_long) {
+        console.log('Station missing coordinates:', station);
+        return;
+      }
+      
+      // Check if coordinates are valid numbers
+      if (isNaN(station.geo_lat) || isNaN(station.geo_long)) {
+        console.log('Station with invalid coordinates:', station);
+        return;
+      }
+      
+      // Check if coordinates are in valid range
+      if (station.geo_lat < -90 || station.geo_lat > 90 || 
+          station.geo_long < -180 || station.geo_long > 180) {
+        console.log('Station with out-of-range coordinates:', station);
+        return;
+      }
+      
+      // Calculate grid cell coordinates
+      const gridLat = Math.floor(station.geo_lat / gridSize) * gridSize;
+      const gridLon = Math.floor(station.geo_long / gridSize) * gridSize;
+      const gridKey = `${gridLat},${gridLon}`;
+      
+      // Add to grid cell
+      if (!grid.has(gridKey)) {
+        grid.set(gridKey, []);
+      }
+      grid.get(gridKey).push(station);
+    });
+    
+    // Convert grid cells to clusters
+    const clusters = [];
+    grid.forEach((stationsInCell, gridKey) => {
+      if (stationsInCell.length === 0) return;
+      
+      // Calculate centroid of cluster
+      const avgLat = stationsInCell.reduce((sum, s) => sum + s.geo_lat, 0) / stationsInCell.length;
+      const avgLon = stationsInCell.reduce((sum, s) => sum + s.geo_long, 0) / stationsInCell.length;
+      
+      // Check if all stations share the same location hierarchy with proper empty value handling
+      const isUniform = (field) => {
+        const values = stationsInCell.map(s => s[field]).filter(v => v && v !== 'Unknown' && v !== 'Unknown City');
+        return values.length > 0 && new Set(values).size === 1;
+      };
+
+      let clusterLabel = '';
+      // Only use city + country if both are uniformly shared
+      if (isUniform('city') && isUniform('country')) {
+        clusterLabel = `${stationsInCell[0].city}, ${stationsInCell[0].country}`;
+      }
+      // Fall back to city only if uniformly shared
+      else if (isUniform('city')) {
+        clusterLabel = stationsInCell[0].city;
+      }
+      // No label if neither city nor country are uniform
+      
+      // Helper function to find the most frequent item in an array
+      const getMostFrequent = (arr, key) => {
+        if (!arr || arr.length === 0) return null;
+        const counts = {};
+        arr.forEach(item => {
+          const value = item[key];
+          if (value) {
+            counts[value] = (counts[value] || 0) + 1;
+          }
+        });
+        let maxCount = 0;
+        let mostFrequent = null;
+        for (const value in counts) {
+          if (counts[value] > maxCount) {
+            maxCount = counts[value];
+            mostFrequent = value;
+          }
+        }
+        return mostFrequent;
+      };
+
+      const topCountry = getMostFrequent(stationsInCell, 'country');
+      const topCity = getMostFrequent(stationsInCell, 'city');
+      
+      // Get top 3 stations by popularity (click count)
+      const topStations = [...stationsInCell]
+        .sort((a, b) => (b.clickcount || 0) - (a.clickcount || 0))
+        .slice(0, 3);
+      
+      clusters.push({
+        latitude: avgLat,
+        longitude: avgLon,
+        count: stationsInCell.length,
+        label: clusterLabel,
+        country: topCountry,
+        city: topCity || 'Media Cluster',
+        stations: stationsInCell,
+        topStations: topStations
+      });
+    });
+    
+    return clusters;
+  }, []);
+
+  // Memoize the clusters to prevent infinite loops
+  const clusteredMarkers = useMemo(() => {
+    if (mediaStations.length === 0) return [];
     
     // Determine clustering grid size based on zoom level
     // Higher zoom = smaller grid = more individual markers
@@ -254,26 +456,26 @@ const Globe = () => {
     }
     
     // Apply clustering
-    const clusteredMarkers = gridSize < 10 ? clusterStationsByGrid(allStations, gridSize) : allStations.map(station => ({
+    return gridSize < 10 ? clusterStationsByGrid(mediaStations, gridSize) : mediaStations.map(station => ({
       city: station.city || 'Station',
       country: station.country || 'Unknown',
-      latitude: station.latitude,
-      longitude: station.longitude,
+      latitude: station.geo_lat,
+      longitude: station.geo_long,
       count: 1,
       stations: [station],
       topStations: [station]
     }));
-    
-    setVisibleMarkers(clusteredMarkers);
-  }, [viewer, radioStations, tvStations, zoomLevel, clusterStationsByGrid]);
+  }, [mediaStations, zoomLevel, clusterStationsByGrid]);
 
   // Add markers to the globe
   useEffect(() => {
     if (!viewer) return;
     
     console.log('Updating markers:', {
-      visibleMarkers: visibleMarkers.length,
-      zoomLevel: zoomLevel
+      clusteredMarkers: clusteredMarkers.length,
+      zoomLevel: zoomLevel,
+      tvCount: clusteredMarkers.filter(m => m.stations && m.stations.some(s => s.type === 'tv')).length,
+      radioCount: clusteredMarkers.filter(m => m.stations && m.stations.some(s => s.type === 'radio')).length
     });
     
     try {
@@ -281,11 +483,12 @@ const Globe = () => {
       viewer.entities.removeAll();
 
       // Add markers for each cluster or individual station
-      visibleMarkers.forEach((marker, index) => {
+      clusteredMarkers.forEach((marker, index) => {
         // Determine marker size based on count
         const baseSize = marker.count === 1 ? 8 : 12;
         const maxSize = 30;
-        const size = Math.min(baseSize + Math.log(marker.count) * 3, maxSize);
+        // Reduce size by 80% (keep 20% of original size)
+        const size = Math.min((baseSize + Math.log(marker.count) * 3) * 0.2, maxSize * 0.2);
         
         // Determine color based on station types
         const hasRadio = marker.stations.some(s => s.type === 'radio');
@@ -313,15 +516,17 @@ const Globe = () => {
             heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
           },
           label: {
-            text: marker.count === 1 
-              ? (marker.stations[0].city || marker.stations[0].name)
-              : `${marker.city} (${marker.count})`,
+            text: marker.count === 1
+              ? (marker.stations[0].name || 'Unknown Station')
+              : marker.label ? `${marker.label} (${marker.count})` : '',
             font: '12pt sans-serif',
             pixelOffset: new Cesium.Cartesian2(0, -25 - (index % 5) * 5), // Stagger labels
             fillColor: Cesium.Color.WHITE,
             outlineColor: Cesium.Color.BLACK,
             outlineWidth: 2,
             style: Cesium.LabelStyle.FILL_AND_OUTLINE,
+            showBackground: true,
+            backgroundColor: Cesium.Color.BLACK.withAlpha(0.7),
             show: marker.count >= 3 || zoomLevel > 5 // Show labels for larger clusters or when zoomed in
           },
         });
@@ -336,7 +541,7 @@ const Globe = () => {
     } catch (error) {
       console.error('Error adding markers to globe:', error);
     }
-  }, [viewer, visibleMarkers, zoomLevel]);
+  }, [viewer, clusteredMarkers, zoomLevel]);
 
   // Add mouse move handler for hover interactions
   useEffect(() => {
@@ -364,9 +569,9 @@ const Globe = () => {
           tooltip.style.top = `${movement.endPosition.y + 10}px`;
           tooltip.innerHTML = `
             <div class="bg-black/80 text-white p-2 rounded shadow-lg max-w-xs">
-              <h4 class="font-bold">${pickedObject.id.station.name}</h4>
-              <p class="text-sm">${pickedObject.id.station.country}</p>
-              <p class="text-xs mt-1">${pickedObject.id.station.tags?.split(',')[0] || ''}</p>
+              <h4 class="font-bold">${pickedObject.id.station.name || 'Unknown Station'}</h4>
+              <p class="text-sm">${pickedObject.id.station.country || 'Unknown Country'}</p>
+              <p class="text-xs mt-1">${Array.isArray(pickedObject.id.station.tags) ? pickedObject.id.station.tags.join(', ') : pickedObject.id.station.tags || ''}</p>
             </div>
           `;
         }

@@ -1,0 +1,185 @@
+/* Retro styling for 1982-themed components */
+
+/* Retro TV Remote Control */
+.retro-remote {
+  background: linear-gradient(145deg, #2d3748, #1a202c);
+  border: 4px solid #1a202c;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  font-family: 'Courier New', monospace;
+}
+
+.retro-remote-screen {
+  background: linear-gradient(145deg, #1a202c, #2d3748);
+  border: 2px solid #4a5568;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: 'Courier New', monospace;
+  text-shadow: 0 0 5px rgba(0, 255, 0, 0.7);
+}
+
+.retro-remote-button {
+  background: linear-gradient(145deg, #4a5568, #2d3748);
+  border: 2px solid #1a202c;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.retro-remote-button:hover {
+  background: linear-gradient(145deg, #718096, #4a5568);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.retro-remote-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Retro Boombox */
+.retro-boombox {
+  background: linear-gradient(145deg, #2d3748, #1a202c);
+  border: 4px solid #1a202c;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.retro-boombox-display {
+  background: #000;
+  border: 2px solid #4a5568;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: 'Courier New', monospace;
+  text-shadow: 0 0 5px rgba(0, 255, 0, 0.7);
+}
+
+.retro-boombox-control {
+  background: linear-gradient(145deg, #4a5568, #2d3748);
+  border: 2px solid #1a202c;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.retro-boombox-control:hover {
+  background: linear-gradient(145deg, #718096, #4a5568);
+}
+
+.retro-boombox-control:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.retro-boombox-speaker {
+  background: linear-gradient(145deg, #1a202c, #2d3748);
+  border: 4px solid #1a202c;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.retro-boombox-speaker-grill {
+  background: linear-gradient(145deg, #2d3748, #1a202c);
+  border: 2px solid #4a5568;
+}
+
+/* Retro TV */
+.retro-tv {
+  background: linear-gradient(145deg, #2d3748, #1a202c);
+  border: 8px solid #1a202c;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+}
+
+.retro-tv-screen {
+  background: #000;
+  border: 4px solid #4a5568;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.retro-tv-control {
+  background: linear-gradient(145deg, #4a5568, #2d3748);
+  border: 2px solid #1a202c;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.retro-tv-control:hover {
+  background: linear-gradient(145deg, #718096, #4a5568);
+}
+
+.retro-tv-control:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Retro color palette */
+.retro-green {
+  color: #00ff00;
+}
+
+.retro-orange {
+  color: #ffa500;
+}
+
+.retro-red {
+  color: #ff0000;
+}
+
+.retro-blue {
+  color: #0000ff;
+}
+
+.retro-yellow {
+  color: #ffff00;
+}
+
+.retro-purple {
+  color: #800080;
+}
+
+.retro-pink {
+  color: #ffc0cb;
+}
+
+.retro-cyan {
+  color: #00ffff;
+}
+
+/* Retro fonts */
+.retro-font {
+  font-family: 'Courier New', monospace;
+  letter-spacing: 1px;
+}
+
+.retro-font-bold {
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Retro animations */
+@keyframes retro-pulse {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+
+.retro-pulse {
+  animation: retro-pulse 1s infinite;
+}
+
+/* Retro scanlines effect */
+.retro-scanlines {
+  position: relative;
+  overflow: hidden;
+}
+
+.retro-scanlines::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  pointer-events: none;
+  z-index: 10;
+}

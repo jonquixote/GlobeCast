@@ -112,9 +112,9 @@ class TVDataProcessor {
       const channelsWithCoords = [];
       let processedCount = 0;
 
-      // Process only first 100 channels for a reasonable test
-      const testChannels = channelsWithCity.slice(0, 100);
-      console.log(`Processing first ${testChannels.length} channels...`);
+      // Process only first 5 channels for testing
+      const testChannels = channelsWithCity.slice(0, 5);
+      console.log(`Processing first ${testChannels.length} channels for testing...`);
 
       for (const channel of testChannels) {
         try {
@@ -134,7 +134,7 @@ class TVDataProcessor {
           console.log(`Processed ${processedCount}/${testChannels.length} channels`);
           
           // Add a small delay to be respectful to the geocoding API
-          await new Promise(resolve => setTimeout(resolve, 500));
+          await new Promise(resolve => setTimeout(resolve, 1000));
         } catch (error) {
           console.warn(`Error processing ${channel.city}, ${channel.country}:`, error.message);
         }

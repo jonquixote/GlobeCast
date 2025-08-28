@@ -16,7 +16,7 @@ const StationInfo = () => {
   };
 
   const formatTags = (tags) => {
-    if (!tags) return [];
+    if (!tags || typeof tags !== 'string') return [];
     return tags.split(',').map(tag => tag.trim()).filter(tag => tag.length > 0);
   };
 

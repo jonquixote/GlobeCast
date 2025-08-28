@@ -7,13 +7,18 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "process-tv-data": "node scripts/processTVData.js"
+    "process-tv-data": "node scripts/processTVData.js",
+    "process-radio-data": "node scripts/processRadioData.js",
+    "start-server": "node server.js",
+    "dev-server": "nodemon server.js"
   },
   "dependencies": {
     "@floating-ui/react": "^0.26.0",
     "autoprefixer": "^10.4.21",
     "axios": "^1.6.7",
     "cesium": "^1.120.0",
+    "csv-parse": "^5.5.6",
+    "express": "^4.19.2",
     "lucide-react": "^0.344.0",
     "postcss": "^8.5.6",
     "react": "^18.2.0",
@@ -27,6 +32,7 @@
   "devDependencies": {
     "@tailwindcss/vite": "^4.0.0",
     "@vitejs/plugin-react": "^4.2.1",
+    "nodemon": "^3.1.4",
     "vite": "^5.0.0",
     "vite-plugin-cesium": "^1.2.23"
   }

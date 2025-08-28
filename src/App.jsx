@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Globe from './components/Globe';
-import MediaPlayer from './components/MediaPlayer';
-import GlobeControls from './components/GlobeControls';
+import RetroMediaPlayer from './components/RetroMediaPlayer';
+import RetroGlobeControls from './components/RetroGlobeControls';
 import StationInfo from './components/StationInfo';
 import StationMenu from './components/StationMenu';
 import LoadingScreen from './components/LoadingScreen';
@@ -64,9 +64,9 @@ function App() {
         style={{ display: 'none' }}
       />
       <ErrorBoundary>
-        <MediaPlayer key={selectedStation ? `${selectedStation.id}-${Date.now()}` : 'none'} />
+        <RetroMediaPlayer key={selectedStation ? `${selectedStation.id}-${Date.now()}` : 'none'} />
       </ErrorBoundary>
-      <GlobeControls />
+      <RetroGlobeControls />
       <StationInfo />
       <StationMenu />
       

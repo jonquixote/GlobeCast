@@ -489,7 +489,7 @@ const MediaPlayer = () => {
             <div className="flex-1">
               <div className="text-white text-sm">{isPlaying ? 'Now Playing' : 'Paused'}</div>
               <div className="text-gray-300 text-xs">
-                {selectedStation.tags && selectedStation.tags.split(',').slice(0, 3).join(' • ')}
+                {selectedStation.tags && typeof selectedStation.tags === 'string' && selectedStation.tags.split(',').slice(0, 3).join(' • ')}
               </div>
             </div>
             <audio

@@ -42,40 +42,43 @@ function clusterStationsByGrid(stations, gridSize) {
     // Sort by popularity
     gridCell.stations.sort((a, b) => (b.clickcount || b.listeners || 0) - (a.clickcount || a.listeners || 0));
     
-    // Determine cluster name based on majority city/country or geographic region
-    const cityCounts = {};
-    const countryCounts = {};
+    const hasRadio = gridCell.stations.some(s => s.type === 'radio');
+    const hasTV = gridCell.stations.some(s => s.type === 'tv');
     
-    gridCell.stations.forEach(station => {
-      if (station.city) {
-        cityCounts[station.city] = (cityCounts[station.city] || 0) + 1;
-      }
-      if (station.country) {
-        countryCounts[station.country] = (countryCounts[station.country] || 0) + 1;
-      }
-    });
+    const isUniform = (field) => {
+      const first = gridCell.stations[0][field];
+      return gridCell.stations.every(station => station[field] && station[field] === first);
+    };
     
-    // Get most common city and country
-    const topCity = Object.keys(cityCounts).sort((a, b) => cityCounts[b] - cityCounts[a])[0];
-    const topCountry = Object.keys(countryCounts).sort((a, b) => countryCounts[b] - countryCounts[a])[0];
-    
-    // Create cluster name
-    let clusterName = 'Cluster';
-    if (topCity) {
-      clusterName = topCity;
-    } else if (topCountry) {
-      clusterName = topCountry;
+    // Build cluster label using hierarchical uniformity checks
+    let clusterLabel = '';
+    if (isUniform('city') && isUniform('country')) {
+      clusterName = hasRadio ? isUniform('state') ?
+        `${gridCell.stations[0].city}, ${gridCell.stations[0].state}, ${gridCell.stations[0].country} (Radio)` :
+        `${gridCell.stations[0].city}, ${gridCell.stations[0].country} (Radio)` :
+        hasTV ?
+          `${gridCell.stations[0].city}, ${gridCell.stations[0].country} (TV)` :
+          `${gridCell.stations[0].city}, ${gridCell.stations[0].country} (${gridCell.stations[0].type})`;
+    } else if (isUniform('country')) {
+      clusterName = hasRadio && isUniform('state') ?
+        `${gridCell.stations[0].state}, ${gridCell.stations[0].country} (Radio)` :
+        hasRadio ?
+          `${gridCell.stations[0].country} (Radio)` :
+          hasTV ?
+            `${gridCell.stations[0].country} (TV)` :
+            `${gridCell.stations[0].country} (${gridCell.stations[0].type})`;
     }
     
     return {
-      city: clusterName,
-      country: topCountry || 'Unknown',
+      city: clusterName || gridCell.stations[0].city || 'Media Cluster',
+      country: clusterName && hasRadio ? gridCell.stations[0].country : (hasRadio ? gridCell.stations[0].country : ''),
       latitude: totalLat / count,
       longitude: totalLon / count,
       count: count,
       stations: gridCell.stations,
-      topStations: gridCell.stations.slice(0, 5)
+      topStations: topStations
     };
+    
   });
 }
 
