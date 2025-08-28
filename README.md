@@ -2,7 +2,7 @@
 
 An interactive 3D globe application that allows users to explore and stream live radio and TV stations from around the world. Built with React, Cesium.js, and Video.js.
 
-![Project Screenshot](docs/screenshot.png)
+![Project Screenshot](docs/screenshots/screenshot.png)
 
 ## Features
 
@@ -111,3 +111,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 For questions or feedback, please open an issue on the GitHub repository.
+

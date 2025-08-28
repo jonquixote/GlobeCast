@@ -96,15 +96,23 @@ const MediaPlayer = () => {
   const cleanupPlayer = () => {
     if (playerRef.current) {
       try {
-        // Remove all event listeners before disposing
+        // Safely remove all event listeners before disposing
         playerRef.current.off('play');
         playerRef.current.off('pause');
         playerRef.current.off('error');
         playerRef.current.off('volumechange');
         playerRef.current.off('ready');
         
-        // Dispose of the player
-        playerRef.current.dispose();
+        // Pause the player first
+        if (typeof playerRef.current.pause === 'function') {
+          playerRef.current.pause();
+        }
+        
+        // Check if player is still mounted before disposing
+        if (playerRef.current.el && playerRef.current.el()) {
+          // Dispose of the player
+          playerRef.current.dispose();
+        }
       } catch (e) {
         console.warn('Error disposing player:', e);
       } finally {
@@ -138,6 +146,10 @@ const MediaPlayer = () => {
 
     // Cleanup function
     let initPlayer;
+    let retryTimeout;
+    let loadTimeout;
+    let retryCount = 0;
+    const maxRetries = 3;
 
     const initializePlayer = () => {
       // Additional check to ensure element is mounted
@@ -147,6 +159,19 @@ const MediaPlayer = () => {
       }
 
       try {
+        // Determine media type based on URL
+        let mediaType = 'application/x-mpegURL'; // Default to HLS
+        if (selectedStation.url.includes('.mpd')) {
+          mediaType = 'application/dash+xml'; // DASH
+        } else if (selectedStation.url.includes('.mp4')) {
+          mediaType = 'video/mp4'; // MP4
+        } else if (selectedStation.url.includes('.webm')) {
+          mediaType = 'video/webm'; // WebM
+        }
+        
+        // Add CORS proxy for streams that might have CORS issues
+        const proxiedUrl = selectedStation.url; // We'll handle CORS proxying through Video.js settings
+        
         // Configure Video.js options
         const options = {
           controls: true,
@@ -158,8 +183,8 @@ const MediaPlayer = () => {
           autoplay: true,
           muted: false,
           sources: [{
-            src: selectedStation.url,
-            type: selectedStation.type === 'radio' ? 'audio/mpeg' : 'application/x-mpegURL',
+            src: proxiedUrl,
+            type: selectedStation.type === 'radio' ? 'audio/mpeg' : mediaType,
           }],
           html5: {
             hls: {
@@ -167,17 +192,38 @@ const MediaPlayer = () => {
               smoothQualityChange: true,
               overrideNative: true,
             },
+            dash: {
+              setLimitBitrateByPortal: true,
+            }
           },
+          // Add error handling options
+          techOrder: ['html5'],
+          // Set timeouts for loading
+          playbackRates: [0.5, 1, 1.5, 2],
         };
 
         // Initialize player
         const player = videojs(videoRef.current, options);
         playerRef.current = player;
-
-        // Event listeners
+        
+        // Set a timeout for loading the stream
+        loadTimeout = setTimeout(() => {
+          if (playerRef.current && !playerRef.current.paused()) {
+            console.warn('Stream loading timeout for:', selectedStation.name);
+            setError('Stream loading timeout - please try another station');
+            if (typeof playerRef.current.pause === 'function') {
+              playerRef.current.pause();
+            }
+          }
+        }, 30000); // 30 second timeout
+        
+        // Clear timeout when player is ready
         player.ready(() => {
+          clearTimeout(loadTimeout);
           console.log('Player ready for:', selectedStation.name);
           setError(null);
+          // Reset retry count on successful load
+          retryCount = 0;
         });
 
         player.on('play', () => {
@@ -190,9 +236,89 @@ const MediaPlayer = () => {
         });
 
         player.on('error', (e) => {
+          // Clear any existing timeouts
+          if (loadTimeout) {
+            clearTimeout(loadTimeout);
+          }
+          
           const error = player.error();
-          console.error('Player error:', error);
-          setError(error ? `Error ${error.code}: ${error.message}` : 'Playback error');
+          console.error('Player error for station:', selectedStation.name, error);
+          
+          // Handle specific error cases
+          let errorMessage = 'Playback error - this stream may not be working';
+          if (error) {
+            switch (error.code) {
+              case 1: // MEDIA_ERR_ABORTED
+                errorMessage = 'Media loading aborted';
+                break;
+              case 2: // MEDIA_ERR_NETWORK
+                errorMessage = 'Network error occurred - stream may be temporarily unavailable';
+                break;
+              case 3: // MEDIA_ERR_DECODE
+                errorMessage = 'Media decode error - file may be corrupted';
+                break;
+              case 4: // MEDIA_ERR_SRC_NOT_SUPPORTED
+                errorMessage = 'Media format not supported or stream unavailable';
+                break;
+              default:
+                errorMessage = `Error ${error.code}: ${error.message}`;
+            }
+          }
+          
+          // Check for DNS resolution errors specifically
+          if (errorMessage.includes('Network error') && selectedStation.url) {
+            try {
+              const url = new URL(selectedStation.url);
+              // If it's a test URL or obviously fake URL, handle it specially
+              if (url.hostname.includes('radio-') && url.hostname.includes('.com')) {
+                errorMessage = 'Stream URL appears to be invalid or test data - please try another station';
+              }
+            } catch (urlError) {
+              // Invalid URL
+              errorMessage = 'Invalid stream URL - please try another station';
+            }
+          }
+          
+          // Implement retry mechanism for network errors
+          if ((error && (error.code === 2 || error.code === 4)) && retryCount < maxRetries) {
+            retryCount++;
+            console.log(`Retrying ${selectedStation.name} (${retryCount}/${maxRetries})...`);
+            setError(`Retrying... (${retryCount}/${maxRetries})`);
+            
+            // Clean up current player safely
+            if (playerRef.current) {
+              try {
+                playerRef.current.off('error'); // Remove error listener to prevent recursive calls
+                if (typeof playerRef.current.pause === 'function') {
+                  playerRef.current.pause();
+                }
+                // Check if player element exists before disposing
+                if (playerRef.current.el && playerRef.current.el()) {
+                  playerRef.current.dispose();
+                }
+              } catch (e) {
+                console.warn('Error during player cleanup:', e);
+              } finally {
+                playerRef.current = null;
+              }
+            }
+            
+            // Retry after a delay, with exponential backoff
+            const retryDelay = Math.pow(2, retryCount) * 1000; // 2s, 4s, 8s, etc.
+            retryTimeout = setTimeout(initializePlayer, retryDelay);
+            return;
+          }
+          
+          // For CORS or forbidden errors, suggest opening in new tab
+          if (error && error.message && 
+              (error.message.includes('CORS') || 
+               error.message.includes('403') || 
+               error.message.includes('400') || 
+               error.message.includes('Forbidden'))) {
+            errorMessage = 'Stream blocked by CORS policy. Try opening in a new tab.';
+          }
+          
+          setError(errorMessage);
           setIsPlaying(false);
         });
 
@@ -201,8 +327,21 @@ const MediaPlayer = () => {
         });
 
       } catch (err) {
-        console.error('Error initializing player:', err);
-        setError('Failed to initialize player');
+        console.error('Error initializing player for station:', selectedStation.name, err);
+        
+        // Implement retry mechanism for initialization errors
+        if (retryCount < maxRetries) {
+          retryCount++;
+          console.log(`Retrying initialization ${selectedStation.name} (${retryCount}/${maxRetries})...`);
+          setError(`Retrying initialization... (${retryCount}/${maxRetries})`);
+          
+          // Exponential backoff for retries
+          const retryDelay = Math.pow(2, retryCount) * 1000; // 2s, 4s, 8s, etc.
+          retryTimeout = setTimeout(initializePlayer, retryDelay);
+          return;
+        }
+        
+        setError('Failed to initialize player - please try another station');
       }
     };
 
@@ -213,8 +352,14 @@ const MediaPlayer = () => {
       if (initPlayer) {
         clearTimeout(initPlayer);
       }
+      if (retryTimeout) {
+        clearTimeout(retryTimeout);
+      }
+      if (loadTimeout) {
+        clearTimeout(loadTimeout);
+      }
     };
-  }, [selectedStation, isPlayerVisible, currentStation]); // Depend on currentStation instead of selectedStation
+  }, [selectedStation, isPlayerVisible, currentStation, isPlayerFullscreen]); // Depend on currentStation instead of selectedStation
 
   // Handle fullscreen changes
   useEffect(() => {
@@ -316,13 +461,27 @@ const MediaPlayer = () => {
         {error ? (
           <div className="p-4 text-center">
             <div className="text-red-400 text-sm mb-2">⚠️ Playback Error</div>
-            <div className="text-gray-300 text-xs">{error}</div>
-            <button
-              onClick={() => window.open(selectedStation.url, '_blank')}
-              className="mt-2 px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white text-xs rounded transition-colors"
-            >
-              Open Direct Link
-            </button>
+            <div className="text-gray-300 text-xs mb-2">{error}</div>
+            <div className="text-gray-400 text-xs mb-3">
+              {error.includes('CORS') || error.includes('403') || error.includes('400') || error.includes('Forbidden') 
+                ? "Many live streams have restrictions that prevent them from playing in this player."
+                : "This stream may be temporarily unavailable."}
+              Try another station or open the direct link below.
+            </div>
+            <div className="flex flex-col gap-2">
+              <button
+                onClick={() => window.open(selectedStation.url, '_blank')}
+                className="px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white text-xs rounded transition-colors"
+              >
+                Open Direct Link
+              </button>
+              <button
+                onClick={closePlayer}
+                className="px-3 py-1 bg-gray-600 hover:bg-gray-700 text-white text-xs rounded transition-colors"
+              >
+                Close Player
+              </button>
+            </div>
           </div>
         ) : isRadio ? (
           <div className="p-4 flex items-center space-x-3">

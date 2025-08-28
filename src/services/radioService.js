@@ -1,4 +1,5 @@
 import axios from 'axios';
+import radioStations from '../data/radioStations.json';
 
 const RADIO_BROWSER_BASE_URL = 'https://de1.api.radio-browser.info';
 
@@ -10,26 +11,20 @@ class RadioService {
         'Content-Type': 'application/json',
       },
     });
+    // Use local data instead of API calls for better performance with large dataset
+    this.localStations = radioStations;
   }
 
   /**
-   * Fetch popular radio stations with geographic coordinates
+   * Get radio stations from local data
    * @param {number} limit - Number of stations to fetch
    * @returns {Promise<Array>} Array of radio station objects
    */
-  async getPopularStations(limit = 100) {
+  async getLocalStations(limit = 100) {
     try {
-      const response = await this.api.get('/json/stations/search', {
-        params: {
-          limit,
-          order: 'clickcount',
-          reverse: 'true',
-          hidebroken: 'true',
-          has_geo_info: 'true', // Only stations with geographic coordinates
-        },
-      });
-
-      return response.data.map(station => ({
+      // Shuffle array to get random stations
+      const shuffled = this.localStations.sort(() => 0.5 - Math.random());
+      return shuffled.slice(0, limit).map(station => ({
         id: station.stationuuid,
         name: station.name,
         url: station.url_resolved || station.url,
@@ -42,8 +37,8 @@ class RadioService {
         tags: station.tags,
         codec: station.codec,
         bitrate: station.bitrate,
-        geo_lat: station.geo_lat,
-        geo_long: station.geo_long,
+        latitude: parseFloat(station.geo_lat),
+        longitude: parseFloat(station.geo_long),
         votes: station.votes,
         clickcount: station.clickcount,
         lastcheckok: station.lastcheckok,
@@ -51,7 +46,22 @@ class RadioService {
       }));
     } catch (error) {
       console.error('Error fetching radio stations:', error);
-      throw error;
+      return [];
+    }
+  }
+
+  /**
+   * Fetch popular radio stations with geographic coordinates
+   * @param {number} limit - Number of stations to fetch
+   * @returns {Promise<Array>} Array of radio station objects
+   */
+  async getPopularStations(limit = 100) {
+    try {
+      // Use local data for better performance
+      return await this.getLocalStations(limit);
+    } catch (error) {
+      console.error('Error fetching radio stations:', error);
+      return [];
     }
   }
 
@@ -63,17 +73,16 @@ class RadioService {
    */
   async getStationsByCountry(countryCode, limit = 50) {
     try {
-      const response = await this.api.get('/json/stations/bycountrycodeexact/' + countryCode, {
-        params: {
-          limit,
-          order: 'clickcount',
-          reverse: 'true',
-          hidebroken: 'true',
-          has_geo_info: 'true',
-        },
-      });
-
-      return response.data.map(station => ({
+      // Filter local stations by country
+      const countryStations = this.localStations.filter(station => 
+        station.countrycode === countryCode
+      );
+      
+      // Shuffle and limit results
+      const shuffled = countryStations.sort(() => 0.5 - Math.random());
+      const selected = shuffled.slice(0, limit);
+      
+      return selected.map(station => ({
         id: station.stationuuid,
         name: station.name,
         url: station.url_resolved || station.url,
@@ -86,8 +95,8 @@ class RadioService {
         tags: station.tags,
         codec: station.codec,
         bitrate: station.bitrate,
-        geo_lat: station.geo_lat,
-        geo_long: station.geo_long,
+        latitude: parseFloat(station.geo_lat),
+        longitude: parseFloat(station.geo_long),
         votes: station.votes,
         clickcount: station.clickcount,
         lastcheckok: station.lastcheckok,
@@ -95,7 +104,7 @@ class RadioService {
       }));
     } catch (error) {
       console.error('Error fetching radio stations by country:', error);
-      throw error;
+      return [];
     }
   }
 
@@ -105,25 +114,13 @@ class RadioService {
    */
   async getDiverseStations() {
     try {
-      const countries = ['US', 'GB', 'DE', 'FR', 'IT', 'ES', 'CA', 'AU', 'JP', 'BR'];
-      const stationsPerCountry = 10;
-      
-      const promises = countries.map(country => 
-        this.getStationsByCountry(country, stationsPerCountry)
-          .catch(error => {
-            console.warn(`Failed to fetch stations for ${country}:`, error);
-            return [];
-          })
-      );
-
-      const results = await Promise.all(promises);
-      return results.flat();
+      // Use local data for better performance with large dataset
+      return await this.getLocalStations(1000);
     } catch (error) {
       console.error('Error fetching diverse radio stations:', error);
-      throw error;
+      return [];
     }
   }
 }
 
 export default new RadioService();
-

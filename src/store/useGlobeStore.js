@@ -13,6 +13,7 @@ const useGlobeStore = create((set, get) => ({
   // Selected station and media player
   selectedStation: null,
   isPlayerVisible: false,
+  isCitySelected: false,
   isPlayerLocked: false,
   isPlayerFullscreen: false,
   
@@ -25,6 +26,11 @@ const useGlobeStore = create((set, get) => ({
   
   // User location for geo-blocking
   userLocation: null,
+  
+  // UI state for collapsible menus
+  isStationMenuOpen: false,
+  isRadioMenuOpen: true,
+  isTVMenuOpen: true,
   
   // Actions
   setViewer: (viewer) => set({ viewer, isGlobeReady: true }),
@@ -39,9 +45,9 @@ const useGlobeStore = create((set, get) => ({
     return { tvStations: stations, allStations };
   }),
   
-  setSelectedStation: (station) => set({ 
+  setSelectedStation: (station) => set({
     selectedStation: station,
-    isPlayerVisible: !!station 
+    isPlayerVisible: !!station
   }),
   
   togglePlayerLock: () => set((state) => ({ 
@@ -54,6 +60,11 @@ const useGlobeStore = create((set, get) => ({
   
   setCameraFocusTarget: (target) => set({ cameraFocusTarget: target }),
   
+  setSelectedCity: (city) => set({
+    selectedCity: city,
+    isCitySelected: !!city
+  }),
+  
   setLoadingRadio: (loading) => set({ isLoadingRadio: loading }),
   setLoadingTV: (loading) => set({ isLoadingTV: loading }),
   
@@ -64,6 +75,18 @@ const useGlobeStore = create((set, get) => ({
     isPlayerVisible: false,
     isPlayerLocked: false,
     isPlayerFullscreen: false
+  }),
+  
+  // UI Actions for collapsible menus
+  toggleStationMenu: () => set((state) => ({ isStationMenuOpen: !state.isStationMenuOpen })),
+  toggleRadioMenu: () => set((state) => ({ isRadioMenuOpen: !state.isRadioMenuOpen })),
+  toggleTVMenu: () => set((state) => ({ isTVMenuOpen: !state.isTVMenuOpen })),
+  
+  // Close all menus
+  closeAllMenus: () => set({ 
+    isStationMenuOpen: false,
+    isRadioMenuOpen: false,
+    isTVMenuOpen: false
   }),
 }));
 

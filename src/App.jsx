@@ -3,15 +3,18 @@ import Globe from './components/Globe';
 import MediaPlayer from './components/MediaPlayer';
 import GlobeControls from './components/GlobeControls';
 import StationInfo from './components/StationInfo';
+import StationMenu from './components/StationMenu';
 import LoadingScreen from './components/LoadingScreen';
 import WelcomeOverlay from './components/WelcomeOverlay';
 import ErrorBoundary from './components/ErrorBoundary';
 import useMediaStations from './hooks/useMediaStations';
+import useGlobeStore from './store/useGlobeStore';
 import './App.css';
 import './styles/mobile.css';
 
 function App() {
   const { isLoading, error, totalStations } = useMediaStations();
+  const { selectedStation, selectedCity } = useGlobeStore();
   const [showWelcome, setShowWelcome] = useState(false);
   const [loadingProgress, setLoadingProgress] = useState(0);
 
@@ -54,11 +57,18 @@ function App() {
   return (
     <div className="w-screen h-screen overflow-hidden bg-black relative">
       <Globe />
+      {/* Station tooltip container */}
+      <div
+        id="station-tooltip"
+        className="fixed pointer-events-none opacity-0 transition-opacity duration-200"
+        style={{ display: 'none' }}
+      />
       <ErrorBoundary>
-        <MediaPlayer key={Date.now()} />
+        <MediaPlayer key={selectedStation ? `${selectedStation.id}-${Date.now()}` : 'none'} />
       </ErrorBoundary>
       <GlobeControls />
       <StationInfo />
+      <StationMenu />
       
       {/* Welcome overlay */}
       {showWelcome && <WelcomeOverlay onClose={handleWelcomeClose} />}
@@ -69,19 +79,6 @@ function App() {
           <span className="text-sm">{error}</span>
         </div>
       )}
-      
-      {/* Instructions */}
-      <div className="absolute bottom-4 right-4 bg-black/80 text-white px-4 py-2 rounded-lg backdrop-blur-sm max-w-xs z-30 transition-all duration-300 hover:bg-black/90">
-        <p className="text-sm">
-          🌍 Spin the globe to explore • 📻 Cyan dots = Radio • 📺 Orange dots = TV • Click any dot to play
-        </p>
-        <button
-          onClick={() => setShowWelcome(true)}
-          className="text-xs text-blue-400 hover:text-blue-300 mt-1 underline"
-        >
-          Show tutorial again
-        </button>
-      </div>
 
       {/* Floating action button for help */}
       <button
