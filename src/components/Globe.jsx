@@ -36,14 +36,14 @@ const Globe = () => {
           
           const stations = response.data.map(station => {
             // Better detection of station type
-            let type = 'radio'; // Default to radio
-            if (station.type) {
-              type = station.type;
-            } else if (station.categories && station.categories.toLowerCase().includes('tv')) {
-              type = 'tv';
-            } else if (station.name && station.name.toLowerCase().includes('tv')) {
-              type = 'tv';
-            } else if (station.url && (station.url.includes('.m3u8') || station.url.includes('.smil'))) {
+            let type = station.type || 'radio'; // Start with provided type or default to radio
+            
+            // Override if strong indicators of TV are present, as the `type` field might be generic.
+            if (
+              (station.name && station.name.toLowerCase().includes('tv')) ||
+              (station.url && (station.url.includes('.m3u8') || station.url.includes('.smil'))) ||
+              (station.categories && typeof station.categories === 'string' && station.categories.toLowerCase().includes('tv'))
+            ) {
               type = 'tv';
             }
             

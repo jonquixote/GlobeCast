@@ -44,8 +44,8 @@ async function readJsonFile(filePath) {
 app.get('/api/stations', async (req, res) => {
   try {
     // Read both radio and TV station files from src/data instead of public
-    const tvStations = await readJsonFile(path.join(__dirname, '..', 'src', 'data', 'tvStationsWithUrls.json'));
-    const radioStations = await readJsonFile(path.join(__dirname, '..', 'src', 'data', 'radioStations.json'));
+    const tvStations = await readJsonFile(path.join(__dirname, '..', 'src', 'data', 'tvStationsWithUrlsFixed.json'));
+    const radioStations = await readJsonFile(path.join(__dirname, '..', 'src', 'data', 'radioStationsFixed.json'));
     
     // Combine and add type property
     const allStations = [
@@ -89,7 +89,7 @@ app.get('/api/stations', async (req, res) => {
 // Get TV stations only
 app.get('/api/stations/tv', async (req, res) => {
   try {
-    const tvStations = await readJsonFile(path.join(__dirname, '..', 'src', 'data', 'tvStationsWithUrls.json'));
+    const tvStations = await readJsonFile(path.join(__dirname, '..', 'src', 'data', 'tvStationsWithUrlsFixed.json'));
     
     // Add type property
     const stationsWithType = tvStations.map(station => ({ ...station, type: 'tv' }));
@@ -118,7 +118,7 @@ app.get('/api/stations/tv', async (req, res) => {
 // Get radio stations only
 app.get('/api/stations/radio', async (req, res) => {
   try {
-    const radioStations = await readJsonFile(path.join(__dirname, '..', 'src', 'data', 'radioStations.json'));
+    const radioStations = await readJsonFile(path.join(__dirname, '..', 'src', 'data', 'radioStationsFixed.json'));
     
     // Add type property
     const stationsWithType = radioStations.map(station => ({ ...station, type: 'radio' }));
@@ -150,8 +150,8 @@ app.get('/api/stations/:id', async (req, res) => {
     const { id } = req.params;
     
     // Read both radio and TV station files from src/data instead of public
-    const tvStations = await readJsonFile(path.join(__dirname, '..', 'src', 'data', 'tvStationsWithUrls.json'));
-    const radioStations = await readJsonFile(path.join(__dirname, '..', 'src', 'data', 'radioStations.json'));
+    const tvStations = await readJsonFile(path.join(__dirname, '..', 'src', 'data', 'tvStationsWithUrlsFixed.json'));
+    const radioStations = await readJsonFile(path.join(__dirname, '..', 'src', 'data', 'radioStationsFixed.json'));
     
     // Combine and add type property
     const allStations = [
@@ -186,8 +186,8 @@ app.get('/api/stations/:id', async (req, res) => {
 app.get('/api/stats', async (req, res) => {
   try {
     // Read both radio and TV station files from src/data instead of public
-    const tvStations = await readJsonFile(path.join(__dirname, '..', 'src', 'data', 'tvStationsWithUrls.json'));
-    const radioStations = await readJsonFile(path.join(__dirname, '..', 'src', 'data', 'radioStations.json'));
+    const tvStations = await readJsonFile(path.join(__dirname, '..', 'src', 'data', 'tvStationsWithUrlsFixed.json'));
+    const radioStations = await readJsonFile(path.join(__dirname, '..', 'src', 'data', 'radioStationsFixed.json'));
     
     // Calculate statistics
     const stats = {

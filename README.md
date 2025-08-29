@@ -83,6 +83,20 @@ src/
 - **TV Streams**: [iptv-org GitHub repository](https://github.com/iptv-org/iptv)
 - **Radio Stations**: Custom curated database with geographic coordinates
 
+## Station Coordinate Updates
+
+Station coordinates are periodically updated to ensure accuracy. To manually update station coordinates:
+
+```bash
+npm run update-station-coordinates
+```
+
+This script will:
+- Identify stations with invalid coordinates
+- Use OpenStreetMap Nominatim API to geocode locations
+- Update the fixed data files with accurate coordinates
+- Preserve existing valid coordinates
+
 ## Known Issues
 
 - Some streams may not play due to CORS restrictions

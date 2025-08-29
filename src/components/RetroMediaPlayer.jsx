@@ -4,6 +4,7 @@ import { X, Lock, Unlock, Maximize, Minimize, Volume2, VolumeX } from 'lucide-re
 import videojs from 'video.js';
 import 'video.js/dist/video-js.css';
 import './MediaPlayer.css';
+import './RetroMediaPlayer.css';
 import * as Cesium from 'cesium';
 import useGlobeStore from '../store/useGlobeStore';
 
@@ -265,7 +266,15 @@ const RetroMediaPlayer = () => {
         };
 
         // Initialize player
-        const player = videojs(videoRef.current, options);
+        const player = videojs(videoRef.current, options, () => {
+          console.log('Player initialized callback for:', selectedStation.name);
+          // Ensure the player is visible after initialization
+          const playerElement = player.el();
+          if (playerElement) {
+            playerElement.style.display = 'block';
+            playerElement.style.visibility = 'visible';
+          }
+        });
         playerRef.current = player;
         
         // Set initial volume
@@ -287,6 +296,7 @@ const RetroMediaPlayer = () => {
         }, 60000); // 60 second timeout for live streams
         
         // Clear timeout when player is ready
+        // Clear timeout when player is ready
         player.ready(() => {
           if (loadTimeout) {
             clearTimeout(loadTimeout);
@@ -294,6 +304,22 @@ const RetroMediaPlayer = () => {
           console.log('Player ready for:', selectedStation.name);
           setError(null);
           setIsLoading(false);
+          
+          // Ensure the player is visible and properly sized
+          setTimeout(() => {
+            const playerElement = playerRef.current.el();
+            if (playerElement) {
+              playerElement.style.display = 'block';
+              playerElement.style.visibility = 'visible';
+            }
+            
+            // Force a resize to ensure proper display
+            if (playerRef.current) {
+              playerRef.current.width(isPlayerFullscreen ? window.innerWidth : 400);
+              playerRef.current.height(isPlayerFullscreen ? window.innerHeight : (selectedStation?.type === 'radio' ? 100 : 225));
+            }
+          }, 100);
+          
           // Reset retry count on successful load
           retryCount = 0;
         });
@@ -431,7 +457,7 @@ const RetroMediaPlayer = () => {
     };
 
     // Use a longer delay to ensure DOM is fully ready
-    initPlayer = setTimeout(initializePlayer, 300);
+    initPlayer = setTimeout(initializePlayer, 500);
 
     return () => {
       if (initPlayer) {
@@ -484,12 +510,12 @@ const RetroMediaPlayer = () => {
     return null;
   }
 
-  const isRadio = selectedStation.type === 'radio';
+  const isRadio = selectedStation && selectedStation.type === 'radio';
 
   return (
     <div
       ref={refs.setFloating}
-      style={floatingStyles}
+      style={{...floatingStyles, zIndex: 1000}}
       className={`
         ${isPlayerFullscreen ? 'fixed inset-0 z-50' : 'z-40'}
         premium-boombox
@@ -660,6 +686,11 @@ const RetroMediaPlayer = () => {
                   {isPlaying ? 'LIVE BROADCAST' : 'STANDBY MODE'}
                 </span>
               </div>
+              
+              {/* Audio-only indicator */}
+              <div className="mt-2 text-[8px] text-blue-300 font-bold">
+                AUDIO ONLY - NO VIDEO AVAILABLE
+              </div>
             </div>
 
             {/* Media Control Buttons */}
@@ -693,14 +724,14 @@ const RetroMediaPlayer = () => {
             {/* Hidden Audio Element */}
             <audio
               ref={videoRef}
-              className="hidden"
               data-vjs-player
             />
           </div>
         ) : (
           // TV Player - Premium 1982 Style
           <div className={`${isPlayerFullscreen ? 'h-full' : ''}`}>
-            <div className="bg-black border-2 border-gray-600 rounded-md overflow-hidden">
+            <div className={`bg-black border-2 border-gray-600 rounded-md overflow-hidden ${isPlayerFullscreen ? 'h-full' : 'h-[225px]'}`} 
+                 style={{ position: 'relative', display: 'block' }}>
               <video
                 ref={videoRef}
                 className="video-js vjs-default-skin w-full h-full"
@@ -708,7 +739,11 @@ const RetroMediaPlayer = () => {
                 style={{
                   fontFamily: 'var(--font-led)',
                   background: 'linear-gradient(45deg, #1a1a1a 25%, transparent 25%), linear-gradient(-45deg, #1a1a1a 25%, transparent 25%)',
-                  backgroundSize: '3px 3px'
+                  backgroundSize: '3px 3px',
+                  display: 'block',
+                  visibility: 'visible',
+                  position: 'relative',
+                  zIndex: 10
                 }}
               />
             </div>

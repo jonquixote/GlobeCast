@@ -10,7 +10,8 @@
     "process-tv-data": "node scripts/processTVData.js",
     "process-radio-data": "node scripts/processRadioData.js",
     "start-server": "node server.js",
-    "dev-server": "nodemon server.js"
+    "dev-server": "nodemon server.js",
+    "update-station-coordinates": "node updateStationCoordinates.js"
   },
   "dependencies": {
     "@floating-ui/react": "^0.26.0",

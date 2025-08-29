@@ -1,0 +1,21 @@
+/* Additional styles to ensure video player visibility */
+.video-js.vjs-default-skin {
+  visibility: visible !important;
+  display: block !important;
+}
+
+.video-js.vjs-default-skin .vjs-tech {
+  visibility: visible !important;
+  display: block !important;
+}
+
+.video-js.vjs-default-skin video {
+  visibility: visible !important;
+  display: block !important;
+}
+
+/* Ensure player is always on top when active */
+.premium-boombox {
+  visibility: visible !important;
+  display: block !important;
+}

@@ -119,7 +119,10 @@ const useMediaStations = () => {
 
   // Load TV stations
   const loadTVStations = async () => {
-    if (tvStations.length > 0) return; // Already loaded
+    if (tvStations.length > 0) {
+      console.log('TV stations already loaded:', tvStations.length);
+      return; // Already loaded
+    }
     
     setLoadingTV(true);
     setError(null);
@@ -128,7 +131,7 @@ const useMediaStations = () => {
       console.log('Loading TV stations...');
       // Load 1000 stations for better coverage
       const stations = await tvService.getSampleStations(1000);
-      console.log(`Loaded ${stations.length} TV stations`);
+      console.log(`Loaded ${stations.length} TV stations`, stations.slice(0, 3));
       setTVStations(stations);
     } catch (err) {
       console.error('Failed to load TV stations:', err);
@@ -140,14 +143,17 @@ const useMediaStations = () => {
 
   // Load both radio and TV stations
   const loadAllStations = async () => {
+    console.log('Loading all stations...');
     await Promise.all([
       loadRadioStations(),
       loadTVStations(),
     ]);
+    console.log('Finished loading all stations');
   };
 
   // Auto-load stations on mount
   useEffect(() => {
+    console.log('useMediaStations: Auto-loading stations...');
     loadAllStations();
   }, []);
 

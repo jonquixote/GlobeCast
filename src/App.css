@@ -154,6 +154,7 @@
   left: 0 !important;
   right: 0 !important;
   bottom: 0 !important;
+  z-index: 1 !important;
 }
 
 .cesium-viewer-cesiumWidgetContainer {
@@ -220,5 +221,16 @@
 
 .cesium-viewer-fullscreenButton {
   display: none !important;
+}
+
+/* Ensure video players are visible above the globe */
+.video-js {
+  z-index: 1000 !important;
+  position: relative !important;
+}
+
+.video-js video {
+  z-index: 1001 !important;
+  position: relative !important;
 }
 

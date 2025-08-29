@@ -1,5 +1,5 @@
 import axios from 'axios';
-import radioStations from '../data/radioStations.json';
+import radioStations from '../data/radioStations.json' with { type: 'json' };
 
 const RADIO_BROWSER_BASE_URL = 'https://de1.api.radio-browser.info';
 
