@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "concurrently \"vite\" \"npm run dev-server\"",
     "build": "vite build",
+    "vercel-build": "vite build",
     "preview": "vite preview",
     "process-tv-data": "node scripts/processTVData.js",
     "process-radio-data": "node scripts/processRadioData.js",

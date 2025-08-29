@@ -1,7 +1,13 @@
 {
   "version": 2,
-  "framework": "vite",
   "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    },
     {
       "src": "server.js",
       "use": "@vercel/node"
@@ -9,30 +15,24 @@
   ],
   "routes": [
     {
-      "src": "/cesium/(.*)",
-      "dest": "/dist/cesium/$1",
-      "headers": {
-        "Cache-Control": "public, max-age=31536000, immutable"
-      }
-    },
-    {
-      "src": "/assets/(.*)",
-      "dest": "/dist/assets/$1",
-      "headers": {
-        "Cache-Control": "public, max-age=31536000, immutable"
-      }
-    },
-    {
-      "src": "/favicon.ico",
-      "dest": "/dist/assets/favicon.ico"
-    },
-    {
       "src": "/api/(.*)",
       "dest": "/server.js"
     },
     {
+      "src": "/cesium/(.*)",
+      "dest": "/cesium/$1"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "/favicon.ico"
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    },
+    {
       "src": "/(.*)",
-      "dest": "/dist/index.html"
+      "dest": "/index.html"
     }
   ]
 }
