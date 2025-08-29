@@ -260,8 +260,8 @@
     "city": "12  1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -96
+    "geo_lat": 64.6863136,
+    "geo_long": 97.7453061
   },
   {
     "id": "13MaxTelevision.ar",
@@ -272,8 +272,8 @@
     "city": "13Max Televisin 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -96
+    "geo_lat": -34.9964963,
+    "geo_long": -64.9672817
   },
   {
     "id": "15TV.mx@SD",
@@ -296,8 +296,8 @@
     "city": "16tv Budapest 360p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -96
+    "geo_lat": 47.1817585,
+    "geo_long": 19.5060937
   },
   {
     "id": "20MinutesTV.fr",
@@ -320,8 +320,8 @@
     "city": "23 ABC Bakersfield CA KERO 720",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -96
+    "geo_lat": 35.3733,
+    "geo_long": -119.0187
   },
   {
     "id": "28kanala.es@SD",
@@ -344,8 +344,8 @@
     "city": "101tv Antequera",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 56,
-    "geo_long": -96
+    "geo_lat": 39.3260685,
+    "geo_long": -4.8379791
   },
   {
     "id": "101tvAxarquia.es",
@@ -356,8 +356,8 @@
     "city": "101tv Axarquia 480p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 58,
-    "geo_long": -96
+    "geo_lat": 39.3260685,
+    "geo_long": -4.8379791
   },
   {
     "id": "101tvRonda.es",
@@ -368,8 +368,8 @@
     "city": "101tv Ronda 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40,
-    "geo_long": -94
+    "geo_lat": 39.3260685,
+    "geo_long": -4.8379791
   },
   {
     "id": "101tvSevilla.es",
@@ -380,8 +380,8 @@
     "city": "101tv Sevilla",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -94
+    "geo_lat": 39.3260685,
+    "geo_long": -4.8379791
   },
   {
     "id": "360.ru",
@@ -392,8 +392,8 @@
     "city": "360 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -94
+    "geo_lat": 64.6863136,
+    "geo_long": 97.7453061
   },
   {
     "id": "360RFTV.cr",
@@ -404,8 +404,8 @@
     "city": "360 RFTV 576p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 46,
-    "geo_long": -94
+    "geo_lat": 10.2735633,
+    "geo_long": -84.0739102
   },
   {
     "id": "A1TV.nl",
@@ -488,8 +488,8 @@
     "city": "A Guate 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40,
-    "geo_long": -92
+    "geo_lat": 15.5855545,
+    "geo_long": -90.345759
   },
   {
     "id": "ABC.us",
@@ -512,8 +512,8 @@
     "city": "ABC 3 Lafayette LA KATC 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -92
+    "geo_lat": 30.2241,
+    "geo_long": -92.0198
   },
   {
     "id": "KRGVDT1.us",
@@ -536,8 +536,8 @@
     "city": "ABC 7 Denver CO KMGH 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -92
+    "geo_lat": 39.7392,
+    "geo_long": -104.9903
   },
   {
     "id": "KTNVDT1.us",
@@ -548,8 +548,8 @@
     "city": "ABC 13 Las Vegas NV KTNV 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 50,
-    "geo_long": -92
+    "geo_lat": 36.1699,
+    "geo_long": -115.1398
   },
   {
     "id": "KNXVDT1.us",
@@ -560,8 +560,8 @@
     "city": "ABC 15 Phoenix AZ KNXV",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -92
+    "geo_lat": 33.4484,
+    "geo_long": -112.074
   },
   {
     "id": "KXXVDT1.us",
@@ -572,8 +572,8 @@
     "city": "ABC 25 News Central Texas",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -92
+    "geo_lat": 31.9686,
+    "geo_long": -99.9018
   },
   {
     "id": "ABCAustralia.au",
@@ -596,8 +596,8 @@
     "city": "ABC Australia Vietnam 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 58,
-    "geo_long": -92
+    "geo_lat": 14.0583,
+    "geo_long": 108.2772
   },
   {
     "id": "ABCTV.au@Adelaide",
@@ -692,8 +692,8 @@
     "city": "Abu Dhabi Aloula 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -90
+    "geo_lat": 24.4539,
+    "geo_long": 54.3773
   },
   {
     "id": "AbuDhabiEmirates.ae@SD",
@@ -704,8 +704,8 @@
     "city": "Abu Dhabi Emirates 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 56,
-    "geo_long": -90
+    "geo_lat": 24.4539,
+    "geo_long": 54.3773
   },
   {
     "id": "AbuDhabiTV.ae@SD",
@@ -728,8 +728,8 @@
     "city": "Access Humboldt 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40,
-    "geo_long": -88
+    "geo_lat": 40.7459,
+    "geo_long": -123.8665
   },
   {
     "id": "AMP1.us",
@@ -740,8 +740,8 @@
     "city": "Access Media Productions Chann",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -88
+    "geo_lat": 36.7783,
+    "geo_long": -119.4179
   },
   {
     "id": "TheMontereyChannel.us",
@@ -752,8 +752,8 @@
     "city": "Access Media Productions Monte",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -88
+    "geo_lat": 36.6002,
+    "geo_long": -121.8947
   },
   {
     "id": "AccessNashua.us",
@@ -776,8 +776,8 @@
     "city": "Access Sacramento Channel 17",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -88
+    "geo_lat": 38.5816,
+    "geo_long": -121.4944
   },
   {
     "id": "AccessSacramentoChannel18.us",
@@ -788,8 +788,8 @@
     "city": "Access Sacramento Channel 18",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 50,
-    "geo_long": -88
+    "geo_lat": 38.5816,
+    "geo_long": -121.4944
   },
   {
     "id": "AccessTuolumne.us",
@@ -800,8 +800,8 @@
     "city": "Access Tuolumne Tuolumne Count",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -88
+    "geo_lat": 37.9643,
+    "geo_long": -120.4036
   },
   {
     "id": "AccessVisionChannel16.us",
@@ -812,8 +812,8 @@
     "city": "AccessVision Channel 16",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -88
+    "geo_lat": 34.0522,
+    "geo_long": -118.2437
   },
   {
     "id": "AcheloosTV.gr",
@@ -836,8 +836,8 @@
     "city": "ACTV Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 58,
-    "geo_long": -88
+    "geo_lat": 50.6402809,
+    "geo_long": 4.6667145
   },
   {
     "id": "ACWUGTV.ug",
@@ -848,8 +848,8 @@
     "city": "ACW UG",
     "categories": "General;Music",
     "type": "tv",
-    "geo_lat": 40,
-    "geo_long": -86
+    "geo_lat": 1.5333554,
+    "geo_long": 32.2166578
   },
   {
     "id": "AdaTV.cy",
@@ -896,8 +896,8 @@
     "city": "Adom",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 7.4687328,
-    "geo_long": -2.5983739
+    "geo_lat": 5.5556,
+    "geo_long": -0.1961
   },
   {
     "id": "AfaqTV.iq",
@@ -920,8 +920,8 @@
     "city": "Afghan Nobel",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -86
+    "geo_lat": 34.5553,
+    "geo_long": 69.2075
   },
   {
     "id": "AfricableTV.ml",
@@ -944,8 +944,8 @@
     "city": "Afroturk",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 56,
-    "geo_long": -86
+    "geo_lat": 39.294076,
+    "geo_long": 35.2316631
   },
   {
     "id": "AhoraTV.do",
@@ -980,8 +980,8 @@
     "city": "Aire de Santa Fe 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -84
+    "geo_lat": -34.9964963,
+    "geo_long": -64.9672817
   },
   {
     "id": "AjmanTV.ae",
@@ -1016,8 +1016,8 @@
     "city": "Akaku 53 Hawaii 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -84
+    "geo_lat": 21.3069,
+    "geo_long": -157.8583
   },
   {
     "id": "Akaku54.us",
@@ -1028,8 +1028,8 @@
     "city": "Akaku 54 Hawaii 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 50,
-    "geo_long": -84
+    "geo_lat": 21.3069,
+    "geo_long": -157.8583
   },
   {
     "id": "Akaku55.us",
@@ -1040,8 +1040,8 @@
     "city": "Akaku 55 Hawaii 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -84
+    "geo_lat": 21.3069,
+    "geo_long": -157.8583
   },
   {
     "id": "AksuTV.tr",
@@ -1088,8 +1088,8 @@
     "city": "Al Aoula Inter 480p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40,
-    "geo_long": -82
+    "geo_lat": 31.7917,
+    "geo_long": -7.0926
   },
   {
     "id": "LaayouneTV.ma@SD",
@@ -1100,8 +1100,8 @@
     "city": "Al Aoula Layoune 480p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -82
+    "geo_lat": 27.1536,
+    "geo_long": -13.2036
   },
   {
     "id": "AlAqsaTV.ps",
@@ -1112,8 +1112,8 @@
     "city": "Al Aqsa Channel 416p Not 247",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -82
+    "geo_lat": 31.5017,
+    "geo_long": 34.4668
   },
   {
     "id": "AlDafrahTV.ae",
@@ -1136,8 +1136,8 @@
     "city": "Al Iraqia 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -82
+    "geo_lat": 33.0955793,
+    "geo_long": 44.1749775
   },
   {
     "id": "AlIttihadTV.lb",
@@ -1148,8 +1148,8 @@
     "city": "Al Ittihad 552p Not 247",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 50,
-    "geo_long": -82
+    "geo_lat": 33.8750629,
+    "geo_long": 35.843409
   },
   {
     "id": "AlJadeed.lb@SD",
@@ -1160,8 +1160,8 @@
     "city": "Al Jadeed 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -82
+    "geo_lat": 33.8938,
+    "geo_long": 35.5018
   },
   {
     "id": "AlMaghribia.ma@SD",
@@ -1172,8 +1172,8 @@
     "city": "Al Maghribia 480p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -82
+    "geo_lat": 31.7917,
+    "geo_long": -7.0926
   },
   {
     "id": "AlMasriyah.eg@SD",
@@ -1220,8 +1220,8 @@
     "city": "Al Rayyan 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -80
+    "geo_lat": 25.3336984,
+    "geo_long": 51.2295295
   },
   {
     "id": "AlRayyanOldTV.qa",
@@ -1232,8 +1232,8 @@
     "city": "Al Rayyan Al Qadeem 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -80
+    "geo_lat": 25.3336984,
+    "geo_long": 51.2295295
   },
   {
     "id": "AlSaudiya.sa",
@@ -1244,8 +1244,8 @@
     "city": "Al Saudiya 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 46,
-    "geo_long": -80
+    "geo_lat": 25.6242618,
+    "geo_long": 42.3528328
   },
   {
     "id": "AlShallalTV.ae",
@@ -1268,8 +1268,8 @@
     "city": "Al Sharqiya Min Kabla 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 50,
-    "geo_long": -80
+    "geo_lat": 24.0002488,
+    "geo_long": 53.9994829
   },
   {
     "id": "AlWoustaTV.ae",
@@ -1280,8 +1280,8 @@
     "city": "Al Wousta",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -80
+    "geo_lat": 24.0002488,
+    "geo_long": 53.9994829
   },
   {
     "id": "AlSharqiya.iq",
@@ -1328,8 +1328,8 @@
     "city": "AlbDreams",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40,
-    "geo_long": -78
+    "geo_lat": 41.1533,
+    "geo_long": 20.1683
   },
   {
     "id": "AlborzTV.ir",
@@ -1352,8 +1352,8 @@
     "city": "AlbUK",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -78
+    "geo_lat": 54.7023545,
+    "geo_long": -3.2765753
   },
   {
     "id": "AlcarriaTV.es",
@@ -1400,8 +1400,8 @@
     "city": "Allgu",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -78
+    "geo_lat": 51.1638175,
+    "geo_long": 10.4478313
   },
   {
     "id": "AlpedHuezTV.fr",
@@ -1412,8 +1412,8 @@
     "city": "Alpe dHuez",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -78
+    "geo_lat": 46.603354,
+    "geo_long": 1.8883335
   },
   {
     "id": "AlphaChannel.br",
@@ -1424,8 +1424,8 @@
     "city": "Alpha Channel 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 56,
-    "geo_long": -78
+    "geo_lat": -10.3333333,
+    "geo_long": -53.2
   },
   {
     "id": "AlsaciasTelevision.hn",
@@ -1436,8 +1436,8 @@
     "city": "Alsacias Televisin A",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 58,
-    "geo_long": -78
+    "geo_lat": 15.2572432,
+    "geo_long": -86.0755145
   },
   {
     "id": "AlShoub.eg@SD",
@@ -1448,8 +1448,8 @@
     "city": "AlShoub 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40,
-    "geo_long": -76
+    "geo_lat": 35.8617,
+    "geo_long": 104.1954
   },
   {
     "id": "AltantoTV.do",
@@ -1460,8 +1460,8 @@
     "city": "Altanto",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -76
+    "geo_lat": 19.0974031,
+    "geo_long": -70.3028026
   },
   {
     "id": "AltasTV.tr",
@@ -1508,8 +1508,8 @@
     "city": "Althania 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 50,
-    "geo_long": -76
+    "geo_lat": 34.8147886,
+    "geo_long": 38.4231781
   },
   {
     "id": "AltoAdigeTV.it",
@@ -1532,8 +1532,8 @@
     "city": "Altyn Asyr 406p Not 247",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -76
+    "geo_lat": 37.9605,
+    "geo_long": 58.3283
   },
   {
     "id": "AlvinChannelTV.az",
@@ -1544,8 +1544,8 @@
     "city": "Alvin Channel",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 56,
-    "geo_long": -76
+    "geo_lat": 29.4241,
+    "geo_long": -95.2702
   },
   {
     "id": "Ame47.do@SD",
@@ -1556,8 +1556,8 @@
     "city": "Ame 47 576p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 58,
-    "geo_long": -76
+    "geo_lat": 34.6937,
+    "geo_long": 135.5023
   },
   {
     "id": "AmericaEstereoGuayaquil.ec",
@@ -1568,8 +1568,8 @@
     "city": "Amrica Estreo Guayaquil 360p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40,
-    "geo_long": -74
+    "geo_lat": -1.3397668,
+    "geo_long": -79.3666965
   },
   {
     "id": "AmericaEstereoIbarra.ec",
@@ -1580,8 +1580,8 @@
     "city": "Amrica Estreo Ibarra 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -74
+    "geo_lat": -1.3397668,
+    "geo_long": -79.3666965
   },
   {
     "id": "AmericaEstereoTulcan.ec",
@@ -1592,8 +1592,8 @@
     "city": "Amrica Estreo Tulcn 614p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -74
+    "geo_lat": -1.3397668,
+    "geo_long": -79.3666965
   },
   {
     "id": "AmericaTelevision.pe@SD",
@@ -1616,8 +1616,8 @@
     "city": "Amrica TeV 1080p",
     "categories": "Entertainment;General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -74
+    "geo_lat": 25.7617,
+    "geo_long": -80.1918
   },
   {
     "id": "AMGATV.us",
@@ -1652,8 +1652,8 @@
     "city": "Amouzesh",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -74
+    "geo_lat": 35.6892,
+    "geo_long": 51.389
   },
   {
     "id": "AnadoluDernekTV.tr",
@@ -1700,8 +1700,8 @@
     "city": "Antena 1 720p Not 247",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -72
+    "geo_lat": 45.9852129,
+    "geo_long": 24.6859225
   },
   {
     "id": "Antena3Internacional.es@SD",
@@ -1712,8 +1712,8 @@
     "city": "Antena 3 Internacional 480p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -72
+    "geo_lat": 40.4168,
+    "geo_long": -3.7038
   },
   {
     "id": "Antena7.do",
@@ -1736,8 +1736,8 @@
     "city": "Antena Seis TV 720p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -72
+    "geo_lat": 10.2735633,
+    "geo_long": -84.0739102
   },
   {
     "id": "AntenaTV.mx",
@@ -1772,8 +1772,8 @@
     "city": "Antenna Tre Veneto 480p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -72
+    "geo_lat": 42.6384261,
+    "geo_long": 12.674297
   },
   {
     "id": "AntofagastaTV.cl",
@@ -1796,8 +1796,8 @@
     "city": "Anzotegui",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 58,
-    "geo_long": -72
+    "geo_lat": 8.0018709,
+    "geo_long": -66.1109318
   },
   {
     "id": "ApprovalTV.ng",
@@ -1820,8 +1820,8 @@
     "city": "Aqjaiyq 576p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -70
+    "geo_lat": 44.5217,
+    "geo_long": 65.2275
   },
   {
     "id": "Aqtobe.kz",
@@ -1832,8 +1832,8 @@
     "city": "Aqtbe 576p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -70
+    "geo_lat": 50.2707,
+    "geo_long": 57.2182
   },
   {
     "id": "AraTV.ir",
@@ -1940,8 +1940,8 @@
     "city": "Argentinsima Satelital 540p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -68
+    "geo_lat": -34.9964963,
+    "geo_long": -64.9672817
   },
   {
     "id": "ArgesTV.ro",
@@ -1964,8 +1964,8 @@
     "city": "Arirang Radio 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 46,
-    "geo_long": -68
+    "geo_lat": 36.638392,
+    "geo_long": 127.6961188
   },
   {
     "id": "ArirangTV.kr",
@@ -2036,8 +2036,8 @@
     "city": "ARTN",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 58,
-    "geo_long": -68
+    "geo_lat": 36.2048,
+    "geo_long": 138.2529
   },
   {
     "id": "Asgabat.tm",
@@ -2048,8 +2048,8 @@
     "city": "Agabat 406p Not 247",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40,
-    "geo_long": -66
+    "geo_lat": 37.9601,
+    "geo_long": 58.3261
   },
   {
     "id": "AssenTV.nl",
@@ -2072,8 +2072,8 @@
     "city": "AssyriaSat 720p Not 247",
     "categories": "General;Religious",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -66
+    "geo_lat": 35.485,
+    "geo_long": 44.215
   },
   {
     "id": "AstroVaanavil.my@SD",
@@ -2084,8 +2084,8 @@
     "city": "Astro Vaanavil",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 46,
-    "geo_long": -66
+    "geo_lat": 4.2105,
+    "geo_long": 101.9758
   },
   {
     "id": "AT5.nl",
@@ -2108,8 +2108,8 @@
     "city": "ATB La Paz 614p Not 247",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 50,
-    "geo_long": -66
+    "geo_lat": -17.0568696,
+    "geo_long": -64.9912286
   },
   {
     "id": "AtinkaTV.gh@SD",
@@ -2276,8 +2276,8 @@
     "city": "Atyra 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 58,
-    "geo_long": -64
+    "geo_lat": 47.1072,
+    "geo_long": 51.9153
   },
   {
     "id": "AugsburgTV.de",
@@ -2300,8 +2300,8 @@
     "city": "aurLife HD 614p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -62
+    "geo_lat": 30.3308401,
+    "geo_long": 71.247499
   },
   {
     "id": "AuroraTV.us",
@@ -2336,8 +2336,8 @@
     "city": "Autntica Televisin 720p Not 24",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -62
+    "geo_lat": -6.8699697,
+    "geo_long": -75.0458515
   },
   {
     "id": "Avers.ua",
@@ -2360,8 +2360,8 @@
     "city": "AWE 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -62
+    "geo_lat": 40.7128,
+    "geo_long": -74.006
   },
   {
     "id": "AWEEncore.us",
@@ -2372,8 +2372,8 @@
     "city": "AWE Encore 720p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -62
+    "geo_lat": 40.7128,
+    "geo_long": -74.006
   },
   {
     "id": "AysenTV.cl",
@@ -2444,8 +2444,8 @@
     "city": "Azteca 7 720p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 46,
-    "geo_long": -60
+    "geo_lat": 23.6585116,
+    "geo_long": -102.0077097
   },
   {
     "id": "AztecaGuatemala.gt",
@@ -2456,8 +2456,8 @@
     "city": "Azteca Guate 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -60
+    "geo_lat": 15.5855545,
+    "geo_long": -90.345759
   },
   {
     "id": "AztecaHonduras.hn",
@@ -2468,8 +2468,8 @@
     "city": "Azteca Honduras Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 50,
-    "geo_long": -60
+    "geo_lat": 15.2572432,
+    "geo_long": -86.0755145
   },
   {
     "id": "AztecaUno.mx",
@@ -2480,8 +2480,8 @@
     "city": "Azteca Uno 720p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -60
+    "geo_lat": 23.6585116,
+    "geo_long": -102.0077097
   },
   {
     "id": "AzzurraTV.it",
@@ -2504,8 +2504,8 @@
     "city": "Bbolnai",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 56,
-    "geo_long": -60
+    "geo_lat": 47.1817585,
+    "geo_long": 19.5060937
   },
   {
     "id": "Badakhshon.tj",
@@ -2516,8 +2516,8 @@
     "city": "Badakhshon 576p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 58,
-    "geo_long": -60
+    "geo_lat": 37.9116,
+    "geo_long": 70.5058
   },
   {
     "id": "BadenTV.de",
@@ -3620,8 +3620,8 @@
     "city": "Canal 2 International",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 29.9489545,
-    "geo_long": -90.0635321
+    "geo_lat": 29.9511,
+    "geo_long": -90.0715
   },
   {
     "id": "Canal3TVBiar.es",
@@ -4292,8 +4292,8 @@
     "city": "Capital",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 8.97315,
-    "geo_long": 7.1820758
+    "geo_lat": 48.455818,
+    "geo_long": -123.4733796
   },
   {
     "id": "CaprichoTV.ec",
