@@ -61,13 +61,18 @@ app.get('/api/stations', async (req, res) => {
     const validatedStations = allStations.map(station => ({
       ...station,
       url: station.url || '', // Ensure URL is always a string
-      geo_lat: parseFloat(station.geo_lat) || 0,
-      geo_long: parseFloat(station.geo_long) || 0
+      latitude: parseFloat(station.latitude) || 0,
+      longitude: parseFloat(station.longitude) || 0
     })).filter(station => 
       station.url && 
       station.url.length > 0 && 
-      !station.url.includes('radio-') // Filter out test URLs
-      // Note: We've already fixed the coordinates, so we don't need to filter out placeholder coordinates
+      !station.url.includes('radio-') && // Filter out test URLs
+      station.latitude && 
+      station.longitude &&
+      !isNaN(station.latitude) && 
+      !isNaN(station.longitude) &&
+      station.latitude >= -90 && station.latitude <= 90 &&
+      station.longitude >= -180 && station.longitude <= 180
     );
     
     // Filter by query parameters if provided
@@ -113,13 +118,19 @@ app.get('/api/stations/tv', async (req, res) => {
       .map(station => ({
         ...station,
         url: station.url || '', // Ensure URL is always a string
-        geo_lat: parseFloat(station.geo_lat) || 0,
-        geo_long: parseFloat(station.geo_long) || 0
+        latitude: parseFloat(station.latitude) || 0,
+        longitude: parseFloat(station.longitude) || 0
       }))
       .filter(station => 
         station.url && 
         station.url.length > 0 && 
-        !station.url.includes('radio-') // Filter out test URLs
+        !station.url.includes('radio-') && // Filter out test URLs
+        station.latitude && 
+        station.longitude &&
+        !isNaN(station.latitude) && 
+        !isNaN(station.longitude) &&
+        station.latitude >= -90 && station.latitude <= 90 &&
+        station.longitude >= -180 && station.longitude <= 180
       );
     
     // Apply limit if provided
@@ -153,13 +164,19 @@ app.get('/api/stations/radio', async (req, res) => {
       .map(station => ({
         ...station,
         url: station.url || '', // Ensure URL is always a string
-        geo_lat: parseFloat(station.geo_lat) || 0,
-        geo_long: parseFloat(station.geo_long) || 0
+        latitude: parseFloat(station.latitude) || 0,
+        longitude: parseFloat(station.longitude) || 0
       }))
       .filter(station => 
         station.url && 
         station.url.length > 0 && 
-        !station.url.includes('radio-') // Filter out test URLs
+        !station.url.includes('radio-') && // Filter out test URLs
+        station.latitude && 
+        station.longitude &&
+        !isNaN(station.latitude) && 
+        !isNaN(station.longitude) &&
+        station.latitude >= -90 && station.latitude <= 90 &&
+        station.longitude >= -180 && station.longitude <= 180
       );
     
     // Apply limit if provided
@@ -202,12 +219,18 @@ app.get('/api/stations/:id', async (req, res) => {
     const validatedStations = allStations.map(station => ({
       ...station,
       url: station.url || '', // Ensure URL is always a string
-      geo_lat: parseFloat(station.geo_lat) || 0,
-      geo_long: parseFloat(station.geo_long) || 0
+      latitude: parseFloat(station.latitude) || 0,
+      longitude: parseFloat(station.longitude) || 0
     })).filter(station => 
       station.url && 
       station.url.length > 0 && 
-      !station.url.includes('radio-') // Filter out test URLs
+      !station.url.includes('radio-') && // Filter out test URLs
+      station.latitude && 
+      station.longitude &&
+      !isNaN(station.latitude) && 
+      !isNaN(station.longitude) &&
+      station.latitude >= -90 && station.latitude <= 90 &&
+      station.longitude >= -180 && station.longitude <= 180
     );
     
     // Find station by ID
