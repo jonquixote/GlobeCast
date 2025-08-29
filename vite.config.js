@@ -31,5 +31,11 @@ export default defineConfig({
         }
       }
     }
+  },
+  // Ensure Cesium files are properly served
+  server: {
+    fs: {
+      allow: ['.']
+    }
   }
 })
