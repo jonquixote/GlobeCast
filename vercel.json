@@ -1,11 +1,12 @@
 {
   "version": 2,
   "framework": "vite",
-  "functions": {
-    "server.js": {
-      "runtime": "nodejs18.x"
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node@18.x"
     }
-  },
+  ],
   "routes": [
     {
       "handle": "filesystem"
