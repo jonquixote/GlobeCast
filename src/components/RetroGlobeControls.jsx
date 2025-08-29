@@ -44,10 +44,10 @@ const RetroGlobeControls = () => {
       station.country.toLowerCase().includes(query.toLowerCase())
     );
     
-    if (matchingStation && matchingStation.geo_lat && matchingStation.geo_long) {
+    if (matchingStation && matchingStation.latitude && matchingStation.longitude) {
       setCameraFocusTarget({
-        longitude: parseFloat(matchingStation.geo_long),
-        latitude: parseFloat(matchingStation.geo_lat),
+        longitude: parseFloat(matchingStation.longitude),
+        latitude: parseFloat(matchingStation.latitude),
         height: 1000000,
       });
     }
@@ -62,11 +62,11 @@ const RetroGlobeControls = () => {
       
       if (countryStations.length > 0) {
         const station = countryStations[0];
-        // Check if geo_lat and geo_long exist and are valid
-        if (station.geo_lat && station.geo_long) {
+        // Check if latitude and longitude exist and are valid
+        if (station.latitude && station.longitude) {
           setCameraFocusTarget({
-            longitude: parseFloat(station.geo_long),
-            latitude: parseFloat(station.geo_lat),
+            longitude: parseFloat(station.longitude),
+            latitude: parseFloat(station.latitude),
             height: 5000000,
           });
         }
@@ -142,11 +142,11 @@ const RetroGlobeControls = () => {
       if (continent.stations.length > 0) {
         const randomStation = continent.stations[Math.floor(Math.random() * continent.stations.length)];
         
-        if (randomStation.geo_lat && randomStation.geo_long) {
+        if (randomStation.latitude && randomStation.longitude) {
           // Zoom into the specific station location
           setCameraFocusTarget({
-            longitude: parseFloat(randomStation.geo_long),
-            latitude: parseFloat(randomStation.geo_lat),
+            longitude: parseFloat(randomStation.longitude),
+            latitude: parseFloat(randomStation.latitude),
             height: 800000,
           });
           
@@ -166,10 +166,10 @@ const RetroGlobeControls = () => {
       // Play a random station from anywhere
       if (allStations.length > 0) {
         const randomStation = allStations[Math.floor(Math.random() * allStations.length)];
-        if (randomStation.geo_lat && randomStation.geo_long) {
+        if (randomStation.latitude && randomStation.longitude) {
           setCameraFocusTarget({
-            longitude: parseFloat(randomStation.geo_long),
-            latitude: parseFloat(randomStation.geo_lat),
+            longitude: parseFloat(randomStation.longitude),
+            latitude: parseFloat(randomStation.latitude),
             height: 1000000,
           });
           setSelectedStation(randomStation);

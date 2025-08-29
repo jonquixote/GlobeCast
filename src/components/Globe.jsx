@@ -336,27 +336,27 @@ const Globe = () => {
     // Place stations in grid cells
     stations.forEach(station => {
       // Debug log for stations with missing or invalid coordinates
-      if (!station.geo_lat || !station.geo_long) {
+      if (!station.latitude || !station.longitude) {
         console.log('Station missing coordinates:', station);
         return;
       }
       
       // Check if coordinates are valid numbers
-      if (isNaN(station.geo_lat) || isNaN(station.geo_long)) {
+      if (isNaN(station.latitude) || isNaN(station.longitude)) {
         console.log('Station with invalid coordinates:', station);
         return;
       }
       
       // Check if coordinates are in valid range
-      if (station.geo_lat < -90 || station.geo_lat > 90 || 
-          station.geo_long < -180 || station.geo_long > 180) {
+      if (station.latitude < -90 || station.latitude > 90 || 
+          station.longitude < -180 || station.longitude > 180) {
         console.log('Station with out-of-range coordinates:', station);
         return;
       }
       
       // Calculate grid cell coordinates
-      const gridLat = Math.floor(station.geo_lat / gridSize) * gridSize;
-      const gridLon = Math.floor(station.geo_long / gridSize) * gridSize;
+      const gridLat = Math.floor(station.latitude / gridSize) * gridSize;
+      const gridLon = Math.floor(station.longitude / gridSize) * gridSize;
       const gridKey = `${gridLat},${gridLon}`;
       
       // Add to grid cell
@@ -372,8 +372,8 @@ const Globe = () => {
       if (stationsInCell.length === 0) return;
       
       // Calculate centroid of cluster
-      const avgLat = stationsInCell.reduce((sum, s) => sum + s.geo_lat, 0) / stationsInCell.length;
-      const avgLon = stationsInCell.reduce((sum, s) => sum + s.geo_long, 0) / stationsInCell.length;
+      const avgLat = stationsInCell.reduce((sum, s) => sum + s.latitude, 0) / stationsInCell.length;
+      const avgLon = stationsInCell.reduce((sum, s) => sum + s.longitude, 0) / stationsInCell.length;
       
       // Check if all stations share the same location hierarchy with proper empty value handling
       const isUniform = (field) => {
@@ -459,8 +459,8 @@ const Globe = () => {
     return gridSize < 10 ? clusterStationsByGrid(mediaStations, gridSize) : mediaStations.map(station => ({
       city: station.city || 'Station',
       country: station.country || 'Unknown',
-      latitude: station.geo_lat,
-      longitude: station.geo_long,
+      latitude: station.latitude,
+      longitude: station.longitude,
       count: 1,
       stations: [station],
       topStations: [station]

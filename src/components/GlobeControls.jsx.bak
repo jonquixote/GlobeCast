@@ -39,10 +39,10 @@ const GlobeControls = () => {
       station.country.toLowerCase().includes(query.toLowerCase())
     );
     
-    if (matchingStation && matchingStation.geo_lat && matchingStation.geo_long) {
+    if (matchingStation && matchingStation.latitude && matchingStation.longitude) {
       setCameraFocusTarget({
-        longitude: parseFloat(matchingStation.geo_long),
-        latitude: parseFloat(matchingStation.geo_lat),
+        longitude: parseFloat(matchingStation.longitude),
+        latitude: parseFloat(matchingStation.latitude),
         height: 1000000,
       });
     }
@@ -57,8 +57,8 @@ const GlobeControls = () => {
     if (countryStations.length > 0) {
       const station = countryStations[0];
       setCameraFocusTarget({
-        longitude: parseFloat(station.geo_long),
-        latitude: parseFloat(station.geo_lat),
+        longitude: parseFloat(station.longitude),
+        latitude: parseFloat(station.latitude),
         height: 5000000,
       });
     }

@@ -39,7 +39,7 @@ const MediaPlayer = () => {
 
   // Update virtual element position based on selected station
   useEffect(() => {
-    if (selectedStation && viewer && selectedStation.geo_lat && selectedStation.geo_long) {
+    if (selectedStation && viewer && selectedStation.latitude && selectedStation.longitude) {
       const updatePosition = () => {
         try {
           // Check if viewer and scene are properly initialized
@@ -48,8 +48,8 @@ const MediaPlayer = () => {
           }
           
           const position = Cesium.Cartesian3.fromDegrees(
-            parseFloat(selectedStation.geo_long),
-            parseFloat(selectedStation.geo_lat)
+            parseFloat(selectedStation.longitude),
+            parseFloat(selectedStation.latitude)
           );
           
           // Check if SceneTransforms is available and the scene is valid
