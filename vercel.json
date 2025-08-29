@@ -34,5 +34,8 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ]
+  ],
+  "env": {
+    "VITE_REACT_APP_API_URL": "/api"
+  }
 }

@@ -2,8 +2,9 @@
 import axios from 'axios';
 
 // Create axios instance with base URL
+// Use relative paths for API calls to work in both local and production environments
 const api = axios.create({
-  baseURL: import.meta.env.VITE_REACT_APP_API_URL || 'http://localhost:3001/api',
+  baseURL: import.meta.env.VITE_REACT_APP_API_URL || '/api',
   timeout: 30000,
 });
 
