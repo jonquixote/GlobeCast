@@ -2,10 +2,11 @@
   "version": 2,
   "builds": [
     {
-      "src": "vite.config.js",
+      "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "includeFiles": ["public/**"]
+        "buildCommand": "npm run build",
+        "outputDirectory": "dist"
       }
     },
     {
