@@ -42,14 +42,14 @@ async function geocodeLocation(city, state, country) {
     
     // Build location query with available information
     const locationParts = [];
-    if (country && country !== 'Unknown' && country.trim() !== '') {
-      locationParts.push(country.trim());
+    if (city && city !== 'Unknown' && city.trim() !== '') {
+      locationParts.push(city.trim());
     }
     if (state && state !== 'Unknown' && state.trim() !== '') {
       locationParts.push(state.trim());
     }
-    if (city && city !== 'Unknown' && city.trim() !== '') {
-      locationParts.push(city.trim());
+    if (country && country !== 'Unknown' && country.trim() !== '') {
+      locationParts.push(country.trim());
     }
     
     if (locationParts.length === 0) {
@@ -57,8 +57,6 @@ async function geocodeLocation(city, state, country) {
     }
     
     const locationQuery = locationParts.join(', ');
-    
-    console.log(`Geocoding location: ${locationQuery}`);
     
     // Use OpenStreetMap Nominatim API for geocoding
     const response = await axios.get('https://nominatim.openstreetmap.org/search', {
@@ -119,53 +117,51 @@ async function fixTVStations() {
       }
       
       // If coordinates are not valid, try to geocode
-      stationsToGeocode++;
+      // Only try to geocode if we have location info
+      const hasLocationInfo = 
+        (station.city && station.city !== 'Unknown') ||
+        (station.country && station.country !== 'Unknown');
       
-      // Create a cache key
-      const cacheKey = `${station.city || ''}|${station.state || ''}|${station.country || ''}`;
-      
-      // Check if we already have this location geocoded
-      if (geocodedCache.has(cacheKey)) {
-        const coords = geocodedCache.get(cacheKey);
-        if (coords) {
-          station.geo_lat = coords.latitude;
-          station.geo_long = coords.longitude;
-          geocodedStations++;
-          console.log(`Using cached coordinates for ${station.name} (${station.city}, ${station.country}): ${coords.latitude}, ${coords.longitude}`);
+      if (hasLocationInfo) {
+        stationsToGeocode++;
+        
+        // Create a cache key
+        const cacheKey = `${station.city || ''}|${station.state || ''}|${station.country || ''}`;
+        
+        // Check if we already have this location geocoded
+        if (geocodedCache.has(cacheKey)) {
+          const coords = geocodedCache.get(cacheKey);
+          if (coords) {
+            station.geo_lat = coords.latitude;
+            station.geo_long = coords.longitude;
+            geocodedStations++;
+            console.log(`Using cached coordinates for ${station.name} (${station.city}, ${station.country}): ${coords.latitude}, ${coords.longitude}`);
+          } else {
+            skippedStations++;
+            console.log(`Skipping ${station.name} (${station.city}, ${station.country}): No cached coordinates`);
+          }
         } else {
-          skippedStations++;
-          console.log(`Skipping ${station.name} (${station.city}, ${station.country}): No cached coordinates`);
+          // Try to geocode this location
+          console.log(`Geocoding ${station.name} (${station.city}, ${station.country})...`);
+          const coords = await geocodeLocation(station.city, station.state, station.country);
+          geocodedCache.set(cacheKey, coords);
+          
+          if (coords) {
+            station.geo_lat = coords.latitude;
+            station.geo_long = coords.longitude;
+            geocodedStations++;
+            console.log(`Geocoded ${station.name} (${station.city}, ${station.country}): ${coords.latitude}, ${coords.longitude}`);
+          } else {
+            skippedStations++;
+            console.log(`Failed to geocode ${station.name} (${station.city}, ${station.country})`);
+          }
+          
+          // Add a small delay to respect API rate limits
+          await new Promise(resolve => setTimeout(resolve, 1000));
         }
       } else {
-        // Try to geocode this location
-        console.log(`Geocoding ${station.name} (${station.city}, ${station.state}, ${station.country})...`);
-        const coords = await geocodeLocation(station.city, station.state, station.country);
-        geocodedCache.set(cacheKey, coords);
-        
-        if (coords) {
-          station.geo_lat = coords.latitude;
-          station.geo_long = coords.longitude;
-          geocodedStations++;
-          console.log(`Geocoded ${station.name} (${station.city}, ${station.country}): ${coords.latitude}, ${coords.longitude}`);
-        } else {
-          skippedStations++;
-          console.log(`Failed to geocode ${station.name} (${station.city}, ${station.country})`);
-          
-          // Try with just the country if we have one
-          if (station.country && station.country !== 'Unknown') {
-            console.log(`Trying with just country: ${station.country}`);
-            const countryCoords = await geocodeLocation(null, null, station.country);
-            if (countryCoords) {
-              station.geo_lat = countryCoords.latitude;
-              station.geo_long = countryCoords.longitude;
-              geocodedStations++;
-              console.log(`Geocoded ${station.name} using country ${station.country}: ${countryCoords.latitude}, ${countryCoords.longitude}`);
-            }
-          }
-        }
-        
-        // Add a small delay to respect API rate limits
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        skippedStations++;
+        console.log(`Skipping ${station.name}: No location information available`);
       }
     }
     
@@ -216,70 +212,76 @@ async function fixRadioStations() {
       }
       
       // If coordinates are not valid, try to geocode
-      stationsToGeocode++;
+      // Only try to geocode if we have location info
+      const hasLocationInfo = 
+        (station.city && station.city !== 'Unknown') ||
+        (station.state && station.state !== 'Unknown') ||
+        (station.country && station.country !== 'Unknown');
       
-      // Create a cache key using available location information
-      const locationParts = [];
-      if (station.city && station.city !== 'Unknown') {
-        locationParts.push(station.city);
-      }
-      if (station.state && station.state !== 'Unknown') {
-        locationParts.push(station.state);
-      }
-      if (station.country && station.country !== 'Unknown') {
-        locationParts.push(station.country);
-      }
-      
-      const cacheKey = locationParts.join('|');
-      
-      // Check if we already have this location geocoded
-      if (geocodedCache.has(cacheKey)) {
-        const coords = geocodedCache.get(cacheKey);
-        if (coords) {
-          station.geo_lat = coords.latitude;
-          station.geo_long = coords.longitude;
-          geocodedStations++;
-          console.log(`Using cached coordinates for ${station.name} (${cacheKey}): ${coords.latitude}, ${coords.longitude}`);
-        } else {
+      if (hasLocationInfo) {
+        stationsToGeocode++;
+        
+        // Create a cache key using available location information
+        const locationParts = [];
+        if (station.city && station.city !== 'Unknown') {
+          locationParts.push(station.city);
+        }
+        if (station.state && station.state !== 'Unknown') {
+          locationParts.push(station.state);
+        }
+        if (station.country && station.country !== 'Unknown') {
+          locationParts.push(station.country);
+        }
+        
+        const cacheKey = locationParts.join('|');
+        
+        // Skip if we don't have enough information
+        if (locationParts.length === 0) {
           skippedStations++;
-          console.log(`Skipping ${station.name} (${cacheKey}): No cached coordinates`);
+          console.log(`Skipping ${station.name}: No location information`);
+          continue;
+        }
+        
+        // Check if we already have this location geocoded
+        if (geocodedCache.has(cacheKey)) {
+          const coords = geocodedCache.get(cacheKey);
+          if (coords) {
+            station.geo_lat = coords.latitude;
+            station.geo_long = coords.longitude;
+            geocodedStations++;
+            console.log(`Using cached coordinates for ${station.name} (${cacheKey}): ${coords.latitude}, ${coords.longitude}`);
+          } else {
+            skippedStations++;
+            console.log(`Skipping ${station.name} (${cacheKey}): No cached coordinates`);
+          }
+        } else {
+          // Try to geocode this location
+          console.log(`Geocoding ${station.name} (${cacheKey})...`);
+          
+          // Use available location information
+          const city = station.city && station.city !== 'Unknown' ? station.city : null;
+          const state = station.state && station.state !== 'Unknown' ? station.state : null;
+          const country = station.country && station.country !== 'Unknown' ? station.country : null;
+          
+          const coords = await geocodeLocation(city, state, country);
+          geocodedCache.set(cacheKey, coords);
+          
+          if (coords) {
+            station.geo_lat = coords.latitude;
+            station.geo_long = coords.longitude;
+            geocodedStations++;
+            console.log(`Geocoded ${station.name} (${cacheKey}): ${coords.latitude}, ${coords.longitude}`);
+          } else {
+            skippedStations++;
+            console.log(`Failed to geocode ${station.name} (${cacheKey})`);
+          }
+          
+          // Add a small delay to respect API rate limits
+          await new Promise(resolve => setTimeout(resolve, 1000));
         }
       } else {
-        // Try to geocode this location
-        console.log(`Geocoding ${station.name} (${cacheKey})...`);
-        
-        // Use available location information
-        const city = station.city && station.city !== 'Unknown' ? station.city : null;
-        const state = station.state && station.state !== 'Unknown' ? station.state : null;
-        const country = station.country && station.country !== 'Unknown' ? station.country : null;
-        
-        const coords = await geocodeLocation(city, state, country);
-        geocodedCache.set(cacheKey, coords);
-        
-        if (coords) {
-          station.geo_lat = coords.latitude;
-          station.geo_long = coords.longitude;
-          geocodedStations++;
-          console.log(`Geocoded ${station.name} (${cacheKey}): ${coords.latitude}, ${coords.longitude}`);
-        } else {
-          skippedStations++;
-          console.log(`Failed to geocode ${station.name} (${cacheKey})`);
-          
-          // Try with just the country if we have one
-          if (station.country && station.country !== 'Unknown') {
-            console.log(`Trying with just country: ${station.country}`);
-            const countryCoords = await geocodeLocation(null, null, station.country);
-            if (countryCoords) {
-              station.geo_lat = countryCoords.latitude;
-              station.geo_long = countryCoords.longitude;
-              geocodedStations++;
-              console.log(`Geocoded ${station.name} using country ${station.country}: ${countryCoords.latitude}, ${countryCoords.longitude}`);
-            }
-          }
-        }
-        
-        // Add a small delay to respect API rate limits
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        skippedStations++;
+        console.log(`Skipping ${station.name}: No location information available`);
       }
     }
     

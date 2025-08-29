@@ -4,14 +4,17 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "concurrently \"vite\" \"npm run dev-server\"",
     "build": "vite build",
     "preview": "vite preview",
     "process-tv-data": "node scripts/processTVData.js",
     "process-radio-data": "node scripts/processRadioData.js",
     "start-server": "node server.js",
     "dev-server": "nodemon server.js",
-    "update-station-coordinates": "node updateStationCoordinates.js"
+    "update-station-coordinates": "node updateStationCoordinates.js",
+    "fix-station-coordinates": "node fixStationCoordinatesFinal.js",
+    "verify-station-coordinates": "node verifyStationCoordinates.js",
+    "maintain-station-coordinates": "node maintainStationCoordinates.js"
   },
   "dependencies": {
     "@floating-ui/react": "^0.26.0",
@@ -33,6 +36,7 @@
   "devDependencies": {
     "@tailwindcss/vite": "^4.0.0",
     "@vitejs/plugin-react": "^4.2.1",
+    "concurrently": "^9.2.1",
     "nodemon": "^3.1.4",
     "vite": "^5.0.0",
     "vite-plugin-cesium": "^1.2.23"

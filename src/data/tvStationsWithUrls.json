@@ -32,8 +32,8 @@
     "city": "Unknown",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 0,
-    "geo_long": 0
+    "geo_lat": 33.7680065,
+    "geo_long": 66.2385139
   },
   {
     "id": "1TV.ge",
@@ -188,8 +188,8 @@
     "city": "Unknown",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 0,
-    "geo_long": 0
+    "geo_lat": 14.4750607,
+    "geo_long": -14.4529612
   },
   {
     "id": "8LaMarinaTV.es",
@@ -2240,8 +2240,8 @@
     "city": "Unknown",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 0,
-    "geo_long": 0
+    "geo_lat": 47.59397,
+    "geo_long": 14.12456
   },
   {
     "id": "ATVAlanya.tr",
