@@ -12,12 +12,12 @@
     "tags": "music,variety",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 752759,
     "clickcount": 14057,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "9617a958-0601-11e8-ae97-52543be04c81",
@@ -32,12 +32,12 @@
     "tags": "california,eclectic,free,internet,non-commercial,paradise,radio",
     "codec": "AAC",
     "bitrate": 320,
-    "geo_lat": 38.9243135,
-    "geo_long": -77.0744826,
     "votes": 248649,
     "clickcount": 12244,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 38.9243135,
+    "longitude": -77.0744826
   },
   {
     "stationuuid": "d28420a4-eccf-47a2-ace1-088c7e7cb7e0",
@@ -52,12 +52,12 @@
     "tags": "easy listening,jazz,smooth jazz",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 38.9243135,
-    "geo_long": -77.0744826,
     "votes": 73481,
     "clickcount": 11203,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 38.9243135,
+    "longitude": -77.0744826
   },
   {
     "stationuuid": "1c3e8be2-5b14-4933-bad3-87cbc227cba4",
@@ -72,12 +72,12 @@
     "tags": "culture,news,public service,information",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 7119,
     "clickcount": 9257,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "962cc6df-0601-11e8-ae97-52543be04c81",
@@ -92,12 +92,12 @@
     "tags": "club dance electronic house trance",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 47.1817585,
-    "geo_long": 19.5060937,
     "votes": 514115,
     "clickcount": 8094,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 47.1817585,
+    "longitude": 19.5060937
   },
   {
     "stationuuid": "1cfb151d-a341-11e9-a787-52543be04c81",
@@ -112,12 +112,12 @@
     "tags": "",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 46.603354,
-    "geo_long": 1.8883335,
     "votes": 73968,
     "clickcount": 7352,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 46.603354,
+    "longitude": 1.8883335
   },
   {
     "stationuuid": "902ea231-d537-4dc8-8708-6819418086d0",
@@ -132,12 +132,12 @@
     "tags": "classical",
     "codec": "AAC",
     "bitrate": 94,
-    "geo_lat": 22.3511148,
-    "geo_long": 78.6677428,
     "votes": 11350,
     "clickcount": 7063,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 22.3511148,
+    "longitude": 78.6677428
   },
   {
     "stationuuid": "c17ec87a-3063-40b0-834c-a2991ca074b9",
@@ -152,12 +152,12 @@
     "tags": "classical",
     "codec": "UNKNOWN",
     "bitrate": 0,
-    "geo_lat": 14.1483443,
-    "geo_long": 121.3119391,
     "votes": 10767,
     "clickcount": 6426,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 14.1483443,
+    "longitude": 121.3119391
   },
   {
     "stationuuid": "240d28b9-7858-48d2-a816-9cf8e1875fe8",
@@ -172,12 +172,12 @@
     "tags": "news,pop,rock",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 15063,
     "clickcount": 6412,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "960b9e98-0601-11e8-ae97-52543be04c81",
@@ -192,12 +192,12 @@
     "tags": "news",
     "codec": "MP3",
     "bitrate": 192,
-    "geo_lat": 65,
-    "geo_long": -120,
     "votes": 48005,
     "clickcount": 6195,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 65,
+    "longitude": -120
   },
   {
     "stationuuid": "dc722c5e-21a0-49be-8687-474638c95ca7",
@@ -212,12 +212,12 @@
     "tags": "news",
     "codec": "UNKNOWN",
     "bitrate": 0,
-    "geo_lat": 35.000074,
-    "geo_long": 104.999927,
     "votes": 8991,
     "clickcount": 5776,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 35.000074,
+    "longitude": 104.999927
   },
   {
     "stationuuid": "9606f727-0601-11e8-ae97-52543be04c81",
@@ -232,12 +232,12 @@
     "tags": "ard,public radio,rock,top 40,wdr",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 27652,
     "clickcount": 5201,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "9605edb3-0601-11e8-ae97-52543be04c81",
@@ -252,12 +252,12 @@
     "tags": "information,news,news talk,political talk,talk",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 21186,
     "clickcount": 5182,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "9622cd46-0601-11e8-ae97-52543be04c81",
@@ -272,12 +272,12 @@
     "tags": "dance,house,pop",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 85,
-    "geo_long": -120,
     "votes": 52624,
     "clickcount": 4899,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 85,
+    "longitude": -120
   },
   {
     "stationuuid": "f592bcd7-c052-11e9-8502-52543be04c81",
@@ -292,12 +292,12 @@
     "tags": "#original,fm,rey,reyfm",
     "codec": "MP3",
     "bitrate": 192,
-    "geo_lat": 26.492533,
-    "geo_long": 92.3308789,
     "votes": 380399,
     "clickcount": 4812,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 26.492533,
+    "longitude": 92.3308789
   },
   {
     "stationuuid": "df6a8fa4-23cb-4279-a025-bf3057bd0a4b",
@@ -312,12 +312,12 @@
     "tags": "",
     "codec": "UNKNOWN",
     "bitrate": 0,
-    "geo_lat": 4.5693754,
-    "geo_long": 102.2656823,
     "votes": 1431,
     "clickcount": 4631,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 4.5693754,
+    "longitude": 102.2656823
   },
   {
     "stationuuid": "95eff2f9-cb7a-4fe4-bb07-8c700719f8b6",
@@ -332,12 +332,12 @@
     "tags": "chill,chillout,chillout+lounge",
     "codec": "MP3",
     "bitrate": 0,
-    "geo_lat": 25,
-    "geo_long": -110,
     "votes": 1520,
     "clickcount": 4615,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 25,
+    "longitude": -110
   },
   {
     "stationuuid": "98137c2d-ce68-4e33-8cb7-ddf3692ecc9d",
@@ -352,12 +352,12 @@
     "tags": "comedy,drama,news,talk",
     "codec": "UNKNOWN",
     "bitrate": 0,
-    "geo_lat": 30,
-    "geo_long": -110,
     "votes": 1981,
     "clickcount": 4469,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 30,
+    "longitude": -110
   },
   {
     "stationuuid": "399b7c2a-6680-11e8-b15b-52543be04c81",
@@ -372,12 +372,12 @@
     "tags": "fm,rmf,rmffm",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 52.215933,
-    "geo_long": 19.134422,
     "votes": 52746,
     "clickcount": 4356,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 52.215933,
+    "longitude": 19.134422
   },
   {
     "stationuuid": "2bf82625-6e78-445d-afff-e51e53c369a9",
@@ -392,12 +392,12 @@
     "tags": "tv",
     "codec": "UNKNOWN",
     "bitrate": 0,
-    "geo_lat": 35.000074,
-    "geo_long": 104.999927,
     "votes": 11965,
     "clickcount": 4210,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 35.000074,
+    "longitude": 104.999927
   },
   {
     "stationuuid": "964fade0-0601-11e8-ae97-52543be04c81",
@@ -412,12 +412,12 @@
     "tags": "classic hits,moscow,music,pop,retro,russia,russian pop",
     "codec": "MP3",
     "bitrate": 256,
-    "geo_lat": 45,
-    "geo_long": -110,
     "votes": 48008,
     "clickcount": 4065,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 45,
+    "longitude": -110
   },
   {
     "stationuuid": "932eb148-e6f6-11e9-a96c-52543be04c81",
@@ -432,12 +432,12 @@
     "tags": "aac,music,public radio,radio france",
     "codec": "AAC",
     "bitrate": 192,
-    "geo_lat": 46.603354,
-    "geo_long": 1.8883335,
     "votes": 35473,
     "clickcount": 3847,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 46.603354,
+    "longitude": 1.8883335
   },
   {
     "stationuuid": "63688c44-e90b-11e8-a471-52543be04c81",
@@ -452,12 +452,12 @@
     "tags": "pop",
     "codec": "AAC+",
     "bitrate": 64,
-    "geo_lat": 55,
-    "geo_long": -110,
     "votes": 48653,
     "clickcount": 3746,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 55,
+    "longitude": -110
   },
   {
     "stationuuid": "604bb4af-ccf6-47bd-819e-7d1accd15e05",
@@ -472,12 +472,12 @@
     "tags": "opm,talk,top 40,variety",
     "codec": "AAC+",
     "bitrate": 64,
-    "geo_lat": 14.1483443,
-    "geo_long": 121.3119391,
     "votes": 2835,
     "clickcount": 3729,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 14.1483443,
+    "longitude": 121.3119391
   },
   {
     "stationuuid": "5a6946a2-f02f-4fd1-a16b-558c90150041",
@@ -492,12 +492,12 @@
     "tags": "culture,news,public service,information",
     "codec": "OGG",
     "bitrate": 24,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 1204,
     "clickcount": 3661,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "d2bbffaf-5d67-4a65-9772-097d8c0269d3",
@@ -512,12 +512,12 @@
     "tags": "",
     "codec": "AAC",
     "bitrate": 192,
-    "geo_lat": 46.603354,
-    "geo_long": 1.8883335,
     "votes": 53864,
     "clickcount": 3605,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 46.603354,
+    "longitude": 1.8883335
   },
   {
     "stationuuid": "960c2914-0601-11e8-ae97-52543be04c81",
@@ -532,12 +532,12 @@
     "tags": "africa,news",
     "codec": "MP3",
     "bitrate": 64,
-    "geo_lat": 46.603354,
-    "geo_long": 1.8883335,
     "votes": 73333,
     "clickcount": 3534,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 46.603354,
+    "longitude": 1.8883335
   },
   {
     "stationuuid": "6a1440b2-e6f0-11e9-a96c-52543be04c81",
@@ -552,12 +552,12 @@
     "tags": "aac,culture,public radio,radio france",
     "codec": "AAC",
     "bitrate": 192,
-    "geo_lat": 46.603354,
-    "geo_long": 1.8883335,
     "votes": 47928,
     "clickcount": 3486,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 46.603354,
+    "longitude": 1.8883335
   },
   {
     "stationuuid": "962dc110-0601-11e8-ae97-52543be04c81",
@@ -572,12 +572,12 @@
     "tags": "80s",
     "codec": "MP3",
     "bitrate": 0,
-    "geo_lat": 53.5140296,
-    "geo_long": 10.2480924,
     "votes": 25350,
     "clickcount": 3166,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 53.5140296,
+    "longitude": 10.2480924
   },
   {
     "stationuuid": "33960c43-0464-44b4-abfa-73591ebf647f",
@@ -592,12 +592,12 @@
     "tags": "",
     "codec": "UNKNOWN",
     "bitrate": 0,
-    "geo_lat": 46.603354,
-    "geo_long": 1.8883335,
     "votes": 4459,
     "clickcount": 3113,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 46.603354,
+    "longitude": 1.8883335
   },
   {
     "stationuuid": "a4e79d4f-8c40-46a4-bd5b-37c5266ae8e8",
@@ -612,12 +612,12 @@
     "tags": "",
     "codec": "UNKNOWN",
     "bitrate": 0,
-    "geo_lat": 4.5693754,
-    "geo_long": 102.2656823,
     "votes": 316,
     "clickcount": 3109,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 4.5693754,
+    "longitude": 102.2656823
   },
   {
     "stationuuid": "f796d445-4314-4eb6-a09d-bcac5d474661",
@@ -632,12 +632,12 @@
     "tags": "80s,90s,russian",
     "codec": "AAC+",
     "bitrate": 64,
-    "geo_lat": 25,
-    "geo_long": -100,
     "votes": 47921,
     "clickcount": 3096,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 25,
+    "longitude": -100
   },
   {
     "stationuuid": "9627ddc0-0601-11e8-ae97-52543be04c81",
@@ -652,12 +652,12 @@
     "tags": "hiphop,oldschool,rnb,waynesboro",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 38.9243135,
-    "geo_long": -77.0744826,
     "votes": 47934,
     "clickcount": 3088,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 38.9243135,
+    "longitude": -77.0744826
   },
   {
     "stationuuid": "960594a6-0601-11e8-ae97-52543be04c81",
@@ -672,12 +672,12 @@
     "tags": "rock",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 21321,
     "clickcount": 3086,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "961b7325-0601-11e8-ae97-52543be04c81",
@@ -692,12 +692,12 @@
     "tags": "80s",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 38.9243135,
-    "geo_long": -77.0744826,
     "votes": 48032,
     "clickcount": 3080,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 38.9243135,
+    "longitude": -77.0744826
   },
   {
     "stationuuid": "d377fdb9-9136-47de-a1f4-6b02a1bc7f72",
@@ -712,12 +712,12 @@
     "tags": "adult contemporary",
     "codec": "AAC",
     "bitrate": 128,
-    "geo_lat": 52.215933,
-    "geo_long": 19.134422,
     "votes": 4208,
     "clickcount": 3039,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 52.215933,
+    "longitude": 19.134422
   },
   {
     "stationuuid": "aa408a3b-3d07-415d-8af1-a60b64e07043",
@@ -732,12 +732,12 @@
     "tags": "middle eastern music,pop",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 32.6475314,
-    "geo_long": 54.5643516,
     "votes": 32490,
     "clickcount": 2956,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 32.6475314,
+    "longitude": 54.5643516
   },
   {
     "stationuuid": "7dd71b85-139b-4362-81b1-4206133a517c",
@@ -752,12 +752,12 @@
     "tags": "",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 22.3511148,
-    "geo_long": 78.6677428,
     "votes": 4318,
     "clickcount": 2935,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 22.3511148,
+    "longitude": 78.6677428
   },
   {
     "stationuuid": "9a8f7fb5-3159-11ea-afca-52543be04c81",
@@ -772,12 +772,12 @@
     "tags": "news,talk",
     "codec": "MP3",
     "bitrate": 64,
-    "geo_lat": 1.5333554,
-    "geo_long": 32.2166578,
     "votes": 15754,
     "clickcount": 2933,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 1.5333554,
+    "longitude": 32.2166578
   },
   {
     "stationuuid": "1b762b21-2ec6-412a-a231-fa34a96f4f99",
@@ -792,12 +792,12 @@
     "tags": "80s,new wave,pop,rock",
     "codec": "MP3",
     "bitrate": 0,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 2669,
     "clickcount": 2926,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "986c5985-41d7-11ea-a95e-52543be04c81",
@@ -812,12 +812,12 @@
     "tags": "news talk",
     "codec": "MP3",
     "bitrate": 64,
-    "geo_lat": 42.6384261,
-    "geo_long": 12.674297,
     "votes": 27609,
     "clickcount": 2792,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 42.6384261,
+    "longitude": 12.674297
   },
   {
     "stationuuid": "9e8ccaf9-99b1-4b80-ac33-66b3b5057745",
@@ -832,12 +832,12 @@
     "tags": "",
     "codec": "AAC+",
     "bitrate": 48,
-    "geo_lat": -28.8166236,
-    "geo_long": 24.991639,
     "votes": 260,
     "clickcount": 2778,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": -28.8166236,
+    "longitude": 24.991639
   },
   {
     "stationuuid": "a0d30a64-51e5-11e8-a4d1-52543be04c81",
@@ -852,12 +852,12 @@
     "tags": "marusya,marusya fm - new russian hits!,маруся",
     "codec": "AAC",
     "bitrate": 64,
-    "geo_lat": 80,
-    "geo_long": -100,
     "votes": 49703,
     "clickcount": 2764,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 80,
+    "longitude": -100
   },
   {
     "stationuuid": "18570040-960a-4f41-96dc-fe47d5878dd1",
@@ -872,12 +872,12 @@
     "tags": "politics,world news",
     "codec": "AAC",
     "bitrate": 0,
-    "geo_lat": 85,
-    "geo_long": -100,
     "votes": 4145,
     "clickcount": 2756,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 85,
+    "longitude": -100
   },
   {
     "stationuuid": "961c96ef-0601-11e8-ae97-52543be04c81",
@@ -892,12 +892,12 @@
     "tags": "classic rock,pop rock,rock",
     "codec": "MP3",
     "bitrate": 0,
-    "geo_lat": 90,
-    "geo_long": -100,
     "votes": 50620,
     "clickcount": 2744,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 90,
+    "longitude": -100
   },
   {
     "stationuuid": "96126f56-0601-11e8-ae97-52543be04c81",
@@ -912,12 +912,12 @@
     "tags": "news",
     "codec": "MP3",
     "bitrate": 192,
-    "geo_lat": 52.2434979,
-    "geo_long": 5.6343227,
     "votes": 15257,
     "clickcount": 2740,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 52.2434979,
+    "longitude": 5.6343227
   },
   {
     "stationuuid": "96126e82-0601-11e8-ae97-52543be04c81",
@@ -932,12 +932,12 @@
     "tags": "evergreens,talk",
     "codec": "MP3",
     "bitrate": 192,
-    "geo_lat": 52.2434979,
-    "geo_long": 5.6343227,
     "votes": 10222,
     "clickcount": 2732,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 52.2434979,
+    "longitude": 5.6343227
   },
   {
     "stationuuid": "961d5c4e-0601-11e8-ae97-52543be04c81",
@@ -952,12 +952,12 @@
     "tags": "hits,top 40",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 38.9243135,
-    "geo_long": -77.0744826,
     "votes": 47894,
     "clickcount": 2702,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 38.9243135,
+    "longitude": -77.0744826
   },
   {
     "stationuuid": "68d00a44-200c-4c82-b17f-18d777f3b2ee",
@@ -972,12 +972,12 @@
     "tags": "",
     "codec": "AAC",
     "bitrate": 94,
-    "geo_lat": 22.3511148,
-    "geo_long": 78.6677428,
     "votes": 3075,
     "clickcount": 2694,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 22.3511148,
+    "longitude": 78.6677428
   },
   {
     "stationuuid": "692a3b69-0f68-11ea-a87e-52543be04c81",
@@ -992,12 +992,12 @@
     "tags": "cultural news,live,news,news talk,spanish,sports news",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 39.3260685,
-    "geo_long": -4.8379791,
     "votes": 22710,
     "clickcount": 2657,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 39.3260685,
+    "longitude": -4.8379791
   },
   {
     "stationuuid": "563f5559-105c-11e9-a80b-52543be04c81",
@@ -1012,12 +1012,12 @@
     "tags": "dance",
     "codec": "AAC+",
     "bitrate": 96,
-    "geo_lat": 45,
-    "geo_long": -90,
     "votes": 47915,
     "clickcount": 2653,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 45,
+    "longitude": -90
   },
   {
     "stationuuid": "0de82079-04e7-407b-b616-e0726eba5244",
@@ -1032,12 +1032,12 @@
     "tags": "pop",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 3156,
     "clickcount": 2649,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "f4e89fce-5d97-4e6a-bc72-b5738344dc91",
@@ -1052,12 +1052,12 @@
     "tags": "#1 pilihan pantai timur,entertaining segments,mix genres",
     "codec": "UNKNOWN",
     "bitrate": 0,
-    "geo_lat": 4.5693754,
-    "geo_long": 102.2656823,
     "votes": 494,
     "clickcount": 2638,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 4.5693754,
+    "longitude": 102.2656823
   },
   {
     "stationuuid": "e723f7f8-0db1-4bc5-a64c-64d8377f9f9a",
@@ -1072,12 +1072,12 @@
     "tags": "orf,pop",
     "codec": "MP3",
     "bitrate": 192,
-    "geo_lat": 47.59397,
-    "geo_long": 14.12456,
     "votes": 744,
     "clickcount": 2600,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 47.59397,
+    "longitude": 14.12456
   },
   {
     "stationuuid": "961d9b63-0601-11e8-ae97-52543be04c81",
@@ -1092,12 +1092,12 @@
     "tags": "country",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 38.9243135,
-    "geo_long": -77.0744826,
     "votes": 47925,
     "clickcount": 2593,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 38.9243135,
+    "longitude": -77.0744826
   },
   {
     "stationuuid": "7a3a3989-8f26-44f7-9ae5-fa91e5cf4f9d",
@@ -1112,12 +1112,12 @@
     "tags": "france,info,sport,talk",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 46.603354,
-    "geo_long": 1.8883335,
     "votes": 59598,
     "clickcount": 2553,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 46.603354,
+    "longitude": 1.8883335
   },
   {
     "stationuuid": "119f07c3-81f0-4309-91e8-f46525f0d35d",
@@ -1132,12 +1132,12 @@
     "tags": "african,alternative,pop",
     "codec": "UNKNOWN",
     "bitrate": 0,
-    "geo_lat": -28.8166236,
-    "geo_long": 24.991639,
     "votes": 1673,
     "clickcount": 2539,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": -28.8166236,
+    "longitude": 24.991639
   },
   {
     "stationuuid": "c8d92f0d-6b56-46e7-853b-54cf389d1a97",
@@ -1152,12 +1152,12 @@
     "tags": "",
     "codec": "MP3",
     "bitrate": 535,
-    "geo_lat": 32.6475314,
-    "geo_long": 54.5643516,
     "votes": 6853,
     "clickcount": 2536,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 32.6475314,
+    "longitude": 54.5643516
   },
   {
     "stationuuid": "033fe547-b71c-4ea0-8274-e6522444629c",
@@ -1172,12 +1172,12 @@
     "tags": "misc",
     "codec": "AAC",
     "bitrate": 0,
-    "geo_lat": 85,
-    "geo_long": -90,
     "votes": 25927,
     "clickcount": 2532,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 85,
+    "longitude": -90
   },
   {
     "stationuuid": "ac81df15-039c-43df-b944-7462426b9db5",
@@ -1192,12 +1192,12 @@
     "tags": "",
     "codec": "AAC+",
     "bitrate": 48,
-    "geo_lat": -28.8166236,
-    "geo_long": 24.991639,
     "votes": 1219,
     "clickcount": 2520,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": -28.8166236,
+    "longitude": 24.991639
   },
   {
     "stationuuid": "962a1abd-0601-11e8-ae97-52543be04c81",
@@ -1212,12 +1212,12 @@
     "tags": "moscow,music,news,russia,talk",
     "codec": "MP3",
     "bitrate": 0,
-    "geo_lat": 20,
-    "geo_long": -80,
     "votes": 38908,
     "clickcount": 2517,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 20,
+    "longitude": -80
   },
   {
     "stationuuid": "961fa288-0601-11e8-ae97-52543be04c81",
@@ -1232,12 +1232,12 @@
     "tags": "ambient,meditation,sleep",
     "codec": "MP3",
     "bitrate": 256,
-    "geo_lat": 38.9243135,
-    "geo_long": -77.0744826,
     "votes": 45525,
     "clickcount": 2508,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 38.9243135,
+    "longitude": -77.0744826
   },
   {
     "stationuuid": "c93f9c76-2ad4-464d-bff4-7f46e95f2601",
@@ -1252,12 +1252,12 @@
     "tags": "1970s,1980s,70's,70s,70s disco,80,80's,80s,classic hits",
     "codec": "AAC",
     "bitrate": 0,
-    "geo_lat": 38.9243135,
-    "geo_long": -77.0744826,
     "votes": 49881,
     "clickcount": 2488,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 38.9243135,
+    "longitude": -77.0744826
   },
   {
     "stationuuid": "74f507d1-91b7-48d5-af98-d0d7df1b4e9b",
@@ -1272,12 +1272,12 @@
     "tags": "",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 26.2540493,
-    "geo_long": 29.2675469,
     "votes": 11183,
     "clickcount": 2470,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 26.2540493,
+    "longitude": 29.2675469
   },
   {
     "stationuuid": "6add27d4-5573-47b4-ae27-1d05834a9a4a",
@@ -1292,12 +1292,12 @@
     "tags": "",
     "codec": "AAC+",
     "bitrate": 95,
-    "geo_lat": 52.2434979,
-    "geo_long": 5.6343227,
     "votes": 328,
     "clickcount": 2448,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 52.2434979,
+    "longitude": 5.6343227
   },
   {
     "stationuuid": "960553a5-0601-11e8-ae97-52543be04c81",
@@ -1312,12 +1312,12 @@
     "tags": "adult contemporary,alternative,ard,information,pop,public radio,rbb,rock,talk",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 11014,
     "clickcount": 2391,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "901c92bd-a757-449a-b8ce-652b079fd38a",
@@ -1332,12 +1332,12 @@
     "tags": "chr,pop-rock,youth",
     "codec": "AAC+",
     "bitrate": 64,
-    "geo_lat": -10.3333333,
-    "geo_long": -53.2,
     "votes": 869,
     "clickcount": 2331,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": -10.3333333,
+    "longitude": -53.2
   },
   {
     "stationuuid": "fd059cc5-b538-41c1-ae76-b8778a84c3db",
@@ -1352,12 +1352,12 @@
     "tags": "",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 52.2434979,
-    "geo_long": 5.6343227,
     "votes": 567,
     "clickcount": 2280,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 52.2434979,
+    "longitude": 5.6343227
   },
   {
     "stationuuid": "7ce50274-160a-43b6-a023-782897576f9e",
@@ -1372,12 +1372,12 @@
     "tags": "music,news,talk,traffic,traffic information,traffic news",
     "codec": "UNKNOWN",
     "bitrate": 254,
-    "geo_lat": 15.9266657,
-    "geo_long": 107.9650855,
     "votes": 342,
     "clickcount": 2275,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 15.9266657,
+    "longitude": 107.9650855
   },
   {
     "stationuuid": "247aa6ff-f402-4b81-8ebb-21fa00791ef5",
@@ -1392,12 +1392,12 @@
     "tags": "pop",
     "codec": "MP3",
     "bitrate": 64,
-    "geo_lat": 14.1483443,
-    "geo_long": 121.3119391,
     "votes": 2002,
     "clickcount": 2248,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 14.1483443,
+    "longitude": 121.3119391
   },
   {
     "stationuuid": "003d3c6f-e183-11e9-a8ba-52543be04c81",
@@ -1412,12 +1412,12 @@
     "tags": "",
     "codec": "MP3",
     "bitrate": 96,
-    "geo_lat": 52.2434979,
-    "geo_long": 5.6343227,
     "votes": 3225,
     "clickcount": 2215,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 52.2434979,
+    "longitude": 5.6343227
   },
   {
     "stationuuid": "01683d91-4e1e-4152-b1bc-30f2f1360b98",
@@ -1432,12 +1432,12 @@
     "tags": "culture,news,public service,information",
     "codec": "AAC",
     "bitrate": 128,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 1176,
     "clickcount": 2157,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "960d063e-0601-11e8-ae97-52543be04c81",
@@ -1452,12 +1452,12 @@
     "tags": "dance,trance",
     "codec": "MP3",
     "bitrate": 0,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 15084,
     "clickcount": 2147,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "165eab56-4a14-11e9-a4d7-52543be04c81",
@@ -1472,12 +1472,12 @@
     "tags": "90-е,eurodance,nostalgia",
     "codec": "AAC+",
     "bitrate": 96,
-    "geo_lat": 85,
-    "geo_long": -80,
     "votes": 47980,
     "clickcount": 2141,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 85,
+    "longitude": -80
   },
   {
     "stationuuid": "960cf833-0601-11e8-ae97-52543be04c81",
@@ -1492,12 +1492,12 @@
     "tags": "ambient,chillout,downtempo,groove,lounge,sleep",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 38.9243135,
-    "geo_long": -77.0744826,
     "votes": 43196,
     "clickcount": 2127,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 38.9243135,
+    "longitude": -77.0744826
   },
   {
     "stationuuid": "7afae7e3-8d06-42f5-b59e-a52d6e09e60e",
@@ -1512,12 +1512,12 @@
     "tags": "60s,60s and 70s.,70's,70er,70s,80's,80er,80s,90's,90er,90s,blues,blues rock,classic blues,classic hits,classic hits 60s 70a 80s,classic rock,classic rock  50's 60's 70's 80's 90's,classic rock music,classic rock oldies,classic rock oldies soul,classic rock; alternative rock indie,country,entretenimiento,fm,hard rock,high quality audio,hits,local radio,melodic hard rock,music,music 70s 80s 90s,musica,oldies,pop rock,public radio,radio,real classic rock,rhythm and blues,rock,soft rock",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 61.0666922,
-    "geo_long": -107.991707,
     "votes": 2299,
     "clickcount": 2127,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 61.0666922,
+    "longitude": -107.991707
   },
   {
     "stationuuid": "2b3e2f56-7f31-483b-9441-59a3aa13cd88",
@@ -1532,12 +1532,12 @@
     "tags": "",
     "codec": "AAC",
     "bitrate": 42,
-    "geo_lat": 32.6475314,
-    "geo_long": 54.5643516,
     "votes": 4978,
     "clickcount": 2109,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 32.6475314,
+    "longitude": 54.5643516
   },
   {
     "stationuuid": "948408f4-0060-44fa-a26c-bf313f6c774d",
@@ -1552,12 +1552,12 @@
     "tags": "",
     "codec": "AAC",
     "bitrate": 128,
-    "geo_lat": 39.294076,
-    "geo_long": 35.2316631,
     "votes": 972,
     "clickcount": 2100,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 39.294076,
+    "longitude": 35.2316631
   },
   {
     "stationuuid": "9605739a-0601-11e8-ae97-52543be04c81",
@@ -1572,12 +1572,12 @@
     "tags": "top 40",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 19028,
     "clickcount": 2090,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "00dc2e9a-578c-430b-bdc2-244b71444dfc",
@@ -1592,12 +1592,12 @@
     "tags": "",
     "codec": "AAC+",
     "bitrate": 96,
-    "geo_lat": 50.6402809,
-    "geo_long": 4.6667145,
     "votes": 661,
     "clickcount": 2090,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 50.6402809,
+    "longitude": 4.6667145
   },
   {
     "stationuuid": "a90bf48e-c689-4394-a22b-a4980689cedf",
@@ -1612,12 +1612,12 @@
     "tags": "",
     "codec": "MP3",
     "bitrate": 96,
-    "geo_lat": 14.1483443,
-    "geo_long": 121.3119391,
     "votes": 891,
     "clickcount": 2080,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 14.1483443,
+    "longitude": 121.3119391
   },
   {
     "stationuuid": "960b77af-0601-11e8-ae97-52543be04c81",
@@ -1632,12 +1632,12 @@
     "tags": "ard,information,news,public radio,rbb",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 10575,
     "clickcount": 2042,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "2678a502-9a27-4774-a549-e00091878051",
@@ -1652,12 +1652,12 @@
     "tags": "news,talk",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 55,
-    "geo_long": -70,
     "votes": 5894,
     "clickcount": 2030,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 55,
+    "longitude": -70
   },
   {
     "stationuuid": "960de706-0601-11e8-ae97-52543be04c81",
@@ -1672,12 +1672,12 @@
     "tags": "chanson",
     "codec": "MP3",
     "bitrate": 0,
-    "geo_lat": 60,
-    "geo_long": -70,
     "votes": 47921,
     "clickcount": 2007,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 60,
+    "longitude": -70
   },
   {
     "stationuuid": "960bf492-0601-11e8-ae97-52543be04c81",
@@ -1692,12 +1692,12 @@
     "tags": "",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 46.603354,
-    "geo_long": 1.8883335,
     "votes": 49938,
     "clickcount": 1998,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 46.603354,
+    "longitude": 1.8883335
   },
   {
     "stationuuid": "3606ef8c-cd58-4440-8c47-dbf1e0cacdac",
@@ -1712,12 +1712,12 @@
     "tags": "adult contemporary",
     "codec": "UNKNOWN",
     "bitrate": 0,
-    "geo_lat": 70,
-    "geo_long": -70,
     "votes": 900,
     "clickcount": 1968,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 70,
+    "longitude": -70
   },
   {
     "stationuuid": "9639c07d-0601-11e8-ae97-52543be04c81",
@@ -1732,12 +1732,12 @@
     "tags": "cultural news,culture,information,kultur,local news,news,regional",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 3864,
     "clickcount": 1963,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "7b03996e-6ea0-4db5-8168-ddd1463faec2",
@@ -1752,12 +1752,12 @@
     "tags": "99.9 fm,argentina,buenos aires,entretenimiento,español,estación,fm,grupo clarín,la 100,latinoamérica,magazines,moi merino,música,radio,suramérica",
     "codec": "MP3",
     "bitrate": 96,
-    "geo_lat": -38.8082927,
-    "geo_long": -70.9347779,
     "votes": 3026,
     "clickcount": 1933,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": -38.8082927,
+    "longitude": -70.9347779
   },
   {
     "stationuuid": "960ac54b-0601-11e8-ae97-52543be04c81",
@@ -1772,12 +1772,12 @@
     "tags": "classical,relax",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 29.6264964,
-    "geo_long": -82.3645914,
     "votes": 47899,
     "clickcount": 1931,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 29.6264964,
+    "longitude": -82.3645914
   },
   {
     "stationuuid": "96201b3d-0601-11e8-ae97-52543be04c81",
@@ -1792,12 +1792,12 @@
     "tags": "müzik,türkçe",
     "codec": "AAC+",
     "bitrate": 104,
-    "geo_lat": 39.294076,
-    "geo_long": 35.2316631,
     "votes": 25372,
     "clickcount": 1929,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 39.294076,
+    "longitude": 35.2316631
   },
   {
     "stationuuid": "96102c22-0601-11e8-ae97-52543be04c81",
@@ -1812,12 +1812,12 @@
     "tags": "blues,jazz",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 46.603354,
-    "geo_long": 1.8883335,
     "votes": 53228,
     "clickcount": 1927,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 46.603354,
+    "longitude": 1.8883335
   },
   {
     "stationuuid": "a4ffabec-a162-4320-8cf2-049b8055b17a",
@@ -1832,12 +1832,12 @@
     "tags": "",
     "codec": "UNKNOWN",
     "bitrate": 0,
-    "geo_lat": 22.3511148,
-    "geo_long": 78.6677428,
     "votes": 10386,
     "clickcount": 1924,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 22.3511148,
+    "longitude": 78.6677428
   },
   {
     "stationuuid": "96185693-0601-11e8-ae97-52543be04c81",
@@ -1852,12 +1852,12 @@
     "tags": "news,public radio,rai",
     "codec": "MP3",
     "bitrate": 256,
-    "geo_lat": 42.6384261,
-    "geo_long": 12.674297,
     "votes": 36304,
     "clickcount": 1920,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 42.6384261,
+    "longitude": 12.674297
   },
   {
     "stationuuid": "fdbdc2b0-c184-437b-8643-9a5bfa45c253",
@@ -1872,12 +1872,12 @@
     "tags": "",
     "codec": "AAC+",
     "bitrate": 101,
-    "geo_lat": 35,
-    "geo_long": -60,
     "votes": 1119,
     "clickcount": 1919,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 35,
+    "longitude": -60
   },
   {
     "stationuuid": "2104e3a4-cd98-41f0-b7aa-1354c8ebfc98",
@@ -1892,12 +1892,12 @@
     "tags": "",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 26.2540493,
-    "geo_long": 29.2675469,
     "votes": 17116,
     "clickcount": 1917,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 26.2540493,
+    "longitude": 29.2675469
   },
   {
     "stationuuid": "f3dfbec0-8ddb-457c-94cd-368631337c0f",
@@ -1912,12 +1912,12 @@
     "tags": "",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 39.294076,
-    "geo_long": 35.2316631,
     "votes": 14565,
     "clickcount": 1913,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 39.294076,
+    "longitude": 35.2316631
   },
   {
     "stationuuid": "7fb05617-62f2-4c5b-8cfb-86ace94905d2",
@@ -1932,12 +1932,12 @@
     "tags": "news,talk",
     "codec": "AAC",
     "bitrate": 320,
-    "geo_lat": 14.1483443,
-    "geo_long": 121.3119391,
     "votes": 979,
     "clickcount": 1901,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 14.1483443,
+    "longitude": 121.3119391
   },
   {
     "stationuuid": "1fbda80a-41a7-11ea-a95e-52543be04c81",
@@ -1952,12 +1952,12 @@
     "tags": "comedy,humor,pop,sketches",
     "codec": "AAC+",
     "bitrate": 64,
-    "geo_lat": 55,
-    "geo_long": -60,
     "votes": 43764,
     "clickcount": 1892,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 55,
+    "longitude": -60
   },
   {
     "stationuuid": "a853f228-0e27-4461-8657-5b10f2fd79d7",
@@ -1972,12 +1972,12 @@
     "tags": "classical",
     "codec": "AAC+",
     "bitrate": 0,
-    "geo_lat": 53.4250605,
-    "geo_long": 27.6971358,
     "votes": 16590,
     "clickcount": 1885,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 53.4250605,
+    "longitude": 27.6971358
   },
   {
     "stationuuid": "d69e38f7-f565-4217-b9a8-0075c5e32340",
@@ -1992,12 +1992,12 @@
     "tags": "news,pop-music",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 46.603354,
-    "geo_long": 1.8883335,
     "votes": 8882,
     "clickcount": 1880,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 46.603354,
+    "longitude": 1.8883335
   },
   {
     "stationuuid": "216ee092-939d-43b6-8562-c646f73ad89f",
@@ -2012,12 +2012,12 @@
     "tags": "italian pop",
     "codec": "UNKNOWN",
     "bitrate": 0,
-    "geo_lat": 42.6384261,
-    "geo_long": 12.674297,
     "votes": 7625,
     "clickcount": 1876,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 42.6384261,
+    "longitude": 12.674297
   },
   {
     "stationuuid": "717e3749-b9e8-4497-bd6a-61ccec935922",
@@ -2032,12 +2032,12 @@
     "tags": "culture,news,public service,information",
     "codec": "AAC",
     "bitrate": 192,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 686,
     "clickcount": 1871,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "33178054-56cd-449c-8cf7-412cc7be936a",
@@ -2052,12 +2052,12 @@
     "tags": "news",
     "codec": "MP3",
     "bitrate": 96,
-    "geo_lat": 38.9243135,
-    "geo_long": -77.0744826,
     "votes": 7938,
     "clickcount": 1864,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 38.9243135,
+    "longitude": -77.0744826
   },
   {
     "stationuuid": "2f1d6057-52bb-4a33-9b4c-be44a800d832",
@@ -2072,12 +2072,12 @@
     "tags": "news,politics,talk",
     "codec": "AAC",
     "bitrate": 0,
-    "geo_lat": 85,
-    "geo_long": -60,
     "votes": 8409,
     "clickcount": 1855,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 85,
+    "longitude": -60
   },
   {
     "stationuuid": "b81c57c3-eb05-47ac-a0ea-eb01a6960cc4",
@@ -2092,12 +2092,12 @@
     "tags": "music,pop,top 40",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 39.3260685,
-    "geo_long": -4.8379791,
     "votes": 26293,
     "clickcount": 1851,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 39.3260685,
+    "longitude": -4.8379791
   },
   {
     "stationuuid": "87906f1e-5f82-4b86-9865-69e8eab8a69a",
@@ -2112,12 +2112,12 @@
     "tags": "60's,70's,80s,90s,goldies,oldies,pop",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 1351,
     "clickcount": 1834,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "961dbb40-0601-11e8-ae97-52543be04c81",
@@ -2132,12 +2132,12 @@
     "tags": "80s,90s,hits,today",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 38.9243135,
-    "geo_long": -77.0744826,
     "votes": 37716,
     "clickcount": 1819,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 38.9243135,
+    "longitude": -77.0744826
   },
   {
     "stationuuid": "5dcbb03d-423a-4f97-8af5-b95981094c69",
@@ -2152,12 +2152,12 @@
     "tags": "adult,classic hits,flashback",
     "codec": "AAC+",
     "bitrate": 64,
-    "geo_lat": -10.3333333,
-    "geo_long": -53.2,
     "votes": 7906,
     "clickcount": 1815,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": -10.3333333,
+    "longitude": -53.2
   },
   {
     "stationuuid": "d25cc615-787f-4deb-b6f3-13b253e32433",
@@ -2172,12 +2172,12 @@
     "tags": "90's,bollywood,hindi,romantic",
     "codec": "AAC+",
     "bitrate": 192,
-    "geo_lat": 22.3511148,
-    "geo_long": 78.6677428,
     "votes": 6653,
     "clickcount": 1809,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 22.3511148,
+    "longitude": 78.6677428
   },
   {
     "stationuuid": "e9c34912-885d-4c5b-accd-6c1de459562f",
@@ -2192,12 +2192,12 @@
     "tags": "news variety",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 1.5333554,
-    "geo_long": 32.2166578,
     "votes": 8405,
     "clickcount": 1801,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 1.5333554,
+    "longitude": 32.2166578
   },
   {
     "stationuuid": "809098b9-2320-4143-9049-b1fe6f285664",
@@ -2212,12 +2212,12 @@
     "tags": "sport",
     "codec": "MP3",
     "bitrate": 64,
-    "geo_lat": 45,
-    "geo_long": -50,
     "votes": 1072,
     "clickcount": 1792,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 45,
+    "longitude": -50
   },
   {
     "stationuuid": "d227990c-2385-4419-8159-1c73a33a58dd",
@@ -2232,12 +2232,12 @@
     "tags": "00's,80's,90's,classic hits,hits",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 52.2434979,
-    "geo_long": 5.6343227,
     "votes": 6401,
     "clickcount": 1789,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 52.2434979,
+    "longitude": 5.6343227
   },
   {
     "stationuuid": "9614225b-0601-11e8-ae97-52543be04c81",
@@ -2252,12 +2252,12 @@
     "tags": "adult contemporary,pop,regional radio,talk",
     "codec": "AAC+",
     "bitrate": 48,
-    "geo_lat": -28.8166236,
-    "geo_long": 24.991639,
     "votes": 5331,
     "clickcount": 1787,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": -28.8166236,
+    "longitude": 24.991639
   },
   {
     "stationuuid": "dfcef843-6bf9-40f6-b3fe-2b224df86e48",
@@ -2272,12 +2272,12 @@
     "tags": "aac,news,talk",
     "codec": "AAC",
     "bitrate": 128,
-    "geo_lat": 46.603354,
-    "geo_long": 1.8883335,
     "votes": 13064,
     "clickcount": 1784,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 46.603354,
+    "longitude": 1.8883335
   },
   {
     "stationuuid": "4285a122-9c78-417e-879e-5440c0482c56",
@@ -2292,12 +2292,12 @@
     "tags": "",
     "codec": "MP3",
     "bitrate": 96,
-    "geo_lat": -34.9964963,
-    "geo_long": -64.9672817,
     "votes": 423,
     "clickcount": 1784,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": -34.9964963,
+    "longitude": -64.9672817
   },
   {
     "stationuuid": "431eb0c9-c84c-11e8-a54a-52543be04c81",
@@ -2312,12 +2312,12 @@
     "tags": "economic,news",
     "codec": "UNKNOWN",
     "bitrate": 0,
-    "geo_lat": 35.000074,
-    "geo_long": 104.999927,
     "votes": 7353,
     "clickcount": 1784,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 35.000074,
+    "longitude": 104.999927
   },
   {
     "stationuuid": "1e13ed4e-daa9-4728-8550-e08d89c1c8e7",
@@ -2332,12 +2332,12 @@
     "tags": "orf,alternative mainstream,electronic,pop,rock,public radio",
     "codec": "MP3",
     "bitrate": 192,
-    "geo_lat": 47.59397,
-    "geo_long": 14.12456,
     "votes": 907,
     "clickcount": 1782,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 47.59397,
+    "longitude": 14.12456
   },
   {
     "stationuuid": "1daf83f3-6b68-11ea-b1cf-52543be04c81",
@@ -2352,12 +2352,12 @@
     "tags": "",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 80,
-    "geo_long": -50,
     "votes": 48346,
     "clickcount": 1761,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 80,
+    "longitude": -50
   },
   {
     "stationuuid": "01b61e49-18bd-486d-b0e1-cb51cbaf9a6d",
@@ -2372,12 +2372,12 @@
     "tags": "rap",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 46.603354,
-    "geo_long": 1.8883335,
     "votes": 40674,
     "clickcount": 1761,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 46.603354,
+    "longitude": 1.8883335
   },
   {
     "stationuuid": "50c3c258-d783-4a1e-89e8-4d8b1f366c56",
@@ -2392,12 +2392,12 @@
     "tags": "",
     "codec": "AAC",
     "bitrate": 42,
-    "geo_lat": 32.6475314,
-    "geo_long": 54.5643516,
     "votes": 5540,
     "clickcount": 1759,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 32.6475314,
+    "longitude": 54.5643516
   },
   {
     "stationuuid": "e3d8f94f-156e-11e9-a80b-52543be04c81",
@@ -2412,12 +2412,12 @@
     "tags": "news,talk",
     "codec": "MP3",
     "bitrate": 320,
-    "geo_lat": 20,
-    "geo_long": -40,
     "votes": 43806,
     "clickcount": 1759,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 20,
+    "longitude": -40
   },
   {
     "stationuuid": "dba206f9-bf7e-11e9-8502-52543be04c81",
@@ -2432,12 +2432,12 @@
     "tags": "talk",
     "codec": "MP3",
     "bitrate": 64,
-    "geo_lat": 25,
-    "geo_long": -40,
     "votes": 15151,
     "clickcount": 1752,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 25,
+    "longitude": -40
   },
   {
     "stationuuid": "db93a00f-9191-46ab-9e87-ec9b373b3eee",
@@ -2452,12 +2452,12 @@
     "tags": "",
     "codec": "MP3",
     "bitrate": 192,
-    "geo_lat": 52.2434979,
-    "geo_long": 5.6343227,
     "votes": 302,
     "clickcount": 1739,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 52.2434979,
+    "longitude": 5.6343227
   },
   {
     "stationuuid": "65cd1362-71ab-4829-8a4a-f530caf3a465",
@@ -2472,12 +2472,12 @@
     "tags": "misc",
     "codec": "AAC+",
     "bitrate": 48,
-    "geo_lat": 52.215933,
-    "geo_long": 19.134422,
     "votes": 10084,
     "clickcount": 1728,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 52.215933,
+    "longitude": 19.134422
   },
   {
     "stationuuid": "92556f58-20d3-44ae-8faa-322ce5f256c0",
@@ -2492,12 +2492,12 @@
     "tags": "",
     "codec": "MP3",
     "bitrate": 0,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 2245,
     "clickcount": 1725,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "9614aa8d-0601-11e8-ae97-52543be04c81",
@@ -2512,12 +2512,12 @@
     "tags": "music,news,talk",
     "codec": "MP3",
     "bitrate": 192,
-    "geo_lat": 45,
-    "geo_long": -40,
     "votes": 38009,
     "clickcount": 1721,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 45,
+    "longitude": -40
   },
   {
     "stationuuid": "0a364b59-56b6-11e9-aa33-52543be04c81",
@@ -2532,12 +2532,12 @@
     "tags": "dorojnoe",
     "codec": "MP3",
     "bitrate": 320,
-    "geo_lat": 50,
-    "geo_long": -40,
     "votes": 47939,
     "clickcount": 1720,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 50,
+    "longitude": -40
   },
   {
     "stationuuid": "dd98c499-a0c4-4019-a35e-99caa6940407",
@@ -2552,12 +2552,12 @@
     "tags": "#,#charts,#club,#djmix,#mashup,#radio,#top100,00s,90s,beachclub,charts,chill house,chillout,chillout+lounge,club,club dance,club dance electronic house trance,club house,clubbing,dance house club  electronic techhouse,deejay,deep house,deep music,dj,dj mixes,dj remix,dj sets,edm,electro,electro techno,electronic,funky house,future house,hardstyle/handsup/edm,hip hop,hip-hop,hiphop,house,hypertechno,ibiza,latin,latin music,latin pop,lounge music,mashup,melodic house,minimal,minimal techno,moombahton,pop,progressive house,r&b,r&b/urban,rap hiphop rnb,rave,reggaeton,remixed,remixes,singlecharts,soulful house,sundowner,sunset,tech house,techno,top 40,top100,vocal deep",
     "codec": "MP3",
     "bitrate": 192,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 1997,
     "clickcount": 1716,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "3a386176-7b44-46eb-9461-75fc96121c99",
@@ -2572,12 +2572,12 @@
     "tags": "news,talk",
     "codec": "MP3",
     "bitrate": 0,
-    "geo_lat": 60,
-    "geo_long": -40,
     "votes": 7656,
     "clickcount": 1713,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 60,
+    "longitude": -40
   },
   {
     "stationuuid": "31074f8a-e6f4-11e9-a96c-52543be04c81",
@@ -2592,12 +2592,12 @@
     "tags": "aac,information,public radio,radio france",
     "codec": "AAC",
     "bitrate": 192,
-    "geo_lat": 46.603354,
-    "geo_long": 1.8883335,
     "votes": 49651,
     "clickcount": 1694,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 46.603354,
+    "longitude": 1.8883335
   },
   {
     "stationuuid": "b20de429-e1b3-4624-a1ac-12e2bf0cadb0",
@@ -2612,12 +2612,12 @@
     "tags": "",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 52.2434979,
-    "geo_long": 5.6343227,
     "votes": 479,
     "clickcount": 1690,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 52.2434979,
+    "longitude": 5.6343227
   },
   {
     "stationuuid": "5a299b9c-71ec-4736-b1d2-57a64793ed9e",
@@ -2632,12 +2632,12 @@
     "tags": "electronic",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 38.9243135,
-    "geo_long": -77.0744826,
     "votes": 32796,
     "clickcount": 1690,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 38.9243135,
+    "longitude": -77.0744826
   },
   {
     "stationuuid": "9d2b7b0b-f0cf-4c32-a1ce-bc6e964a7c1a",
@@ -2652,12 +2652,12 @@
     "tags": "новости,политика,разговорное",
     "codec": "AAC",
     "bitrate": 140,
-    "geo_lat": 49.7439047,
-    "geo_long": 15.3381061,
     "votes": 12214,
     "clickcount": 1678,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 49.7439047,
+    "longitude": 15.3381061
   },
   {
     "stationuuid": "d608bb74-0740-47e3-a1e2-c11edfeec91f",
@@ -2672,12 +2672,12 @@
     "tags": "",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 1032,
     "clickcount": 1663,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "6b36ba4f-6d29-4272-b3c0-9aeeb64e61ec",
@@ -2692,12 +2692,12 @@
     "tags": "bollywood,hindi,mirchi,pop",
     "codec": "MP3",
     "bitrate": 0,
-    "geo_lat": 22.3511148,
-    "geo_long": 78.6677428,
     "votes": 9986,
     "clickcount": 1660,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 22.3511148,
+    "longitude": 78.6677428
   },
   {
     "stationuuid": "960cca40-0601-11e8-ae97-52543be04c81",
@@ -2712,12 +2712,12 @@
     "tags": "heavy metal,metal",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 28712,
     "clickcount": 1658,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "a072ec3e-7bb0-4dbc-9f2d-e854733501ee",
@@ -2732,12 +2732,12 @@
     "tags": "culture,information,news",
     "codec": "AAC+",
     "bitrate": 48,
-    "geo_lat": 15.9266657,
-    "geo_long": 107.9650855,
     "votes": 13940,
     "clickcount": 1646,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 15.9266657,
+    "longitude": 107.9650855
   },
   {
     "stationuuid": "9608eb3e-0601-11e8-ae97-52543be04c81",
@@ -2752,12 +2752,12 @@
     "tags": "classical,culture,public radio,rai",
     "codec": "MP3",
     "bitrate": 320,
-    "geo_lat": 42.6384261,
-    "geo_long": 12.674297,
     "votes": 20461,
     "clickcount": 1637,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 42.6384261,
+    "longitude": 12.674297
   },
   {
     "stationuuid": "9619eb8a-0601-11e8-ae97-52543be04c81",
@@ -2772,12 +2772,12 @@
     "tags": "mediaset,pop rock",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 42.6384261,
-    "geo_long": 12.674297,
     "votes": 14477,
     "clickcount": 1633,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 42.6384261,
+    "longitude": 12.674297
   },
   {
     "stationuuid": "0c7e5ad0-b89b-466c-867e-a87866eb9a09",
@@ -2792,12 +2792,12 @@
     "tags": "",
     "codec": "UNKNOWN",
     "bitrate": 0,
-    "geo_lat": 35.000074,
-    "geo_long": 104.999927,
     "votes": 5895,
     "clickcount": 1627,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 35.000074,
+    "longitude": 104.999927
   },
   {
     "stationuuid": "b3c3ac25-ea2c-4865-8444-7ba9a71960f8",
@@ -2812,12 +2812,12 @@
     "tags": "",
     "codec": "AAC",
     "bitrate": 0,
-    "geo_lat": 45,
-    "geo_long": -30,
     "votes": 40272,
     "clickcount": 1625,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 45,
+    "longitude": -30
   },
   {
     "stationuuid": "964da270-0601-11e8-ae97-52543be04c81",
@@ -2832,12 +2832,12 @@
     "tags": "russian pop",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 50,
-    "geo_long": -30,
     "votes": 47917,
     "clickcount": 1622,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 50,
+    "longitude": -30
   },
   {
     "stationuuid": "960e96f3-0601-11e8-ae97-52543be04c81",
@@ -2852,12 +2852,12 @@
     "tags": "dance,eurodance,handsup,happy hardcore,hardcore,jumpstyle,techno",
     "codec": "MP3",
     "bitrate": 192,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 17081,
     "clickcount": 1612,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "fb1fd397-78fd-11ea-8a3b-52543be04c81",
@@ -2872,12 +2872,12 @@
     "tags": "00s,70s,80s,90s,pop,rock",
     "codec": "UNKNOWN",
     "bitrate": 0,
-    "geo_lat": 39.294076,
-    "geo_long": 35.2316631,
     "votes": 9268,
     "clickcount": 1606,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 39.294076,
+    "longitude": 35.2316631
   },
   {
     "stationuuid": "85c799b3-d91f-4f60-b91a-723e4a04acf5",
@@ -2892,12 +2892,12 @@
     "tags": "hiphop,rap",
     "codec": "MP3",
     "bitrate": 0,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 21011,
     "clickcount": 1602,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "9e3b0f8e-95d3-11e9-a605-52543be04c81",
@@ -2912,12 +2912,12 @@
     "tags": "pop",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 4171,
     "clickcount": 1597,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "961ac56b-0601-11e8-ae97-52543be04c81",
@@ -2932,12 +2932,12 @@
     "tags": "jazz,public radio,srg ssr",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 46.7985624,
-    "geo_long": 8.2319736,
     "votes": 23179,
     "clickcount": 1582,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 46.7985624,
+    "longitude": 8.2319736
   },
   {
     "stationuuid": "44ee797f-b7c4-4f94-8853-ce9a9c8731ed",
@@ -2952,12 +2952,12 @@
     "tags": "oldies",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 1851,
     "clickcount": 1570,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "10f16cf6-bc45-4b67-8f17-9758f249a61a",
@@ -2972,12 +2972,12 @@
     "tags": "culture,information,news,public service",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 2275,
     "clickcount": 1561,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "961e5274-0601-11e8-ae97-52543be04c81",
@@ -2992,12 +2992,12 @@
     "tags": "moscow",
     "codec": "MP3",
     "bitrate": 64,
-    "geo_lat": 90,
-    "geo_long": -30,
     "votes": 47896,
     "clickcount": 1554,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 90,
+    "longitude": -30
   },
   {
     "stationuuid": "4e285d46-4491-4df0-a6d8-974b8b9a49f8",
@@ -3012,12 +3012,12 @@
     "tags": "pop,russian",
     "codec": "AAC",
     "bitrate": 0,
-    "geo_lat": 20,
-    "geo_long": -20,
     "votes": 657,
     "clickcount": 1545,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 20,
+    "longitude": -20
   },
   {
     "stationuuid": "960cc332-0601-11e8-ae97-52543be04c81",
@@ -3032,12 +3032,12 @@
     "tags": "drum and bass",
     "codec": "MP3",
     "bitrate": 192,
-    "geo_lat": 38.9243135,
-    "geo_long": -77.0744826,
     "votes": 22785,
     "clickcount": 1538,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 38.9243135,
+    "longitude": -77.0744826
   },
   {
     "stationuuid": "9608c0e3-0601-11e8-ae97-52543be04c81",
@@ -3052,12 +3052,12 @@
     "tags": "information,news",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 5622,
     "clickcount": 1534,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "df369586-40fc-11e9-aa55-52543be04c81",
@@ -3072,12 +3072,12 @@
     "tags": "",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 39.294076,
-    "geo_long": 35.2316631,
     "votes": 13985,
     "clickcount": 1531,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 39.294076,
+    "longitude": 35.2316631
   },
   {
     "stationuuid": "9605ec6a-0601-11e8-ae97-52543be04c81",
@@ -3092,12 +3092,12 @@
     "tags": "music,news,talk",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 5938,
     "clickcount": 1514,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "36e39a32-ff61-440a-8fef-31b543fab883",
@@ -3112,12 +3112,12 @@
     "tags": "",
     "codec": "AAC",
     "bitrate": 42,
-    "geo_lat": 32.6475314,
-    "geo_long": 54.5643516,
     "votes": 4328,
     "clickcount": 1513,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 32.6475314,
+    "longitude": 54.5643516
   },
   {
     "stationuuid": "529b71b3-ac05-426c-bd8c-6ae981713900",
@@ -3132,12 +3132,12 @@
     "tags": "oldies",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 50.6402809,
-    "geo_long": 4.6667145,
     "votes": 303,
     "clickcount": 1484,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 50.6402809,
+    "longitude": 4.6667145
   },
   {
     "stationuuid": "bbd2fa5a-0b6c-4833-81b4-ca69acb8f264",
@@ -3152,12 +3152,12 @@
     "tags": "",
     "codec": "AAC",
     "bitrate": 0,
-    "geo_lat": 38.9243135,
-    "geo_long": -77.0744826,
     "votes": 288,
     "clickcount": 1476,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 38.9243135,
+    "longitude": -77.0744826
   },
   {
     "stationuuid": "1c6dcd6f-88c6-4fd4-8191-078435168e85",
@@ -3172,12 +3172,12 @@
     "tags": "alternative,blues,dance,eclectic,electronic,experimental,funk,grime,hip hop,house,indie,jazz,metal,pop,punk,r&b,reggae,rock,ska,soul,techno,world",
     "codec": "UNKNOWN",
     "bitrate": 0,
-    "geo_lat": 60,
-    "geo_long": -20,
     "votes": 1386,
     "clickcount": 1464,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 60,
+    "longitude": -20
   },
   {
     "stationuuid": "447a1a5f-aee6-4b21-b85f-10ceb1896ad3",
@@ -3192,12 +3192,12 @@
     "tags": "light,misc,portuguese music",
     "codec": "AAC+",
     "bitrate": 128,
-    "geo_lat": -10.3333333,
-    "geo_long": -53.2,
     "votes": 1725,
     "clickcount": 1443,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": -10.3333333,
+    "longitude": -53.2
   },
   {
     "stationuuid": "9637a1b2-0601-11e8-ae97-52543be04c81",
@@ -3212,12 +3212,12 @@
     "tags": "90s,hits,pop",
     "codec": "MP3",
     "bitrate": 0,
-    "geo_lat": 53.5140296,
-    "geo_long": 10.2480924,
     "votes": 21805,
     "clickcount": 1439,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 53.5140296,
+    "longitude": 10.2480924
   },
   {
     "stationuuid": "bf487b2b-503c-42c3-b088-9b5d679fdf29",
@@ -3232,12 +3232,12 @@
     "tags": "",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 52.215933,
-    "geo_long": 19.134422,
     "votes": 4052,
     "clickcount": 1434,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 52.215933,
+    "longitude": 19.134422
   },
   {
     "stationuuid": "e25470de-0bea-43c1-8c84-475c6c500c1a",
@@ -3252,12 +3252,12 @@
     "tags": "",
     "codec": "MP3",
     "bitrate": 96,
-    "geo_lat": 26.2540493,
-    "geo_long": 29.2675469,
     "votes": 8149,
     "clickcount": 1431,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 26.2540493,
+    "longitude": 29.2675469
   },
   {
     "stationuuid": "961ffb71-0601-11e8-ae97-52543be04c81",
@@ -3272,12 +3272,12 @@
     "tags": "arabic,islamic,nablus,quran,القرآن الكريم",
     "codec": "MP3",
     "bitrate": 48,
-    "geo_lat": 85,
-    "geo_long": -20,
     "votes": 4042,
     "clickcount": 1415,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 85,
+    "longitude": -20
   },
   {
     "stationuuid": "d81fd5d3-4c24-4768-88b3-57954e77c0e7",
@@ -3292,12 +3292,12 @@
     "tags": "soft adult contemporary",
     "codec": "MP3",
     "bitrate": 0,
-    "geo_lat": 52.215933,
-    "geo_long": 19.134422,
     "votes": 1091,
     "clickcount": 1405,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 52.215933,
+    "longitude": 19.134422
   },
   {
     "stationuuid": "21ef0997-adba-46c7-a2e1-03e3130bd5ad",
@@ -3312,12 +3312,12 @@
     "tags": "",
     "codec": "MP3",
     "bitrate": 64,
-    "geo_lat": 46.603354,
-    "geo_long": 1.8883335,
     "votes": 5372,
     "clickcount": 1405,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 46.603354,
+    "longitude": 1.8883335
   },
   {
     "stationuuid": "7f753b43-eb65-4638-bcea-8dbaaf620b0d",
@@ -3332,12 +3332,12 @@
     "tags": "christian",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 1.5333554,
-    "geo_long": 32.2166578,
     "votes": 12795,
     "clickcount": 1401,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 1.5333554,
+    "longitude": 32.2166578
   },
   {
     "stationuuid": "961f1da4-0601-11e8-ae97-52543be04c81",
@@ -3352,12 +3352,12 @@
     "tags": "pop,public radio,srg ssr",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 46.7985624,
-    "geo_long": 8.2319736,
     "votes": 5065,
     "clickcount": 1399,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 46.7985624,
+    "longitude": 8.2319736
   },
   {
     "stationuuid": "2dffb353-5341-4438-b67b-83de8c3efbab",
@@ -3372,12 +3372,12 @@
     "tags": "",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 46.603354,
-    "geo_long": 1.8883335,
     "votes": 3803,
     "clickcount": 1386,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 46.603354,
+    "longitude": 1.8883335
   },
   {
     "stationuuid": "675bd925-8b13-43fe-a1b9-43bb0f90fbbd",
@@ -3392,12 +3392,12 @@
     "tags": "local,news,varied",
     "codec": "AAC",
     "bitrate": 192,
-    "geo_lat": 42.6384261,
-    "geo_long": 12.674297,
     "votes": 1668,
     "clickcount": 1384,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 42.6384261,
+    "longitude": 12.674297
   },
   {
     "stationuuid": "98b22cd2-0ec8-4bb1-a5f6-f168de7548b5",
@@ -3412,12 +3412,12 @@
     "tags": "pop,rock,retro,80s,90s,2000s",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 47.1817585,
-    "geo_long": 19.5060937,
     "votes": 5751,
     "clickcount": 1369,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 47.1817585,
+    "longitude": 19.5060937
   },
   {
     "stationuuid": "961fb4b2-0601-11e8-ae97-52543be04c81",
@@ -3432,12 +3432,12 @@
     "tags": "chillout,lounge",
     "codec": "MP3",
     "bitrate": 192,
-    "geo_lat": 46.7985624,
-    "geo_long": 8.2319736,
     "votes": 9579,
     "clickcount": 1368,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 46.7985624,
+    "longitude": 8.2319736
   },
   {
     "stationuuid": "ec55577f-cff5-4b8b-aeaa-6438c2dfc446",
@@ -3452,12 +3452,12 @@
     "tags": "classical",
     "codec": "UNKNOWN",
     "bitrate": 0,
-    "geo_lat": 4.5693754,
-    "geo_long": 102.2656823,
     "votes": 2057,
     "clickcount": 1367,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 4.5693754,
+    "longitude": 102.2656823
   },
   {
     "stationuuid": "97730dcf-857f-4b0a-9f33-c18af303c14b",
@@ -3472,12 +3472,12 @@
     "tags": "culture,news,public service,information",
     "codec": "AAC",
     "bitrate": 48,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 1559,
     "clickcount": 1364,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "71623064-347c-4e85-8136-148115d350f2",
@@ -3492,12 +3492,12 @@
     "tags": "",
     "codec": "AAC",
     "bitrate": 463,
-    "geo_lat": 14.1483443,
-    "geo_long": 121.3119391,
     "votes": 2101,
     "clickcount": 1363,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 14.1483443,
+    "longitude": 121.3119391
   },
   {
     "stationuuid": "379df4ba-0483-481d-9a8c-87a6f59b9be3",
@@ -3512,12 +3512,12 @@
     "tags": "",
     "codec": "AAC+",
     "bitrate": 128,
-    "geo_lat": 14.1483443,
-    "geo_long": 121.3119391,
     "votes": 5432,
     "clickcount": 1362,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 14.1483443,
+    "longitude": 121.3119391
   },
   {
     "stationuuid": "9ebf344d-3885-49fa-8b1e-29f5367fda0f",
@@ -3532,12 +3532,12 @@
     "tags": "70-90-х,ретро",
     "codec": "AAC",
     "bitrate": 0,
-    "geo_lat": 53.4250605,
-    "geo_long": 27.6971358,
     "votes": 802,
     "clickcount": 1359,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 53.4250605,
+    "longitude": 27.6971358
   },
   {
     "stationuuid": "cae35448-1285-4f12-b3e0-2f4fdde00002",
@@ -3552,12 +3552,12 @@
     "tags": "news,sports,talk",
     "codec": "UNKNOWN",
     "bitrate": 0,
-    "geo_lat": 80,
-    "geo_long": -10,
     "votes": 961,
     "clickcount": 1356,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 80,
+    "longitude": -10
   },
   {
     "stationuuid": "49970d3a-0a50-4655-8dfb-9065b279d662",
@@ -3572,12 +3572,12 @@
     "tags": "",
     "codec": "AAC+",
     "bitrate": 48,
-    "geo_lat": -28.8166236,
-    "geo_long": 24.991639,
     "votes": 222,
     "clickcount": 1356,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": -28.8166236,
+    "longitude": 24.991639
   },
   {
     "stationuuid": "9346c66b-f42a-4a06-865d-e96dc44b1aa3",
@@ -3592,12 +3592,12 @@
     "tags": "",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 26.2540493,
-    "geo_long": 29.2675469,
     "votes": 2069,
     "clickcount": 1351,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 26.2540493,
+    "longitude": 29.2675469
   },
   {
     "stationuuid": "3fd18c3f-8157-11e9-aa30-52543be04c81",
@@ -3612,12 +3612,12 @@
     "tags": "chillout,ibiza,lounge",
     "codec": "MP3",
     "bitrate": 192,
-    "geo_lat": 39.3260685,
-    "geo_long": -4.8379791,
     "votes": 6968,
     "clickcount": 1351,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 39.3260685,
+    "longitude": -4.8379791
   },
   {
     "stationuuid": "63bb901a-e09a-478b-9c5e-b7f6a1f9efc4",
@@ -3632,12 +3632,12 @@
     "tags": "orf,pop",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 47.59397,
-    "geo_long": 14.12456,
     "votes": 261,
     "clickcount": 1344,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 47.59397,
+    "longitude": 14.12456
   },
   {
     "stationuuid": "d30c6196-61cd-4fa4-b597-6fd6bff3da91",
@@ -3652,12 +3652,12 @@
     "tags": "dance,internet radio",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 14.1483443,
-    "geo_long": 121.3119391,
     "votes": 4758,
     "clickcount": 1341,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 14.1483443,
+    "longitude": 121.3119391
   },
   {
     "stationuuid": "60ceaabd-4efd-4f47-b961-0dab6f475731",
@@ -3672,12 +3672,12 @@
     "tags": "dancefloor,electronic dance music,eurodance,pop dance,pop music",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 46.603354,
-    "geo_long": 1.8883335,
     "votes": 31665,
     "clickcount": 1339,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 46.603354,
+    "longitude": 1.8883335
   },
   {
     "stationuuid": "f56fc0e0-8d6e-43df-9253-bfa03cb9a067",
@@ -3692,52 +3692,12 @@
     "tags": "dance,pop,pop music,rock",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 52.215933,
-    "geo_long": 19.134422,
     "votes": 717,
     "clickcount": 1338,
     "lastcheckok": 1,
-    "type": "radio"
-  },
-  {
-    "stationuuid": "ac374cbd-6ea3-417e-b8d1-967c77bec430",
-    "name": "ДИСКОТЕКА 90-Х",
-    "url": "https://radiorecord.hostingradio.ru/sd9096.aacp?0968d4a7",
-    "homepage": "",
-    "favicon": "",
-    "country": "The Russian Federation",
-    "countrycode": "RU",
-    "state": "",
-    "language": "",
-    "tags": "",
-    "codec": "AAC",
-    "bitrate": 0,
-    "geo_lat": 45,
-    "geo_long": 0,
-    "votes": 1352,
-    "clickcount": 1336,
-    "lastcheckok": 1,
-    "type": "radio"
-  },
-  {
-    "stationuuid": "d1b0b82d-aa27-49e5-a98e-716ceff7e2f7",
-    "name": "Times Radio UK",
-    "url": "http://timesradio.wireless.radio/stream",
-    "homepage": "https://www.thetimes.co.uk/radio",
-    "favicon": "https://static.mytuner.mobi/media/tvos_radios/jehvybnq4jgc.png",
-    "country": "The United Kingdom Of Great Britain And Northern Ireland",
-    "countrycode": "GB",
-    "state": "England",
-    "language": "english",
-    "tags": "information,news,talk",
-    "codec": "MP3",
-    "bitrate": 128,
-    "geo_lat": 50,
-    "geo_long": 0,
-    "votes": 8884,
-    "clickcount": 1331,
-    "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 52.215933,
+    "longitude": 19.134422
   },
   {
     "stationuuid": "b8601593-152a-429d-9cb2-5065cf7c0185",
@@ -3752,12 +3712,12 @@
     "tags": "noticias y música",
     "codec": "AAC",
     "bitrate": 128,
-    "geo_lat": 39.3260685,
-    "geo_long": -4.8379791,
     "votes": 2089,
     "clickcount": 1324,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 39.3260685,
+    "longitude": -4.8379791
   },
   {
     "stationuuid": "f437a938-2f30-4109-8f52-cbb599e11b03",
@@ -3772,12 +3732,12 @@
     "tags": "",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 28.3347722,
-    "geo_long": -10.3713379,
     "votes": 1472,
     "clickcount": 1308,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 28.3347722,
+    "longitude": -10.3713379
   },
   {
     "stationuuid": "5681d06a-f5af-11e9-bbf2-52543be04c81",
@@ -3792,12 +3752,12 @@
     "tags": "california,alternative,eclectic,rock,free,internet,non-commercial",
     "codec": "AAC",
     "bitrate": 320,
-    "geo_lat": 38.9243135,
-    "geo_long": -77.0744826,
     "votes": 11655,
     "clickcount": 1306,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 38.9243135,
+    "longitude": -77.0744826
   },
   {
     "stationuuid": "3bdf2126-b792-46f6-b0bd-9c991411e373",
@@ -3812,12 +3772,12 @@
     "tags": "",
     "codec": "AAC+",
     "bitrate": 48,
-    "geo_lat": -28.8166236,
-    "geo_long": 24.991639,
     "votes": 697,
     "clickcount": 1305,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": -28.8166236,
+    "longitude": 24.991639
   },
   {
     "stationuuid": "6be8c695-6943-4776-80f0-15a7d49812be",
@@ -3832,12 +3792,12 @@
     "tags": "",
     "codec": "AAC",
     "bitrate": 42,
-    "geo_lat": 32.6475314,
-    "geo_long": 54.5643516,
     "votes": 4312,
     "clickcount": 1296,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 32.6475314,
+    "longitude": 54.5643516
   },
   {
     "stationuuid": "cdd58252-09b9-4c89-b688-243cf107ad29",
@@ -3852,12 +3812,12 @@
     "tags": "music",
     "codec": "AAC+",
     "bitrate": 32,
-    "geo_lat": -2.4833826,
-    "geo_long": 117.8902853,
     "votes": 2095,
     "clickcount": 1294,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": -2.4833826,
+    "longitude": 117.8902853
   },
   {
     "stationuuid": "9611ecb1-0601-11e8-ae97-52543be04c81",
@@ -3872,32 +3832,12 @@
     "tags": "news,talk",
     "codec": "MP3",
     "bitrate": 56,
-    "geo_lat": 39.3260685,
-    "geo_long": -4.8379791,
     "votes": 13020,
     "clickcount": 1293,
     "lastcheckok": 1,
-    "type": "radio"
-  },
-  {
-    "stationuuid": "ea391ded-00f0-47e0-841c-d92663e11854",
-    "name": "BBC News HD (720P)",
-    "url": "https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8",
-    "homepage": "https://bbc.co.uk/news",
-    "favicon": "https://upload.wikimedia.org/wikipedia/en/thumb/2/24/BBC_News_HD_Logo.svg/2560px-BBC_News_HD_Logo.svg.png",
-    "country": "The United Kingdom Of Great Britain And Northern Ireland",
-    "countrycode": "GB",
-    "state": "England",
-    "language": "english",
-    "tags": "england,english,london,news,uk,world news",
-    "codec": "UNKNOWN",
-    "bitrate": 0,
-    "geo_lat": 90,
-    "geo_long": 0,
-    "votes": 1920,
-    "clickcount": 1287,
-    "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 39.3260685,
+    "longitude": -4.8379791
   },
   {
     "stationuuid": "ae209b3a-d20a-48f2-b303-22d68e385bf4",
@@ -3912,12 +3852,12 @@
     "tags": "",
     "codec": "AAC",
     "bitrate": 0,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 1622,
     "clickcount": 1279,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "7ada8a81-5ae1-418c-8f18-51d2f38d86a4",
@@ -3932,12 +3872,12 @@
     "tags": "bossa nova,jazz,mpb",
     "codec": "AAC+",
     "bitrate": 64,
-    "geo_lat": -10.3333333,
-    "geo_long": -53.2,
     "votes": 6511,
     "clickcount": 1264,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": -10.3333333,
+    "longitude": -53.2
   },
   {
     "stationuuid": "850723b8-24a6-4dca-add8-b0da39db7d39",
@@ -3952,12 +3892,12 @@
     "tags": "",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 14.8971921,
-    "geo_long": 100.83273,
     "votes": 3183,
     "clickcount": 1260,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 14.8971921,
+    "longitude": 100.83273
   },
   {
     "stationuuid": "c4175f89-69da-11ea-b1cf-52543be04c81",
@@ -3972,12 +3912,12 @@
     "tags": "business,business news,business programs",
     "codec": "MP3",
     "bitrate": 256,
-    "geo_lat": 35,
-    "geo_long": 10,
     "votes": 3954,
     "clickcount": 1257,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 35,
+    "longitude": 10
   },
   {
     "stationuuid": "9610c454-0601-11e8-ae97-52543be04c81",
@@ -3992,12 +3932,12 @@
     "tags": "chillout",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 12570,
     "clickcount": 1241,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "36a6d57a-4d8a-45e3-aad9-7931c6e43c56",
@@ -4012,12 +3952,12 @@
     "tags": "",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 3438,
     "clickcount": 1240,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "0b2c57db-885d-46d8-bbee-0651449759f1",
@@ -4032,12 +3972,12 @@
     "tags": "news",
     "codec": "MP3",
     "bitrate": 96,
-    "geo_lat": 38.9243135,
-    "geo_long": -77.0744826,
     "votes": 3376,
     "clickcount": 1235,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 38.9243135,
+    "longitude": -77.0744826
   },
   {
     "stationuuid": "962a748b-0601-11e8-ae97-52543be04c81",
@@ -4052,12 +3992,12 @@
     "tags": "deep house,techno",
     "codec": "MP3",
     "bitrate": 192,
-    "geo_lat": 46.7985624,
-    "geo_long": 8.2319736,
     "votes": 15977,
     "clickcount": 1227,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 46.7985624,
+    "longitude": 8.2319736
   },
   {
     "stationuuid": "fc4c247a-7f66-11e9-aa30-52543be04c81",
@@ -4072,12 +4012,12 @@
     "tags": "",
     "codec": "AAC",
     "bitrate": 65,
-    "geo_lat": 60,
-    "geo_long": 10,
     "votes": 837,
     "clickcount": 1214,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 60,
+    "longitude": 10
   },
   {
     "stationuuid": "a1249d7e-eb60-48bf-ba83-ebf3960b9a90",
@@ -4092,12 +4032,12 @@
     "tags": "electronic,house,techno",
     "codec": "MP3",
     "bitrate": 0,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 693,
     "clickcount": 1208,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "57742af1-79d4-4bc7-ae81-b58146638ae7",
@@ -4112,12 +4052,12 @@
     "tags": "",
     "codec": "MP3",
     "bitrate": 0,
-    "geo_lat": 22.3511148,
-    "geo_long": 78.6677428,
     "votes": 2811,
     "clickcount": 1207,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 22.3511148,
+    "longitude": 78.6677428
   },
   {
     "stationuuid": "3f6d52c1-9373-4fd2-8bef-5dd476e4e7d2",
@@ -4132,12 +4072,12 @@
     "tags": "news",
     "codec": "MP3",
     "bitrate": 64,
-    "geo_lat": 35.000074,
-    "geo_long": 104.999927,
     "votes": 1039,
     "clickcount": 1206,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 35.000074,
+    "longitude": 104.999927
   },
   {
     "stationuuid": "3d9dcff7-8fd2-4eda-9d77-cfe259c62a70",
@@ -4152,12 +4092,12 @@
     "tags": "#bewirbdich!,#mashup,beach,best music,brandnew,charts,chillout+lounge,club,clubbing,community radio,dance smashes,dj,dj remix,dj sets,edm,edm radioshows,hard techno,hiphop,hits,hot ac,houseparty,ibiza,ibiza classics,ibiza club,lounge,mashup,minimal techno,non-stop music,party,partycharts,promodj,radio,rave,remixed,singlecharts,sunset,tech house,techno,top 100,top 40,top charts,top hits,underground,urban",
     "codec": "MP3",
     "bitrate": 192,
-    "geo_lat": 52.4043474,
-    "geo_long": 13.0392969,
     "votes": 178,
     "clickcount": 1199,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 52.4043474,
+    "longitude": 13.0392969
   },
   {
     "stationuuid": "706def0c-7017-4601-8305-db1cdb2e9420",
@@ -4172,12 +4112,12 @@
     "tags": "pop",
     "codec": "MP3",
     "bitrate": 64,
-    "geo_lat": 39.294076,
-    "geo_long": 35.2316631,
     "votes": 3493,
     "clickcount": 1196,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 39.294076,
+    "longitude": 35.2316631
   },
   {
     "stationuuid": "653ec48e-d763-4e0f-965f-6b9c6bf41562",
@@ -4192,12 +4132,12 @@
     "tags": "bollywood",
     "codec": "MP3",
     "bitrate": 0,
-    "geo_lat": 22.3511148,
-    "geo_long": 78.6677428,
     "votes": 1135,
     "clickcount": 1195,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 22.3511148,
+    "longitude": 78.6677428
   },
   {
     "stationuuid": "96163b46-0601-11e8-ae97-52543be04c81",
@@ -4212,12 +4152,12 @@
     "tags": "news",
     "codec": "MP3",
     "bitrate": 64,
-    "geo_lat": 20,
-    "geo_long": 20,
     "votes": 13688,
     "clickcount": 1191,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 20,
+    "longitude": 20
   },
   {
     "stationuuid": "1f3700b5-4875-4bdf-986d-1dcaa4e8dfbe",
@@ -4232,12 +4172,12 @@
     "tags": "information",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 51.1638175,
-    "geo_long": 10.4478313,
     "votes": 622,
     "clickcount": 1187,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 51.1638175,
+    "longitude": 10.4478313
   },
   {
     "stationuuid": "74c09a82-e6f1-4276-8afc-d25ea6d02898",
@@ -4252,12 +4192,12 @@
     "tags": "",
     "codec": "AAC",
     "bitrate": 94,
-    "geo_lat": 22.3511148,
-    "geo_long": 78.6677428,
     "votes": 3656,
     "clickcount": 1187,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 22.3511148,
+    "longitude": 78.6677428
   },
   {
     "stationuuid": "7ba4c184-fc2b-11e9-bbf2-52543be04c81",
@@ -4272,12 +4212,12 @@
     "tags": "news,news talk,political talk,politics,public radio,talk",
     "codec": "MP3",
     "bitrate": 96,
-    "geo_lat": 38.9243135,
-    "geo_long": -77.0744826,
     "votes": 24386,
     "clickcount": 1181,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 38.9243135,
+    "longitude": -77.0744826
   },
   {
     "stationuuid": "f0ab0c5c-7125-476c-97a4-2eabc14f5f05",
@@ -4292,12 +4232,12 @@
     "tags": "",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 52.2434979,
-    "geo_long": 5.6343227,
     "votes": 151,
     "clickcount": 1174,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 52.2434979,
+    "longitude": 5.6343227
   },
   {
     "stationuuid": "24ed379c-7425-4367-9fbd-bf960eec0c91",
@@ -4312,12 +4252,12 @@
     "tags": "",
     "codec": "AAC",
     "bitrate": 0,
-    "geo_lat": 28.0000272,
-    "geo_long": 2.9999825,
     "votes": 36960,
     "clickcount": 1171,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 28.0000272,
+    "longitude": 2.9999825
   },
   {
     "stationuuid": "96136fe5-0601-11e8-ae97-52543be04c81",
@@ -4332,12 +4272,12 @@
     "tags": "jazz,soul",
     "codec": "MP3",
     "bitrate": 192,
-    "geo_lat": 46.603354,
-    "geo_long": 1.8883335,
     "votes": 40938,
     "clickcount": 1170,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 46.603354,
+    "longitude": 1.8883335
   },
   {
     "stationuuid": "96266006-0601-11e8-ae97-52543be04c81",
@@ -4352,12 +4292,12 @@
     "tags": "audiobooks,literature,talk,аудиокниги,литература",
     "codec": "MP3",
     "bitrate": 128,
-    "geo_lat": 55,
-    "geo_long": 20,
     "votes": 18866,
     "clickcount": 1161,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": 55,
+    "longitude": 20
   },
   {
     "stationuuid": "5f96f5c1-e75a-4129-abd3-d7e08360fa56",
@@ -4372,11 +4312,11 @@
     "tags": "",
     "codec": "MP3",
     "bitrate": 256,
-    "geo_lat": -2.4833826,
-    "geo_long": 117.8902853,
     "votes": 4384,
     "clickcount": 1158,
     "lastcheckok": 1,
-    "type": "radio"
+    "type": "radio",
+    "latitude": -2.4833826,
+    "longitude": 117.8902853
   }
 ]

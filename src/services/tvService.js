@@ -1,5 +1,5 @@
 import axios from 'axios';
-import tvStations from '../data/tvStationsWithUrls.json' with { type: 'json' };
+import tvStations from '../data/tvStationsWithUrlsFixed.json' with { type: 'json' };
 
 class TVService {
   constructor() {

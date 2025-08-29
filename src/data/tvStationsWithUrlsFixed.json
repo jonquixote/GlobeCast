@@ -8,8 +8,8 @@
     "city": "1Almere",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52.1326,
-    "geo_long": 5.2913
+    "latitude": 52.1326,
+    "longitude": 5.2913
   },
   {
     "id": "1KZNTV.za",
@@ -20,8 +20,8 @@
     "city": "1KZN",
     "categories": "Entertainment;Family;General",
     "type": "tv",
-    "geo_lat": -30.5595,
-    "geo_long": 22.9375
+    "latitude": -30.5595,
+    "longitude": 22.9375
   },
   {
     "id": "1TV.af@SD",
@@ -32,8 +32,8 @@
     "city": "Unknown",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 33.7680065,
-    "geo_long": 66.2385139
+    "latitude": 33.7680065,
+    "longitude": 66.2385139
   },
   {
     "id": "1TV.ge",
@@ -44,8 +44,8 @@
     "city": "Unknown",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 32.3293809,
-    "geo_long": -83.1137366
+    "latitude": 32.3293809,
+    "longitude": -83.1137366
   },
   {
     "id": "1TwenteTV.nl@SD",
@@ -56,8 +56,8 @@
     "city": "1Twente",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52.2309956,
-    "geo_long": 6.8954277
+    "latitude": 52.2309956,
+    "longitude": 6.8954277
   },
   {
     "id": "002RadioTV.do",
@@ -68,8 +68,8 @@
     "city": "002 Radio",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 11.835831,
-    "geo_long": 51.2785088
+    "latitude": 11.835831,
+    "longitude": 51.2785088
   },
   {
     "id": "2M.ma@SD",
@@ -80,8 +80,8 @@
     "city": "2M",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 25.029422,
-    "geo_long": -77.361956
+    "latitude": 25.029422,
+    "longitude": -77.361956
   },
   {
     "id": "2MMonde.ma@SD",
@@ -92,8 +92,8 @@
     "city": "2M Monde",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 0.5390647,
-    "geo_long": 32.1450213
+    "latitude": 0.5390647,
+    "longitude": 32.1450213
   },
   {
     "id": "2TV.ge",
@@ -104,8 +104,8 @@
     "city": "Unknown",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 32.3293809,
-    "geo_long": -83.1137366
+    "latitude": 32.3293809,
+    "longitude": -83.1137366
   },
   {
     "id": "3HD.th",
@@ -116,8 +116,8 @@
     "city": "3HD",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 26.1668651,
-    "geo_long": 78.1778261
+    "latitude": 26.1668651,
+    "longitude": 78.1778261
   },
   {
     "id": "3sat.de",
@@ -128,8 +128,8 @@
     "city": "3sat 720p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 51.1657,
-    "geo_long": 10.4515
+    "latitude": 51.1657,
+    "longitude": 10.4515
   },
   {
     "id": "3sat.de@HD",
@@ -140,8 +140,8 @@
     "city": "3sat HD 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 51.1657,
-    "geo_long": 10.4515
+    "latitude": 51.1657,
+    "longitude": 10.4515
   },
   {
     "id": "5tv.ar",
@@ -152,8 +152,8 @@
     "city": "Unknown",
     "categories": "General",
     "type": "tv",
-    "geo_lat": -38.4161,
-    "geo_long": -63.6167
+    "latitude": -38.4161,
+    "longitude": -63.6167
   },
   {
     "id": "Channel5.ru",
@@ -164,8 +164,8 @@
     "city": "Unknown",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 61.524,
-    "geo_long": 105.3188
+    "latitude": 61.524,
+    "longitude": 105.3188
   },
   {
     "id": "Canal7TeleValencia.es",
@@ -176,20 +176,8 @@
     "city": "7 TeleValencia 576p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40.4637,
-    "geo_long": -3.7492
-  },
-  {
-    "id": "7TVSenegal.sn@SD",
-    "name": "7TV Senegal",
-    "url": "https://live20.bozztv.com/dvrfl06/astv/astv-7tv/index.m3u8",
-    "logo": "https://i.imgur.com/e2K9oFJ.png",
-    "country": "Senegal",
-    "city": "Unknown",
-    "categories": "General",
-    "type": "tv",
-    "geo_lat": 0,
-    "geo_long": 0
+    "latitude": 40.4637,
+    "longitude": -3.7492
   },
   {
     "id": "8LaMarinaTV.es",
@@ -200,8 +188,8 @@
     "city": "8 La Marina",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 38.9099812,
-    "geo_long": 1.436854
+    "latitude": 38.9099812,
+    "longitude": 1.436854
   },
   {
     "id": "8NTV.mx",
@@ -212,8 +200,8 @@
     "city": "8N",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 25.029422,
-    "geo_long": -77.361956
+    "latitude": 25.029422,
+    "longitude": -77.361956
   },
   {
     "id": "9laLomaTV.es",
@@ -224,8 +212,8 @@
     "city": "9 la Loma TV 1080p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40.4637,
-    "geo_long": -3.7492
+    "latitude": 40.4637,
+    "longitude": -3.7492
   },
   {
     "id": "12tv.es",
@@ -236,8 +224,8 @@
     "city": "12tv",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40.4637,
-    "geo_long": -3.7492
+    "latitude": 40.4637,
+    "longitude": -3.7492
   },
   {
     "id": "12TVParma.it",
@@ -248,8 +236,8 @@
     "city": "12",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 28.0613438,
-    "geo_long": 81.610291
+    "latitude": 28.0613438,
+    "longitude": 81.610291
   },
   {
     "id": "Channel12.ru",
@@ -260,8 +248,8 @@
     "city": "12  1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -96
+    "latitude": 42,
+    "longitude": -96
   },
   {
     "id": "13MaxTelevision.ar",
@@ -272,8 +260,8 @@
     "city": "13Max Televisin 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -96
+    "latitude": 44,
+    "longitude": -96
   },
   {
     "id": "15TV.mx@SD",
@@ -284,8 +272,8 @@
     "city": "15",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 11.6165284,
-    "geo_long": 125.4292222
+    "latitude": 11.6165284,
+    "longitude": 125.4292222
   },
   {
     "id": "16tvBudapest.hu",
@@ -296,8 +284,8 @@
     "city": "16tv Budapest 360p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -96
+    "latitude": 48,
+    "longitude": -96
   },
   {
     "id": "20MinutesTV.fr",
@@ -308,8 +296,8 @@
     "city": "20 Minutes",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48.8768086,
-    "geo_long": 2.360696
+    "latitude": 48.8768086,
+    "longitude": 2.360696
   },
   {
     "id": "KERODT1.us",
@@ -320,8 +308,8 @@
     "city": "23 ABC Bakersfield CA KERO 720",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -96
+    "latitude": 52,
+    "longitude": -96
   },
   {
     "id": "28kanala.es@SD",
@@ -332,8 +320,8 @@
     "city": "28 kanala",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 43.13511,
-    "geo_long": -2.081344
+    "latitude": 43.13511,
+    "longitude": -2.081344
   },
   {
     "id": "101tvAntequera.es",
@@ -344,8 +332,8 @@
     "city": "101tv Antequera",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 56,
-    "geo_long": -96
+    "latitude": 56,
+    "longitude": -96
   },
   {
     "id": "101tvAxarquia.es",
@@ -356,8 +344,8 @@
     "city": "101tv Axarquia 480p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 58,
-    "geo_long": -96
+    "latitude": 58,
+    "longitude": -96
   },
   {
     "id": "101tvRonda.es",
@@ -368,8 +356,8 @@
     "city": "101tv Ronda 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40,
-    "geo_long": -94
+    "latitude": 40,
+    "longitude": -94
   },
   {
     "id": "101tvSevilla.es",
@@ -380,8 +368,8 @@
     "city": "101tv Sevilla",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -94
+    "latitude": 42,
+    "longitude": -94
   },
   {
     "id": "360.ru",
@@ -392,8 +380,8 @@
     "city": "360 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -94
+    "latitude": 44,
+    "longitude": -94
   },
   {
     "id": "360RFTV.cr",
@@ -404,8 +392,8 @@
     "city": "360 RFTV 576p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 46,
-    "geo_long": -94
+    "latitude": 46,
+    "longitude": -94
   },
   {
     "id": "A1TV.nl",
@@ -416,8 +404,8 @@
     "city": "A1",
     "categories": "General",
     "type": "tv",
-    "geo_lat": -31.3823246,
-    "geo_long": 131.3940891
+    "latitude": -31.3823246,
+    "longitude": 131.3940891
   },
   {
     "id": "A2iTV.it",
@@ -428,8 +416,8 @@
     "city": "A2i",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 45.2502495,
-    "geo_long": 4.2558503
+    "latitude": 45.2502495,
+    "longitude": 4.2558503
   },
   {
     "id": "A2TV.tr",
@@ -440,8 +428,8 @@
     "city": "A2",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 25.029422,
-    "geo_long": -77.361956
+    "latitude": 25.029422,
+    "longitude": -77.361956
   },
   {
     "id": "A7TV.ro@SD",
@@ -452,8 +440,8 @@
     "city": "A7",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 55.7440885,
-    "geo_long": -2.911116
+    "latitude": 55.7440885,
+    "longitude": -2.911116
   },
   {
     "id": "A12TV.ci@SD",
@@ -464,8 +452,8 @@
     "city": "A12",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 25.029422,
-    "geo_long": -77.361956
+    "latitude": 25.029422,
+    "longitude": -77.361956
   },
   {
     "id": "APunt.es@SD",
@@ -476,8 +464,8 @@
     "city": "A Punt",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 39.5121647,
-    "geo_long": -0.4246933
+    "latitude": 39.5121647,
+    "longitude": -0.4246933
   },
   {
     "id": "APlusGuate.gt",
@@ -488,8 +476,8 @@
     "city": "A Guate 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40,
-    "geo_long": -92
+    "latitude": 40,
+    "longitude": -92
   },
   {
     "id": "ABC.us",
@@ -500,8 +488,8 @@
     "city": "ABC",
     "categories": "General",
     "type": "tv",
-    "geo_lat": -27.4756481,
-    "geo_long": 153.0203484
+    "latitude": -27.4756481,
+    "longitude": 153.0203484
   },
   {
     "id": "KATCDT1.us",
@@ -512,8 +500,8 @@
     "city": "ABC 3 Lafayette LA KATC 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -92
+    "latitude": 44,
+    "longitude": -92
   },
   {
     "id": "KRGVDT1.us",
@@ -524,8 +512,8 @@
     "city": "ABC 5",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52.6389604,
-    "geo_long": 5.0697394
+    "latitude": 52.6389604,
+    "longitude": 5.0697394
   },
   {
     "id": "KMGHDT1.us",
@@ -536,8 +524,8 @@
     "city": "ABC 7 Denver CO KMGH 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -92
+    "latitude": 48,
+    "longitude": -92
   },
   {
     "id": "KTNVDT1.us",
@@ -548,8 +536,8 @@
     "city": "ABC 13 Las Vegas NV KTNV 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 50,
-    "geo_long": -92
+    "latitude": 50,
+    "longitude": -92
   },
   {
     "id": "KNXVDT1.us",
@@ -560,8 +548,8 @@
     "city": "ABC 15 Phoenix AZ KNXV",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -92
+    "latitude": 52,
+    "longitude": -92
   },
   {
     "id": "KXXVDT1.us",
@@ -572,8 +560,8 @@
     "city": "ABC 25 News Central Texas",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -92
+    "latitude": 54,
+    "longitude": -92
   },
   {
     "id": "ABCAustralia.au",
@@ -584,8 +572,8 @@
     "city": "ABC Australia",
     "categories": "General",
     "type": "tv",
-    "geo_lat": -27.4756481,
-    "geo_long": 153.0203484
+    "latitude": -27.4756481,
+    "longitude": 153.0203484
   },
   {
     "id": "ABCAustralia.au@Vietnam",
@@ -596,8 +584,8 @@
     "city": "ABC Australia Vietnam 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 58,
-    "geo_long": -92
+    "latitude": 58,
+    "longitude": -92
   },
   {
     "id": "ABCTV.au@Adelaide",
@@ -608,8 +596,8 @@
     "city": "ABC",
     "categories": "General",
     "type": "tv",
-    "geo_lat": -27.4756481,
-    "geo_long": 153.0203484
+    "latitude": -27.4756481,
+    "longitude": 153.0203484
   },
   {
     "id": "ABCTV.au@Brisbane",
@@ -620,8 +608,8 @@
     "city": "ABC",
     "categories": "General",
     "type": "tv",
-    "geo_lat": -27.4756481,
-    "geo_long": 153.0203484
+    "latitude": -27.4756481,
+    "longitude": 153.0203484
   },
   {
     "id": "ABCTV.au",
@@ -632,8 +620,8 @@
     "city": "ABC",
     "categories": "General",
     "type": "tv",
-    "geo_lat": -27.4756481,
-    "geo_long": 153.0203484
+    "latitude": -27.4756481,
+    "longitude": 153.0203484
   },
   {
     "id": "ABCTV.au@Hobart",
@@ -644,8 +632,8 @@
     "city": "ABC",
     "categories": "General",
     "type": "tv",
-    "geo_lat": -27.4756481,
-    "geo_long": 153.0203484
+    "latitude": -27.4756481,
+    "longitude": 153.0203484
   },
   {
     "id": "ABCTV.au@Melbourne",
@@ -656,8 +644,8 @@
     "city": "ABC",
     "categories": "General",
     "type": "tv",
-    "geo_lat": -27.4756481,
-    "geo_long": 153.0203484
+    "latitude": -27.4756481,
+    "longitude": 153.0203484
   },
   {
     "id": "ABCTV.au@Perth",
@@ -668,8 +656,8 @@
     "city": "ABC",
     "categories": "General",
     "type": "tv",
-    "geo_lat": -27.4756481,
-    "geo_long": 153.0203484
+    "latitude": -27.4756481,
+    "longitude": 153.0203484
   },
   {
     "id": "ABN.kr",
@@ -680,8 +668,8 @@
     "city": "ABN",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 37.3324374,
-    "geo_long": 42.1854699
+    "latitude": 37.3324374,
+    "longitude": 42.1854699
   },
   {
     "id": "AbuDhabiAloula.ae@SD",
@@ -692,8 +680,8 @@
     "city": "Abu Dhabi Aloula 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -90
+    "latitude": 54,
+    "longitude": -90
   },
   {
     "id": "AbuDhabiEmirates.ae@SD",
@@ -704,8 +692,8 @@
     "city": "Abu Dhabi Emirates 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 56,
-    "geo_long": -90
+    "latitude": 56,
+    "longitude": -90
   },
   {
     "id": "AbuDhabiTV.ae@SD",
@@ -716,8 +704,8 @@
     "city": "Abu Dhabi",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 24.4538352,
-    "geo_long": 54.3774014
+    "latitude": 24.4538352,
+    "longitude": 54.3774014
   },
   {
     "id": "AccessHumboldt.us",
@@ -728,8 +716,8 @@
     "city": "Access Humboldt 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40,
-    "geo_long": -88
+    "latitude": 40,
+    "longitude": -88
   },
   {
     "id": "AMP1.us",
@@ -740,8 +728,8 @@
     "city": "Access Media Productions Chann",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -88
+    "latitude": 42,
+    "longitude": -88
   },
   {
     "id": "TheMontereyChannel.us",
@@ -752,8 +740,8 @@
     "city": "Access Media Productions Monte",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -88
+    "latitude": 44,
+    "longitude": -88
   },
   {
     "id": "AccessNashua.us",
@@ -764,8 +752,8 @@
     "city": "Access Nashua",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42.7011896,
-    "geo_long": -71.5419933
+    "latitude": 42.7011896,
+    "longitude": -71.5419933
   },
   {
     "id": "AccessSacramentoChannel17.us",
@@ -776,8 +764,8 @@
     "city": "Access Sacramento Channel 17",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -88
+    "latitude": 48,
+    "longitude": -88
   },
   {
     "id": "AccessSacramentoChannel18.us",
@@ -788,8 +776,8 @@
     "city": "Access Sacramento Channel 18",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 50,
-    "geo_long": -88
+    "latitude": 50,
+    "longitude": -88
   },
   {
     "id": "AccessTuolumne.us",
@@ -800,8 +788,8 @@
     "city": "Access Tuolumne Tuolumne Count",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -88
+    "latitude": 52,
+    "longitude": -88
   },
   {
     "id": "AccessVisionChannel16.us",
@@ -812,8 +800,8 @@
     "city": "AccessVision Channel 16",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -88
+    "latitude": 54,
+    "longitude": -88
   },
   {
     "id": "AcheloosTV.gr",
@@ -824,8 +812,8 @@
     "city": "Acheloos",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 39.0128349,
-    "geo_long": 21.3793216
+    "latitude": 39.0128349,
+    "longitude": 21.3793216
   },
   {
     "id": "ACTV.be",
@@ -836,8 +824,8 @@
     "city": "ACTV Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 58,
-    "geo_long": -88
+    "latitude": 58,
+    "longitude": -88
   },
   {
     "id": "ACWUGTV.ug",
@@ -848,8 +836,8 @@
     "city": "ACW UG",
     "categories": "General;Music",
     "type": "tv",
-    "geo_lat": 40,
-    "geo_long": -86
+    "latitude": 40,
+    "longitude": -86
   },
   {
     "id": "AdaTV.cy",
@@ -860,8 +848,8 @@
     "city": "ADA",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 43.4136539,
-    "geo_long": -116.2367421
+    "latitude": 43.4136539,
+    "longitude": -116.2367421
   },
   {
     "id": "AddisTV.et",
@@ -872,8 +860,8 @@
     "city": "Addis",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 9.0202838,
-    "geo_long": 38.8166003
+    "latitude": 9.0202838,
+    "longitude": 38.8166003
   },
   {
     "id": "AdessoTV.br",
@@ -884,8 +872,8 @@
     "city": "Adesso",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 51.457886,
-    "geo_long": -0.3048221
+    "latitude": 51.457886,
+    "longitude": -0.3048221
   },
   {
     "id": "AdomTV.gh@SD",
@@ -896,8 +884,8 @@
     "city": "Adom",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 7.4687328,
-    "geo_long": -2.5983739
+    "latitude": 7.4687328,
+    "longitude": -2.5983739
   },
   {
     "id": "AfaqTV.iq",
@@ -908,8 +896,8 @@
     "city": "Afaq",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 25.338451,
-    "geo_long": 55.4021377
+    "latitude": 25.338451,
+    "longitude": 55.4021377
   },
   {
     "id": "AfghanNobelTV.ca",
@@ -920,8 +908,8 @@
     "city": "Afghan Nobel",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -86
+    "latitude": 52,
+    "longitude": -86
   },
   {
     "id": "AfricableTV.ml",
@@ -932,8 +920,8 @@
     "city": "Africable",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 12.607137,
-    "geo_long": -7.97397
+    "latitude": 12.607137,
+    "longitude": -7.97397
   },
   {
     "id": "AfroturkTV.tr",
@@ -944,8 +932,8 @@
     "city": "Afroturk",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 56,
-    "geo_long": -86
+    "latitude": 56,
+    "longitude": -86
   },
   {
     "id": "AhoraTV.do",
@@ -956,8 +944,8 @@
     "city": "Ahora",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 39.7752584,
-    "geo_long": 44.3786842
+    "latitude": 39.7752584,
+    "longitude": 44.3786842
   },
   {
     "id": "AIONTV.do",
@@ -968,8 +956,8 @@
     "city": "AION",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 69.7808467,
-    "geo_long": 168.6785306
+    "latitude": 69.7808467,
+    "longitude": 168.6785306
   },
   {
     "id": "AiredeSantaFe.ar",
@@ -980,8 +968,8 @@
     "city": "Aire de Santa Fe 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -84
+    "latitude": 42,
+    "longitude": -84
   },
   {
     "id": "AjmanTV.ae",
@@ -992,8 +980,8 @@
     "city": "Ajman",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 25.5091287,
-    "geo_long": 55.3619072
+    "latitude": 25.5091287,
+    "longitude": 55.3619072
   },
   {
     "id": "AjyalTV.ps",
@@ -1004,8 +992,8 @@
     "city": "Ajyal",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 32.2174363,
-    "geo_long": 35.2567915
+    "latitude": 32.2174363,
+    "longitude": 35.2567915
   },
   {
     "id": "Akaku53.us",
@@ -1016,8 +1004,8 @@
     "city": "Akaku 53 Hawaii 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -84
+    "latitude": 48,
+    "longitude": -84
   },
   {
     "id": "Akaku54.us",
@@ -1028,8 +1016,8 @@
     "city": "Akaku 54 Hawaii 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 50,
-    "geo_long": -84
+    "latitude": 50,
+    "longitude": -84
   },
   {
     "id": "Akaku55.us",
@@ -1040,8 +1028,8 @@
     "city": "Akaku 55 Hawaii 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -84
+    "latitude": 52,
+    "longitude": -84
   },
   {
     "id": "AksuTV.tr",
@@ -1052,8 +1040,8 @@
     "city": "Aksu",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 41.1677575,
-    "geo_long": 80.2582136
+    "latitude": 41.1677575,
+    "longitude": 80.2582136
   },
   {
     "id": "AKTV.id",
@@ -1064,8 +1052,8 @@
     "city": "AK",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 65.3061851,
-    "geo_long": -145.4182743
+    "latitude": 65.3061851,
+    "longitude": -145.4182743
   },
   {
     "id": "AlahadTV.iq",
@@ -1076,8 +1064,8 @@
     "city": "Al Ahad",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 14.2555602,
-    "geo_long": 43.6425238
+    "latitude": 14.2555602,
+    "longitude": 43.6425238
   },
   {
     "id": "AlAoula.ma@Inter",
@@ -1088,8 +1076,8 @@
     "city": "Al Aoula Inter 480p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40,
-    "geo_long": -82
+    "latitude": 40,
+    "longitude": -82
   },
   {
     "id": "LaayouneTV.ma@SD",
@@ -1100,8 +1088,8 @@
     "city": "Al Aoula Layoune 480p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -82
+    "latitude": 42,
+    "longitude": -82
   },
   {
     "id": "AlAqsaTV.ps",
@@ -1112,8 +1100,8 @@
     "city": "Al Aqsa Channel 416p Not 247",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -82
+    "latitude": 44,
+    "longitude": -82
   },
   {
     "id": "AlDafrahTV.ae",
@@ -1124,8 +1112,8 @@
     "city": "Al Dafrah",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 30.7265806,
-    "geo_long": 31.0245514
+    "latitude": 30.7265806,
+    "longitude": 31.0245514
   },
   {
     "id": "AlIraqia.iq",
@@ -1136,8 +1124,8 @@
     "city": "Al Iraqia 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -82
+    "latitude": 48,
+    "longitude": -82
   },
   {
     "id": "AlIttihadTV.lb",
@@ -1148,8 +1136,8 @@
     "city": "Al Ittihad 552p Not 247",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 50,
-    "geo_long": -82
+    "latitude": 50,
+    "longitude": -82
   },
   {
     "id": "AlJadeed.lb@SD",
@@ -1160,8 +1148,8 @@
     "city": "Al Jadeed 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -82
+    "latitude": 52,
+    "longitude": -82
   },
   {
     "id": "AlMaghribia.ma@SD",
@@ -1172,8 +1160,8 @@
     "city": "Al Maghribia 480p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -82
+    "latitude": 54,
+    "longitude": -82
   },
   {
     "id": "AlMasriyah.eg@SD",
@@ -1184,8 +1172,8 @@
     "city": "Al Masriyah",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 5.3733777,
-    "geo_long": 100.4635261
+    "latitude": 5.3733777,
+    "longitude": 100.4635261
   },
   {
     "id": "AlRabiaaTV.iq",
@@ -1196,8 +1184,8 @@
     "city": "Al Rabiaa",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 30.3690691,
-    "geo_long": -9.5351991
+    "latitude": 30.3690691,
+    "longitude": -9.5351991
   },
   {
     "id": "AlRasheedTV.iq",
@@ -1208,8 +1196,8 @@
     "city": "Al Rasheed",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 33.2612817,
-    "geo_long": 44.3322542
+    "latitude": 33.2612817,
+    "longitude": 44.3322542
   },
   {
     "id": "AlRayyanTV.qa",
@@ -1220,8 +1208,8 @@
     "city": "Al Rayyan 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -80
+    "latitude": 42,
+    "longitude": -80
   },
   {
     "id": "AlRayyanOldTV.qa",
@@ -1232,8 +1220,8 @@
     "city": "Al Rayyan Al Qadeem 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -80
+    "latitude": 44,
+    "longitude": -80
   },
   {
     "id": "AlSaudiya.sa",
@@ -1244,8 +1232,8 @@
     "city": "Al Saudiya 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 46,
-    "geo_long": -80
+    "latitude": 46,
+    "longitude": -80
   },
   {
     "id": "AlShallalTV.ae",
@@ -1256,8 +1244,8 @@
     "city": "Al Shallal",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42.3416495,
-    "geo_long": -83.2773033
+    "latitude": 42.3416495,
+    "longitude": -83.2773033
   },
   {
     "id": "AlSharqiyaMinKabla.ae",
@@ -1268,8 +1256,8 @@
     "city": "Al Sharqiya Min Kabla 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 50,
-    "geo_long": -80
+    "latitude": 50,
+    "longitude": -80
   },
   {
     "id": "AlWoustaTV.ae",
@@ -1280,8 +1268,8 @@
     "city": "Al Wousta",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -80
+    "latitude": 52,
+    "longitude": -80
   },
   {
     "id": "AlSharqiya.iq",
@@ -1292,8 +1280,8 @@
     "city": "Al",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 41.328203,
-    "geo_long": 19.8219052
+    "latitude": 41.328203,
+    "longitude": 19.8219052
   },
   {
     "id": "AlacantiTV.es",
@@ -1304,8 +1292,8 @@
     "city": "Alacant",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 38.3436365,
-    "geo_long": -0.4881708
+    "latitude": 38.3436365,
+    "longitude": -0.4881708
   },
   {
     "id": "AlanyaPostaTV.tr",
@@ -1316,8 +1304,8 @@
     "city": "Alanya Posta",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 36.4840521,
-    "geo_long": 32.1030524
+    "latitude": 36.4840521,
+    "longitude": 32.1030524
   },
   {
     "id": "AlbdreamsTV.us",
@@ -1328,8 +1316,8 @@
     "city": "AlbDreams",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40,
-    "geo_long": -78
+    "latitude": 40,
+    "longitude": -78
   },
   {
     "id": "AlborzTV.ir",
@@ -1340,8 +1328,8 @@
     "city": "Alborz",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 35.956,
-    "geo_long": 52.1086
+    "latitude": 35.956,
+    "longitude": 52.1086
   },
   {
     "id": "AlbUKTV.uk",
@@ -1352,8 +1340,8 @@
     "city": "AlbUK",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -78
+    "latitude": 44,
+    "longitude": -78
   },
   {
     "id": "AlcarriaTV.es",
@@ -1364,8 +1352,8 @@
     "city": "Alcarria",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42.2505145,
-    "geo_long": -3.6916617
+    "latitude": 42.2505145,
+    "longitude": -3.6916617
   },
   {
     "id": "AlForatTV.iq",
@@ -1376,8 +1364,8 @@
     "city": "Alforat",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 32.8581077,
-    "geo_long": 35.3093085
+    "latitude": 32.8581077,
+    "longitude": 35.3093085
   },
   {
     "id": "AlhayatTV.eg@SD",
@@ -1388,8 +1376,8 @@
     "city": "Alhayat",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 51.4877215,
-    "geo_long": -0.1404017
+    "latitude": 51.4877215,
+    "longitude": -0.1404017
   },
   {
     "id": "AllgauTV.de",
@@ -1400,8 +1388,8 @@
     "city": "Allgu",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -78
+    "latitude": 52,
+    "longitude": -78
   },
   {
     "id": "AlpedHuezTV.fr",
@@ -1412,8 +1400,8 @@
     "city": "Alpe dHuez",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -78
+    "latitude": 54,
+    "longitude": -78
   },
   {
     "id": "AlphaChannel.br",
@@ -1424,8 +1412,8 @@
     "city": "Alpha Channel 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 56,
-    "geo_long": -78
+    "latitude": 56,
+    "longitude": -78
   },
   {
     "id": "AlsaciasTelevision.hn",
@@ -1436,8 +1424,8 @@
     "city": "Alsacias Televisin A",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 58,
-    "geo_long": -78
+    "latitude": 58,
+    "longitude": -78
   },
   {
     "id": "AlShoub.eg@SD",
@@ -1448,8 +1436,8 @@
     "city": "AlShoub 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40,
-    "geo_long": -76
+    "latitude": 40,
+    "longitude": -76
   },
   {
     "id": "AltantoTV.do",
@@ -1460,8 +1448,8 @@
     "city": "Altanto",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -76
+    "latitude": 42,
+    "longitude": -76
   },
   {
     "id": "AltasTV.tr",
@@ -1472,8 +1460,8 @@
     "city": "Altas",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 41.1614725,
-    "geo_long": 42.8742926
+    "latitude": 41.1614725,
+    "longitude": 42.8742926
   },
   {
     "id": "AltenburgTV.de",
@@ -1484,8 +1472,8 @@
     "city": "Altenburg",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 50.9852411,
-    "geo_long": 12.4340988
+    "latitude": 50.9852411,
+    "longitude": 12.4340988
   },
   {
     "id": "AlternaTV.ar",
@@ -1496,8 +1484,8 @@
     "city": "Alterna",
     "categories": "Culture;Documentary;Entertainment;General;Movies;Music",
     "type": "tv",
-    "geo_lat": -2.2251708,
-    "geo_long": -80.939872
+    "latitude": -2.2251708,
+    "longitude": -80.939872
   },
   {
     "id": "Althania.sy",
@@ -1508,8 +1496,8 @@
     "city": "Althania 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 50,
-    "geo_long": -76
+    "latitude": 50,
+    "longitude": -76
   },
   {
     "id": "AltoAdigeTV.it",
@@ -1520,8 +1508,8 @@
     "city": "Alto Adige",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 46.6559455,
-    "geo_long": 11.2302129
+    "latitude": 46.6559455,
+    "longitude": 11.2302129
   },
   {
     "id": "AltynAsyr.tm",
@@ -1532,8 +1520,8 @@
     "city": "Altyn Asyr 406p Not 247",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -76
+    "latitude": 54,
+    "longitude": -76
   },
   {
     "id": "AlvinChannelTV.az",
@@ -1544,8 +1532,8 @@
     "city": "Alvin Channel",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 56,
-    "geo_long": -76
+    "latitude": 56,
+    "longitude": -76
   },
   {
     "id": "Ame47.do@SD",
@@ -1556,8 +1544,8 @@
     "city": "Ame 47 576p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 58,
-    "geo_long": -76
+    "latitude": 58,
+    "longitude": -76
   },
   {
     "id": "AmericaEstereoGuayaquil.ec",
@@ -1568,8 +1556,8 @@
     "city": "Amrica Estreo Guayaquil 360p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40,
-    "geo_long": -74
+    "latitude": 40,
+    "longitude": -74
   },
   {
     "id": "AmericaEstereoIbarra.ec",
@@ -1580,8 +1568,8 @@
     "city": "Amrica Estreo Ibarra 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -74
+    "latitude": 42,
+    "longitude": -74
   },
   {
     "id": "AmericaEstereoTulcan.ec",
@@ -1592,8 +1580,8 @@
     "city": "Amrica Estreo Tulcn 614p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -74
+    "latitude": 44,
+    "longitude": -74
   },
   {
     "id": "AmericaTelevision.pe@SD",
@@ -1604,8 +1592,8 @@
     "city": "America Television",
     "categories": "General",
     "type": "tv",
-    "geo_lat": -5.1951731,
-    "geo_long": -80.6305309
+    "latitude": -5.1951731,
+    "longitude": -80.6305309
   },
   {
     "id": "AmericaTeVe.pr",
@@ -1616,8 +1604,8 @@
     "city": "Amrica TeV 1080p",
     "categories": "Entertainment;General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -74
+    "latitude": 48,
+    "longitude": -74
   },
   {
     "id": "AMGATV.us",
@@ -1628,8 +1616,8 @@
     "city": "Amga",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 60.894218,
-    "geo_long": 131.97998
+    "latitude": 60.894218,
+    "longitude": 131.97998
   },
   {
     "id": "AmmanTV.jo",
@@ -1640,8 +1628,8 @@
     "city": "Amman",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 31.9515694,
-    "geo_long": 35.9239625
+    "latitude": 31.9515694,
+    "longitude": 35.9239625
   },
   {
     "id": "AmouzeshTV.ir@SD",
@@ -1652,8 +1640,8 @@
     "city": "Amouzesh",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -74
+    "latitude": 54,
+    "longitude": -74
   },
   {
     "id": "AnadoluDernekTV.tr",
@@ -1664,8 +1652,8 @@
     "city": "Anadolu Dernek",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 37.2104195,
-    "geo_long": 37.6902981
+    "latitude": 37.2104195,
+    "longitude": 37.6902981
   },
   {
     "id": "AnadoluNetTV.tr",
@@ -1676,8 +1664,8 @@
     "city": "Anadolu Net",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 39.9589508,
-    "geo_long": 32.8896557
+    "latitude": 39.9589508,
+    "longitude": 32.8896557
   },
   {
     "id": "AnandTV.uk",
@@ -1688,8 +1676,8 @@
     "city": "Anand",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 22.5586555,
-    "geo_long": 72.9627227
+    "latitude": 22.5586555,
+    "longitude": 72.9627227
   },
   {
     "id": "Antena1.ro",
@@ -1700,8 +1688,8 @@
     "city": "Antena 1 720p Not 247",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -72
+    "latitude": 42,
+    "longitude": -72
   },
   {
     "id": "Antena3Internacional.es@SD",
@@ -1712,8 +1700,8 @@
     "city": "Antena 3 Internacional 480p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -72
+    "latitude": 44,
+    "longitude": -72
   },
   {
     "id": "Antena7.do",
@@ -1724,8 +1712,8 @@
     "city": "Antena 7 480p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": -16.4975395,
-    "geo_long": -68.1055452
+    "latitude": -16.4975395,
+    "longitude": -68.1055452
   },
   {
     "id": "AntenaSeisTV.cr",
@@ -1736,8 +1724,8 @@
     "city": "Antena Seis TV 720p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -72
+    "latitude": 48,
+    "longitude": -72
   },
   {
     "id": "AntenaTV.mx",
@@ -1748,8 +1736,8 @@
     "city": "Antena",
     "categories": "General",
     "type": "tv",
-    "geo_lat": -45.8540211,
-    "geo_long": -67.5132878
+    "latitude": -45.8540211,
+    "longitude": -67.5132878
   },
   {
     "id": "Antenna2TV.it",
@@ -1760,8 +1748,8 @@
     "city": "Antenna 2",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 33.255398,
-    "geo_long": -81.0753
+    "latitude": 33.255398,
+    "longitude": -81.0753
   },
   {
     "id": "AntennaTre.it",
@@ -1772,8 +1760,8 @@
     "city": "Antenna Tre Veneto 480p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -72
+    "latitude": 54,
+    "longitude": -72
   },
   {
     "id": "AntofagastaTV.cl",
@@ -1784,8 +1772,8 @@
     "city": "Antofagasta",
     "categories": "General",
     "type": "tv",
-    "geo_lat": -23.6463741,
-    "geo_long": -70.3980033
+    "latitude": -23.6463741,
+    "longitude": -70.3980033
   },
   {
     "id": "AnzoateguiTV.ve",
@@ -1796,8 +1784,8 @@
     "city": "Anzotegui",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 58,
-    "geo_long": -72
+    "latitude": 58,
+    "longitude": -72
   },
   {
     "id": "ApprovalTV.ng",
@@ -1808,8 +1796,8 @@
     "city": "Approval",
     "categories": "General;Religious",
     "type": "tv",
-    "geo_lat": 45.3674123,
-    "geo_long": -75.7867255
+    "latitude": 45.3674123,
+    "longitude": -75.7867255
   },
   {
     "id": "Aqjaiyq.kz",
@@ -1820,8 +1808,8 @@
     "city": "Aqjaiyq 576p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -70
+    "latitude": 42,
+    "longitude": -70
   },
   {
     "id": "Aqtobe.kz",
@@ -1832,8 +1820,8 @@
     "city": "Aqtbe 576p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -70
+    "latitude": 44,
+    "longitude": -70
   },
   {
     "id": "AraTV.ir",
@@ -1844,8 +1832,8 @@
     "city": "Ara",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 12.9489302,
-    "geo_long": 77.7085732
+    "latitude": 12.9489302,
+    "longitude": 77.7085732
   },
   {
     "id": "ArabiTV.es",
@@ -1856,8 +1844,8 @@
     "city": "Arab",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 34.3181497,
-    "geo_long": -86.4958219
+    "latitude": 34.3181497,
+    "longitude": -86.4958219
   },
   {
     "id": "AragonTV.es@SD",
@@ -1868,8 +1856,8 @@
     "city": "Aragon",
     "categories": "General;Public",
     "type": "tv",
-    "geo_lat": 41.3787291,
-    "geo_long": -0.7639373
+    "latitude": 41.3787291,
+    "longitude": -0.7639373
   },
   {
     "id": "ArasTV.tr",
@@ -1880,8 +1868,8 @@
     "city": "ARAS",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 39.6293745,
-    "geo_long": 44.8088337
+    "latitude": 39.6293745,
+    "longitude": 44.8088337
   },
   {
     "id": "ARB.az",
@@ -1892,8 +1880,8 @@
     "city": "ARB",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 50.2839639,
-    "geo_long": 7.0445739
+    "latitude": 50.2839639,
+    "longitude": 7.0445739
   },
   {
     "id": "ArdealTV.ro",
@@ -1904,8 +1892,8 @@
     "city": "Ardeal",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 46.5971623,
-    "geo_long": 24.3740295
+    "latitude": 46.5971623,
+    "longitude": 24.3740295
   },
   {
     "id": "ArekTV.id",
@@ -1916,8 +1904,8 @@
     "city": "Arek",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 39.2897805,
-    "geo_long": 40.396817
+    "latitude": 39.2897805,
+    "longitude": 40.396817
   },
   {
     "id": "ArezoTV.af@SD",
@@ -1928,8 +1916,8 @@
     "city": "Arezo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 50.8633666,
-    "geo_long": 4.3728593
+    "latitude": 50.8633666,
+    "longitude": 4.3728593
   },
   {
     "id": "ArgentinisimaSatelital.ar",
@@ -1940,8 +1928,8 @@
     "city": "Argentinsima Satelital 540p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -68
+    "latitude": 42,
+    "longitude": -68
   },
   {
     "id": "ArgesTV.ro",
@@ -1952,8 +1940,8 @@
     "city": "Arges",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44.9939764,
-    "geo_long": 24.8488685
+    "latitude": 44.9939764,
+    "longitude": 24.8488685
   },
   {
     "id": "ArirangRadio.kr",
@@ -1964,8 +1952,8 @@
     "city": "Arirang Radio 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 46,
-    "geo_long": -68
+    "latitude": 46,
+    "longitude": -68
   },
   {
     "id": "ArirangTV.kr",
@@ -1976,8 +1964,8 @@
     "city": "Arirang",
     "categories": "General;News",
     "type": "tv",
-    "geo_lat": 19.423614,
-    "geo_long": -99.1661107
+    "latitude": 19.423614,
+    "longitude": -99.1661107
   },
   {
     "id": "ArkadagTV.tm",
@@ -1988,8 +1976,8 @@
     "city": "Arkadag",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 38.0696871,
-    "geo_long": 58.0677654
+    "latitude": 38.0696871,
+    "longitude": 58.0677654
   },
   {
     "id": "Armenia1.am@SD",
@@ -2000,8 +1988,8 @@
     "city": "Armenia 1",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40.1876953,
-    "geo_long": 44.5242697
+    "latitude": 40.1876953,
+    "longitude": 44.5242697
   },
   {
     "id": "Armenia2.am@SD",
@@ -2012,8 +2000,8 @@
     "city": "Armenia 2",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 4.5338237,
-    "geo_long": -75.6703332
+    "latitude": 4.5338237,
+    "longitude": -75.6703332
   },
   {
     "id": "ARTTV.gr",
@@ -2024,8 +2012,8 @@
     "city": "ART",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 41.7084124,
-    "geo_long": 44.7515329
+    "latitude": 41.7084124,
+    "longitude": 44.7515329
   },
   {
     "id": "ARTNTV.us",
@@ -2036,8 +2024,8 @@
     "city": "ARTN",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 58,
-    "geo_long": -68
+    "latitude": 58,
+    "longitude": -68
   },
   {
     "id": "Asgabat.tm",
@@ -2048,8 +2036,8 @@
     "city": "Agabat 406p Not 247",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40,
-    "geo_long": -66
+    "latitude": 40,
+    "longitude": -66
   },
   {
     "id": "AssenTV.nl",
@@ -2060,8 +2048,8 @@
     "city": "Assen",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52.997225,
-    "geo_long": 6.5506458
+    "latitude": 52.997225,
+    "longitude": 6.5506458
   },
   {
     "id": "KBSVDT1.us",
@@ -2072,8 +2060,8 @@
     "city": "AssyriaSat 720p Not 247",
     "categories": "General;Religious",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -66
+    "latitude": 44,
+    "longitude": -66
   },
   {
     "id": "AstroVaanavil.my@SD",
@@ -2084,8 +2072,8 @@
     "city": "Astro Vaanavil",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 46,
-    "geo_long": -66
+    "latitude": 46,
+    "longitude": -66
   },
   {
     "id": "AT5.nl",
@@ -2096,8 +2084,8 @@
     "city": "AT5",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 26.1668651,
-    "geo_long": 78.1778261
+    "latitude": 26.1668651,
+    "longitude": 78.1778261
   },
   {
     "id": "ATBLaPaz.bo",
@@ -2108,8 +2096,8 @@
     "city": "ATB La Paz 614p Not 247",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 50,
-    "geo_long": -66
+    "latitude": 50,
+    "longitude": -66
   },
   {
     "id": "AtinkaTV.gh@SD",
@@ -2120,8 +2108,8 @@
     "city": "Atinka",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 43.4287726,
-    "geo_long": 76.9034716
+    "latitude": 43.4287726,
+    "longitude": 76.9034716
   },
   {
     "id": "AtlantaChannel.us@SD",
@@ -2132,8 +2120,8 @@
     "city": "Atlanta Channel",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 33.8937162,
-    "geo_long": -84.4602403
+    "latitude": 33.8937162,
+    "longitude": -84.4602403
   },
   {
     "id": "ATNNational.af@SD",
@@ -2144,8 +2132,8 @@
     "city": "ATN National",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 14.4656556,
-    "geo_long": 120.9949715
+    "latitude": 14.4656556,
+    "longitude": 120.9949715
   },
   {
     "id": "AtrakTV.ir",
@@ -2156,8 +2144,8 @@
     "city": "Atrak",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 38.1122225,
-    "geo_long": 55.0647047
+    "latitude": 38.1122225,
+    "longitude": 55.0647047
   },
   {
     "id": "AtticaTV.gr",
@@ -2168,8 +2156,8 @@
     "city": "Attica",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 37.9753513,
-    "geo_long": 23.7363656
+    "latitude": 37.9753513,
+    "longitude": 23.7363656
   },
   {
     "id": "AndorraTV.ad",
@@ -2180,8 +2168,8 @@
     "city": "Unknown",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42.5407167,
-    "geo_long": 1.5732033
+    "latitude": 42.5407167,
+    "longitude": 1.5732033
   },
   {
     "id": "ATV.at",
@@ -2192,8 +2180,8 @@
     "city": "Unknown",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 47.59397,
-    "geo_long": 14.12456
+    "latitude": 47.59397,
+    "longitude": 14.12456
   },
   {
     "id": "ATV.gn",
@@ -2204,8 +2192,8 @@
     "city": "Unknown",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 10.7226226,
-    "geo_long": -10.7083587
+    "latitude": 10.7226226,
+    "longitude": -10.7083587
   },
   {
     "id": "ATV.pe",
@@ -2216,8 +2204,8 @@
     "city": "Unknown",
     "categories": "General",
     "type": "tv",
-    "geo_lat": -9.19,
-    "geo_long": -75.0152
+    "latitude": -9.19,
+    "longitude": -75.0152
   },
   {
     "id": "ATV.tr",
@@ -2228,20 +2216,8 @@
     "city": "Unknown",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 38.9637,
-    "geo_long": 35.2433
-  },
-  {
-    "id": "ATV2.at@HD",
-    "name": "ATV2 HD",
-    "url": "https://viamotionhsi.netplus.ch/live/eds/atv/browser-dash/atv.mpd",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Logo_ATV2.svg/512px-Logo_ATV2.svg.png",
-    "country": "Austria",
-    "city": "Unknown",
-    "categories": "General",
-    "type": "tv",
-    "geo_lat": 0,
-    "geo_long": 0
+    "latitude": 38.9637,
+    "longitude": 35.2433
   },
   {
     "id": "ATVAlanya.tr",
@@ -2252,8 +2228,8 @@
     "city": "Unknown",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 38.9637,
-    "geo_long": 35.2433
+    "latitude": 38.9637,
+    "longitude": 35.2433
   },
   {
     "id": "ATVSur.pe",
@@ -2264,8 +2240,8 @@
     "city": "Unknown",
     "categories": "General",
     "type": "tv",
-    "geo_lat": -9.19,
-    "geo_long": -75.0152
+    "latitude": -9.19,
+    "longitude": -75.0152
   },
   {
     "id": "Atyray.kz",
@@ -2276,8 +2252,8 @@
     "city": "Atyra 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 58,
-    "geo_long": -64
+    "latitude": 58,
+    "longitude": -64
   },
   {
     "id": "AugsburgTV.de",
@@ -2288,8 +2264,8 @@
     "city": "Augsburg",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48.3690341,
-    "geo_long": 10.8979522
+    "latitude": 48.3690341,
+    "longitude": 10.8979522
   },
   {
     "id": "aurLifeHD.pk",
@@ -2300,8 +2276,8 @@
     "city": "aurLife HD 614p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -62
+    "latitude": 42,
+    "longitude": -62
   },
   {
     "id": "AuroraTV.us",
@@ -2312,8 +2288,8 @@
     "city": "Aurora",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 15.759531,
-    "geo_long": 121.5671028
+    "latitude": 15.759531,
+    "longitude": 121.5671028
   },
   {
     "id": "AustralTV.ec",
@@ -2324,8 +2300,8 @@
     "city": "Austral",
     "categories": "General",
     "type": "tv",
-    "geo_lat": -34.4567098,
-    "geo_long": -58.8588653
+    "latitude": -34.4567098,
+    "longitude": -58.8588653
   },
   {
     "id": "AutenticaTelevision.pe",
@@ -2336,8 +2312,8 @@
     "city": "Autntica Televisin 720p Not 24",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -62
+    "latitude": 48,
+    "longitude": -62
   },
   {
     "id": "Avers.ua",
@@ -2348,8 +2324,8 @@
     "city": "Avers 480p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 46.4446229,
-    "geo_long": 9.5329049
+    "latitude": 46.4446229,
+    "longitude": 9.5329049
   },
   {
     "id": "AWE.us",
@@ -2360,8 +2336,8 @@
     "city": "AWE 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -62
+    "latitude": 52,
+    "longitude": -62
   },
   {
     "id": "AWEEncore.us",
@@ -2372,8 +2348,8 @@
     "city": "AWE Encore 720p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -62
+    "latitude": 54,
+    "longitude": -62
   },
   {
     "id": "AysenTV.cl",
@@ -2384,8 +2360,8 @@
     "city": "Aysen",
     "categories": "General",
     "type": "tv",
-    "geo_lat": -46.1434629,
-    "geo_long": -74.2127886
+    "latitude": -46.1434629,
+    "longitude": -74.2127886
   },
   {
     "id": "AzStarTV.ca",
@@ -2396,8 +2372,8 @@
     "city": "Az Star",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40.3755471,
-    "geo_long": 49.8178625
+    "latitude": 40.3755471,
+    "longitude": 49.8178625
   },
   {
     "id": "AzTV.az",
@@ -2408,8 +2384,8 @@
     "city": "Az",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 35.1864014,
-    "geo_long": -113.6344671
+    "latitude": 35.1864014,
+    "longitude": -113.6344671
   },
   {
     "id": "AzadTV.az",
@@ -2420,8 +2396,8 @@
     "city": "Azad",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40.6940113,
-    "geo_long": 46.5111894
+    "latitude": 40.6940113,
+    "longitude": 46.5111894
   },
   {
     "id": "WestAzerbaijanTV.ir",
@@ -2432,8 +2408,8 @@
     "city": "Azerbaijan Gharbi",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 37.7416484,
-    "geo_long": 45.0207638
+    "latitude": 37.7416484,
+    "longitude": 45.0207638
   },
   {
     "id": "Azteca7.mx",
@@ -2444,8 +2420,8 @@
     "city": "Azteca 7 720p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 46,
-    "geo_long": -60
+    "latitude": 46,
+    "longitude": -60
   },
   {
     "id": "AztecaGuatemala.gt",
@@ -2456,8 +2432,8 @@
     "city": "Azteca Guate 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -60
+    "latitude": 48,
+    "longitude": -60
   },
   {
     "id": "AztecaHonduras.hn",
@@ -2468,8 +2444,8 @@
     "city": "Azteca Honduras Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 50,
-    "geo_long": -60
+    "latitude": 50,
+    "longitude": -60
   },
   {
     "id": "AztecaUno.mx",
@@ -2480,8 +2456,8 @@
     "city": "Azteca Uno 720p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -60
+    "latitude": 52,
+    "longitude": -60
   },
   {
     "id": "AzzurraTV.it",
@@ -2492,8 +2468,8 @@
     "city": "Azzurra",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44.0580563,
-    "geo_long": 6.0638506
+    "latitude": 44.0580563,
+    "longitude": 6.0638506
   },
   {
     "id": "BTV.hu",
@@ -2504,8 +2480,8 @@
     "city": "Bbolnai",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 56,
-    "geo_long": -60
+    "latitude": 56,
+    "longitude": -60
   },
   {
     "id": "Badakhshon.tj",
@@ -2516,8 +2492,8 @@
     "city": "Badakhshon 576p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 58,
-    "geo_long": -60
+    "latitude": 58,
+    "longitude": -60
   },
   {
     "id": "BadenTV.de",
@@ -2528,8 +2504,8 @@
     "city": "Baden",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48.6850065,
-    "geo_long": 8.1174105
+    "latitude": 48.6850065,
+    "longitude": 8.1174105
   },
   {
     "id": "BadenTVSud.de",
@@ -2540,8 +2516,8 @@
     "city": "Baden",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48.6850065,
-    "geo_long": 8.1174105
+    "latitude": 48.6850065,
+    "longitude": 8.1174105
   },
   {
     "id": "BaharTV.af",
@@ -2552,8 +2528,8 @@
     "city": "Bahar",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 36.4040024,
-    "geo_long": 59.6084489
+    "latitude": 36.4040024,
+    "longitude": 59.6084489
   },
   {
     "id": "BahrainInternational.bh",
@@ -2564,8 +2540,8 @@
     "city": "Bahrain International 720p Not",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 46,
-    "geo_long": -58
+    "latitude": 46,
+    "longitude": -58
   },
   {
     "id": "BahrainTV.bh",
@@ -2576,8 +2552,8 @@
     "city": "Bahrain",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 26.1551249,
-    "geo_long": 50.5344606
+    "latitude": 26.1551249,
+    "longitude": 50.5344606
   },
   {
     "id": "BajaiTV.hu",
@@ -2588,8 +2564,8 @@
     "city": "Bajai",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 46.1508016,
-    "geo_long": 18.9548665
+    "latitude": 46.1508016,
+    "longitude": 18.9548665
   },
   {
     "id": "BalikpapanTV.id",
@@ -2600,8 +2576,8 @@
     "city": "Balikpapan",
     "categories": "General",
     "type": "tv",
-    "geo_lat": -1.2398711,
-    "geo_long": 116.8593379
+    "latitude": -1.2398711,
+    "longitude": 116.8593379
   },
   {
     "id": "BanatTV.ro",
@@ -2612,8 +2588,8 @@
     "city": "Banat",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 45.5177463,
-    "geo_long": -87.6976182
+    "latitude": 45.5177463,
+    "longitude": -87.6976182
   },
   {
     "id": "BandungTV.id",
@@ -2624,8 +2600,8 @@
     "city": "Bandung",
     "categories": "General",
     "type": "tv",
-    "geo_lat": -7.0050378,
-    "geo_long": 107.7420402
+    "latitude": -7.0050378,
+    "longitude": 107.7420402
   },
   {
     "id": "BaranTV.ir",
@@ -2636,8 +2612,8 @@
     "city": "Baran",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 24.9208165,
-    "geo_long": 76.6821985
+    "latitude": 24.9208165,
+    "longitude": 76.6821985
   },
   {
     "id": "BayresTV.ar",
@@ -2648,8 +2624,8 @@
     "city": "Bayres",
     "categories": "General",
     "type": "tv",
-    "geo_lat": -34.5847936,
-    "geo_long": -58.4890443
+    "latitude": -34.5847936,
+    "longitude": -58.4890443
   },
   {
     "id": "BBCAlba.uk",
@@ -2660,8 +2636,8 @@
     "city": "BBC Alba 1080p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -56
+    "latitude": 42,
+    "longitude": -56
   },
   {
     "id": "BBCFourCBeebies.uk@HD",
@@ -2672,8 +2648,8 @@
     "city": "BBC FourCBeebies 1080p",
     "categories": "Animation;General;Kids",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -56
+    "latitude": 44,
+    "longitude": -56
   },
   {
     "id": "BBCOne.uk@ChannelIslands",
@@ -2684,8 +2660,8 @@
     "city": "BBC One Channel Islands 1080p ",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 46,
-    "geo_long": -56
+    "latitude": 46,
+    "longitude": -56
   },
   {
     "id": "BBCOne.uk@YorkshireHD",
@@ -2696,8 +2672,8 @@
     "city": "BBC One East 720p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -56
+    "latitude": 48,
+    "longitude": -56
   },
   {
     "id": "BBCOne.uk@EastMidlands",
@@ -2708,8 +2684,8 @@
     "city": "BBC One East Midlands 720p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 50,
-    "geo_long": -56
+    "latitude": 50,
+    "longitude": -56
   },
   {
     "id": "BBCOne.uk@EastMidlandsHD",
@@ -2720,8 +2696,8 @@
     "city": "BBC One East Midlands 1080p Ge",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -56
+    "latitude": 52,
+    "longitude": -56
   },
   {
     "id": "BBCOne.uk@Yorkshire",
@@ -2732,8 +2708,8 @@
     "city": "BBC One East Yorkshire 540p Ge",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -56
+    "latitude": 54,
+    "longitude": -56
   },
   {
     "id": "BBCOne.uk@NorthEastCumbria",
@@ -2744,8 +2720,8 @@
     "city": "BBC One North East 720p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 56,
-    "geo_long": -56
+    "latitude": 56,
+    "longitude": -56
   },
   {
     "id": "BBCOne.uk@NorthEastCumbriaHD",
@@ -2756,8 +2732,8 @@
     "city": "BBC One North East 1080p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 58,
-    "geo_long": -56
+    "latitude": 58,
+    "longitude": -56
   },
   {
     "id": "BBCOne.uk@NorthWest",
@@ -2768,8 +2744,8 @@
     "city": "BBC One North West 720p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40,
-    "geo_long": -54
+    "latitude": 40,
+    "longitude": -54
   },
   {
     "id": "BBCOne.uk@NorthWestHD",
@@ -2780,8 +2756,8 @@
     "city": "BBC One North West 1080p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -54
+    "latitude": 42,
+    "longitude": -54
   },
   {
     "id": "BBCOne.uk@NorthernIreland",
@@ -2792,8 +2768,8 @@
     "city": "BBC One Northern Ireland HD 72",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -54
+    "latitude": 44,
+    "longitude": -54
   },
   {
     "id": "BBCOne.uk@NorthernIrelandHD",
@@ -2804,8 +2780,8 @@
     "city": "BBC One Northern Ireland HD 10",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 46,
-    "geo_long": -54
+    "latitude": 46,
+    "longitude": -54
   },
   {
     "id": "BBCOne.uk@Scotland",
@@ -2816,8 +2792,8 @@
     "city": "BBC One Scotland 540p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -54
+    "latitude": 48,
+    "longitude": -54
   },
   {
     "id": "BBCOne.uk@ScotlandHD",
@@ -2828,8 +2804,8 @@
     "city": "BBC One Scotland HD 1080p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 50,
-    "geo_long": -54
+    "latitude": 50,
+    "longitude": -54
   },
   {
     "id": "BBCOne.uk@South",
@@ -2840,8 +2816,8 @@
     "city": "BBC One South 1080p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -54
+    "latitude": 52,
+    "longitude": -54
   },
   {
     "id": "BBCOne.uk@SouthEast",
@@ -2852,8 +2828,8 @@
     "city": "BBC One South East 1080p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -54
+    "latitude": 54,
+    "longitude": -54
   },
   {
     "id": "BBCOne.uk@SouthWest",
@@ -2864,8 +2840,8 @@
     "city": "BBC One South West 1080p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 56,
-    "geo_long": -54
+    "latitude": 56,
+    "longitude": -54
   },
   {
     "id": "BBCOne.uk@SouthWestHD",
@@ -2876,8 +2852,8 @@
     "city": "BBC One South West HD 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 58,
-    "geo_long": -54
+    "latitude": 58,
+    "longitude": -54
   },
   {
     "id": "BBCOne.uk@Wales",
@@ -2888,8 +2864,8 @@
     "city": "BBC One Wales 1080p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40,
-    "geo_long": -52
+    "latitude": 40,
+    "longitude": -52
   },
   {
     "id": "BBCOne.uk@West",
@@ -2900,8 +2876,8 @@
     "city": "BBC One West 1080p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -52
+    "latitude": 42,
+    "longitude": -52
   },
   {
     "id": "BBCOne.uk@WestMidlands",
@@ -2912,8 +2888,8 @@
     "city": "BBC One West Midlands 1080p Ge",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -52
+    "latitude": 44,
+    "longitude": -52
   },
   {
     "id": "BBCOne.uk@YorkshireLincolnshire",
@@ -2924,8 +2900,8 @@
     "city": "BBC One Yorkshire  Lincolnshir",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 46,
-    "geo_long": -52
+    "latitude": 46,
+    "longitude": -52
   },
   {
     "id": "BBCScotland.uk",
@@ -2936,8 +2912,8 @@
     "city": "BBC Scotland 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -52
+    "latitude": 48,
+    "longitude": -52
   },
   {
     "id": "BBCThree.uk",
@@ -2948,8 +2924,8 @@
     "city": "BBC Three",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 51.8771744,
-    "geo_long": -0.4183493
+    "latitude": 51.8771744,
+    "longitude": -0.4183493
   },
   {
     "id": "BBCThree.uk@HD",
@@ -2960,8 +2936,8 @@
     "city": "BBC Three HD 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -52
+    "latitude": 52,
+    "longitude": -52
   },
   {
     "id": "BBCTwo.uk@England",
@@ -2972,8 +2948,8 @@
     "city": "BBC Two",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -52
+    "latitude": 54,
+    "longitude": -52
   },
   {
     "id": "BBCTwo.uk@HD",
@@ -2984,8 +2960,8 @@
     "city": "BBC Two HD 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 56,
-    "geo_long": -52
+    "latitude": 56,
+    "longitude": -52
   },
   {
     "id": "BBCTwo.uk@NorthernIreland",
@@ -2996,8 +2972,8 @@
     "city": "BBC Two Northern Ireland 540p ",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 58,
-    "geo_long": -52
+    "latitude": 58,
+    "longitude": -52
   },
   {
     "id": "BBCTwo.uk@NorthernIrelandHD",
@@ -3008,8 +2984,8 @@
     "city": "BBC Two Northern Ireland HD 10",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40,
-    "geo_long": -50
+    "latitude": 40,
+    "longitude": -50
   },
   {
     "id": "BBCTwo.uk@Wales",
@@ -3020,8 +2996,8 @@
     "city": "BBC Two Wales 1080p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -50
+    "latitude": 42,
+    "longitude": -50
   },
   {
     "id": "BBCUHD1.uk",
@@ -3032,8 +3008,8 @@
     "city": "BBC UHD 1 2160p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -50
+    "latitude": 44,
+    "longitude": -50
   },
   {
     "id": "BBCUHD2.uk",
@@ -3044,8 +3020,8 @@
     "city": "BBC UHD 2 2160p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 46,
-    "geo_long": -50
+    "latitude": 46,
+    "longitude": -50
   },
   {
     "id": "BBCUHD3.uk",
@@ -3056,8 +3032,8 @@
     "city": "BBC UHD 3 2160p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -50
+    "latitude": 48,
+    "longitude": -50
   },
   {
     "id": "BBCUHD4.uk",
@@ -3068,8 +3044,8 @@
     "city": "BBC UHD 4 2160p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 50,
-    "geo_long": -50
+    "latitude": 50,
+    "longitude": -50
   },
   {
     "id": "BBCUHD5.uk",
@@ -3080,8 +3056,8 @@
     "city": "BBC UHD 5 2160p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -50
+    "latitude": 52,
+    "longitude": -50
   },
   {
     "id": "BCNGospelTV.es",
@@ -3092,8 +3068,8 @@
     "city": "BCN Gospel",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -50
+    "latitude": 54,
+    "longitude": -50
   },
   {
     "id": "BCSStarCrossTV.ng@SD",
@@ -3104,8 +3080,8 @@
     "city": "BCS StarCross",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 56,
-    "geo_long": -50
+    "latitude": 56,
+    "longitude": -50
   },
   {
     "id": "BebetoTV.do@SD",
@@ -3116,8 +3092,8 @@
     "city": "Bebeto",
     "categories": "General",
     "type": "tv",
-    "geo_lat": -31.4439515,
-    "geo_long": -53.1026637
+    "latitude": -31.4439515,
+    "longitude": -53.1026637
   },
   {
     "id": "BemTV.br",
@@ -3128,8 +3104,8 @@
     "city": "Bem",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 32.4025588,
-    "geo_long": -6.3157661
+    "latitude": 32.4025588,
+    "longitude": -6.3157661
   },
   {
     "id": "BerenteTV.hu",
@@ -3140,8 +3116,8 @@
     "city": "Berente",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48.2318559,
-    "geo_long": 20.6645424
+    "latitude": 48.2318559,
+    "longitude": 20.6645424
   },
   {
     "id": "BergamoTV.it@SD",
@@ -3152,8 +3128,8 @@
     "city": "Bergamo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 45.7566557,
-    "geo_long": 9.7542192
+    "latitude": 45.7566557,
+    "longitude": 9.7542192
   },
   {
     "id": "BFMAlsace.fr",
@@ -3164,8 +3140,8 @@
     "city": "BFM Alsace 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 46,
-    "geo_long": -48
+    "latitude": 46,
+    "longitude": -48
   },
   {
     "id": "BHT1.ba",
@@ -3176,8 +3152,8 @@
     "city": "BHT 1 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -48
+    "latitude": 48,
+    "longitude": -48
   },
   {
     "id": "Binge.us",
@@ -3188,8 +3164,8 @@
     "city": "Binge",
     "categories": "General",
     "type": "tv",
-    "geo_lat": -10.8897191,
-    "geo_long": 14.3543887
+    "latitude": -10.8897191,
+    "longitude": 14.3543887
   },
   {
     "id": "BinhPhuocTV1.vn",
@@ -3200,8 +3176,8 @@
     "city": "Binh Phuoc",
     "categories": "General;News",
     "type": "tv",
-    "geo_lat": 11.8000377,
-    "geo_long": 106.9151381
+    "latitude": 11.8000377,
+    "longitude": 106.9151381
   },
   {
     "id": "TVStorbyen.dk",
@@ -3212,8 +3188,8 @@
     "city": "BL",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 46.1504888,
-    "geo_long": 12.3311006
+    "latitude": 46.1504888,
+    "longitude": 12.3311006
   },
   {
     "id": "BlackSeaTV.ua",
@@ -3224,8 +3200,8 @@
     "city": "Black Sea",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 41.0023855,
-    "geo_long": 39.6904592
+    "latitude": 41.0023855,
+    "longitude": 39.6904592
   },
   {
     "id": "BATV.us",
@@ -3236,8 +3212,8 @@
     "city": "Bloomfield Access",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 41.8094109,
-    "geo_long": -72.7252635
+    "latitude": 41.8094109,
+    "longitude": -72.7252635
   },
   {
     "id": "BlueSkyTV.gr",
@@ -3248,8 +3224,8 @@
     "city": "Blue Sky",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40.2998886,
-    "geo_long": -103.8042263
+    "latitude": 40.2998886,
+    "longitude": -103.8042263
   },
   {
     "id": "BMCHDTV.us",
@@ -3260,8 +3236,8 @@
     "city": "BMC",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 38.436561,
-    "geo_long": 27.2550648
+    "latitude": 38.436561,
+    "longitude": 27.2550648
   },
   {
     "id": "BocaChicaTV.do@SD",
@@ -3272,8 +3248,8 @@
     "city": "Boca Chica",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 18.4570748,
-    "geo_long": -69.61487
+    "latitude": 18.4570748,
+    "longitude": -69.61487
   },
   {
     "id": "BoishakhiTV.bd@SD",
@@ -3284,8 +3260,8 @@
     "city": "Boishakhi",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 1.3094303,
-    "geo_long": 103.8544843
+    "latitude": 1.3094303,
+    "longitude": 103.8544843
   },
   {
     "id": "Bolivision.bo",
@@ -3296,8 +3272,8 @@
     "city": "Bolivisin LPZ 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -46
+    "latitude": 48,
+    "longitude": -46
   },
   {
     "id": "CVCPublic.us",
@@ -3308,8 +3284,8 @@
     "city": "Bolton Community Voice Channel",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 50,
-    "geo_long": -46
+    "latitude": 50,
+    "longitude": -46
   },
   {
     "id": "BrionnaisTV.fr",
@@ -3320,8 +3296,8 @@
     "city": "Brionnais",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 46.2632756,
-    "geo_long": 4.0898917
+    "latitude": 46.2632756,
+    "longitude": 4.0898917
   },
   {
     "id": "BrunoMasiTV.py",
@@ -3332,8 +3308,8 @@
     "city": "Bruno Masi",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 45.107794,
-    "geo_long": 11.4857111
+    "latitude": 45.107794,
+    "longitude": 11.4857111
   },
   {
     "id": "BTNTV.rw",
@@ -3344,8 +3320,8 @@
     "city": "BTN",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 27.549511,
-    "geo_long": 90.5119273
+    "latitude": 27.549511,
+    "longitude": 90.5119273
   },
   {
     "id": "BudapestEuropaTelevizio.hu",
@@ -3356,8 +3332,8 @@
     "city": "Budapest Eurpa Televzi 576p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 58,
-    "geo_long": -46
+    "latitude": 58,
+    "longitude": -46
   },
   {
     "id": "BukeddeTV1.ug",
@@ -3368,8 +3344,8 @@
     "city": "Bukedde",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 0.2858473,
-    "geo_long": 32.5768889
+    "latitude": 0.2858473,
+    "longitude": 32.5768889
   },
   {
     "id": "BukeddeTV2.ug",
@@ -3380,8 +3356,8 @@
     "city": "Bukedde",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 0.2858473,
-    "geo_long": 32.5768889
+    "latitude": 0.2858473,
+    "longitude": 32.5768889
   },
   {
     "id": "CanalVisionDorada.co",
@@ -3392,8 +3368,8 @@
     "city": "Bum Televisin 720p Not 247",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -44
+    "latitude": 44,
+    "longitude": -44
   },
   {
     "id": "BungoTV.id",
@@ -3404,8 +3380,8 @@
     "city": "Bungo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": -7.44,
-    "geo_long": 15.386667
+    "latitude": -7.44,
+    "longitude": 15.386667
   },
   {
     "id": "TheBurbankChannel.us",
@@ -3416,8 +3392,8 @@
     "city": "Burbank Channel 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -44
+    "latitude": 48,
+    "longitude": -44
   },
   {
     "id": "BurrianaTeVe.es",
@@ -3428,8 +3404,8 @@
     "city": "Burriana",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 39.8876912,
-    "geo_long": -0.0846321
+    "latitude": 39.8876912,
+    "longitude": -0.0846321
   },
   {
     "id": "BXInform.us",
@@ -3440,8 +3416,8 @@
     "city": "BX Inform 1080p",
     "categories": "General;News",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -44
+    "latitude": 52,
+    "longitude": -44
   },
   {
     "id": "BXInspire.us",
@@ -3452,8 +3428,8 @@
     "city": "BX Inspire 720p",
     "categories": "General;Religious",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -44
+    "latitude": 54,
+    "longitude": -44
   },
   {
     "id": "BXOmni.us",
@@ -3464,8 +3440,8 @@
     "city": "BX Omni 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 56,
-    "geo_long": -44
+    "latitude": 56,
+    "longitude": -44
   },
   {
     "id": "C1.mn",
@@ -3476,8 +3452,8 @@
     "city": "C1 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 58,
-    "geo_long": -44
+    "latitude": 58,
+    "longitude": -44
   },
   {
     "id": "C31Melbourne.au",
@@ -3488,8 +3464,8 @@
     "city": "C31 Melbourne 240p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40,
-    "geo_long": -42
+    "latitude": 40,
+    "longitude": -42
   },
   {
     "id": "CajamarcaTV.pe",
@@ -3500,8 +3476,8 @@
     "city": "Cajamarca",
     "categories": "General",
     "type": "tv",
-    "geo_lat": -6.25,
-    "geo_long": -78.833333
+    "latitude": -6.25,
+    "longitude": -78.833333
   },
   {
     "id": "CaliforniaMediosTV.mx",
@@ -3512,8 +3488,8 @@
     "city": "California Medios",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 10.4813744,
-    "geo_long": -66.8618606
+    "latitude": 10.4813744,
+    "longitude": -66.8618606
   },
   {
     "id": "CAM10TV.cm@SD",
@@ -3524,8 +3500,8 @@
     "city": "CAM 10",
     "categories": "General",
     "type": "tv",
-    "geo_lat": -22.8048247,
-    "geo_long": -46.9156808
+    "latitude": -22.8048247,
+    "longitude": -46.9156808
   },
   {
     "id": "CanaTVDigital.do@SD",
@@ -3536,8 +3512,8 @@
     "city": "Cana",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 29.5024686,
-    "geo_long": 106.5295857
+    "latitude": 29.5024686,
+    "longitude": 106.5295857
   },
   {
     "id": "Canaf54TV.uk@SD",
@@ -3548,8 +3524,8 @@
     "city": "Canaf54",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 50,
-    "geo_long": -42
+    "latitude": 50,
+    "longitude": -42
   },
   {
     "id": "Canal1.co",
@@ -3560,8 +3536,8 @@
     "city": "Canal 1 1080p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -42
+    "latitude": 52,
+    "longitude": -42
   },
   {
     "id": "Canal1.cr",
@@ -3572,8 +3548,8 @@
     "city": "Canal 1 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -42
+    "latitude": 54,
+    "longitude": -42
   },
   {
     "id": "Canal2.sv",
@@ -3584,8 +3560,8 @@
     "city": "Canal 2 480p Not 247",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 56,
-    "geo_long": -42
+    "latitude": 56,
+    "longitude": -42
   },
   {
     "id": "Canal2AlpavisionNeiva.co",
@@ -3596,8 +3572,8 @@
     "city": "Canal 2 Alpavisin Neiva 720p N",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 58,
-    "geo_long": -42
+    "latitude": 58,
+    "longitude": -42
   },
   {
     "id": "Canal2deUshuaia.ar",
@@ -3608,8 +3584,8 @@
     "city": "Canal 2 de Ushuaia 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40,
-    "geo_long": -40
+    "latitude": 40,
+    "longitude": -40
   },
   {
     "id": "Canal2International.cm",
@@ -3620,8 +3596,8 @@
     "city": "Canal 2 International",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 29.9489545,
-    "geo_long": -90.0635321
+    "latitude": 29.9489545,
+    "longitude": -90.0635321
   },
   {
     "id": "Canal3TVBiar.es",
@@ -3632,8 +3608,8 @@
     "city": "Canal 3 Biar 480p Not 247",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -40
+    "latitude": 44,
+    "longitude": -40
   },
   {
     "id": "Canal4.cr",
@@ -3644,8 +3620,8 @@
     "city": "Canal 4 720p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 46,
-    "geo_long": -40
+    "latitude": 46,
+    "longitude": -40
   },
   {
     "id": "Canal4Catalunya.es",
@@ -3656,8 +3632,8 @@
     "city": "Canal 4 Catalunya 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -40
+    "latitude": 48,
+    "longitude": -40
   },
   {
     "id": "Canal4Mallorca.es",
@@ -3668,8 +3644,8 @@
     "city": "Canal 4 Mallorca 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 50,
-    "geo_long": -40
+    "latitude": 50,
+    "longitude": -40
   },
   {
     "id": "Canal4RD.do",
@@ -3680,8 +3656,8 @@
     "city": "Canal 4 RD 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -40
+    "latitude": 52,
+    "longitude": -40
   },
   {
     "id": "Canal6.cr",
@@ -3692,8 +3668,8 @@
     "city": "Canal 6 720p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -40
+    "latitude": 54,
+    "longitude": -40
   },
   {
     "id": "Canal6.sv",
@@ -3704,8 +3680,8 @@
     "city": "Canal 6 480p Not 247",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 56,
-    "geo_long": -40
+    "latitude": 56,
+    "longitude": -40
   },
   {
     "id": "MultimediosCDMX.mx",
@@ -3716,8 +3692,8 @@
     "city": "Canal 6 CDMX",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 19.4319694,
-    "geo_long": -99.1486805
+    "latitude": 19.4319694,
+    "longitude": -99.1486805
   },
   {
     "id": "Canal7Neuquen.ar",
@@ -3728,8 +3704,8 @@
     "city": "Canal 7 Neuqun 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40,
-    "geo_long": -38
+    "latitude": 40,
+    "longitude": -38
   },
   {
     "id": "Canal8.cr",
@@ -3740,8 +3716,8 @@
     "city": "Canal 8 720p Not 247",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -38
+    "latitude": 42,
+    "longitude": -38
   },
   {
     "id": "Canal8Catacaos.pe",
@@ -3752,8 +3728,8 @@
     "city": "Canal 8 Catacaos 720p Not 247",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -38
+    "latitude": 44,
+    "longitude": -38
   },
   {
     "id": "Canal8TVPlus.co",
@@ -3764,8 +3740,8 @@
     "city": "Canal 8",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40.6533411,
-    "geo_long": -73.438291
+    "latitude": 40.6533411,
+    "longitude": -73.438291
   },
   {
     "id": "Canal9.cr",
@@ -3776,8 +3752,8 @@
     "city": "Canal 9 720p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -38
+    "latitude": 48,
+    "longitude": -38
   },
   {
     "id": "BarbeTV.gt",
@@ -3788,8 +3764,8 @@
     "city": "Canal 9 Barbe",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42.8705138,
-    "geo_long": -0.0029114
+    "latitude": 42.8705138,
+    "longitude": -0.0029114
   },
   {
     "id": "Canal9Resistencia.ar",
@@ -3800,8 +3776,8 @@
     "city": "Canal 9 Resistencia 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -38
+    "latitude": 52,
+    "longitude": -38
   },
   {
     "id": "XHTTGTDT.mx",
@@ -3812,8 +3788,8 @@
     "city": "Canal 10 Chiapas 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -38
+    "latitude": 54,
+    "longitude": -38
   },
   {
     "id": "Canal10SOLTV.co",
@@ -3824,8 +3800,8 @@
     "city": "Canal 10 SOL",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 46.6955258,
-    "geo_long": 11.8554609
+    "latitude": 46.6955258,
+    "longitude": 11.8554609
   },
   {
     "id": "Canal11.cr",
@@ -3836,8 +3812,8 @@
     "city": "Canal 11 720p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 58,
-    "geo_long": -38
+    "latitude": 58,
+    "longitude": -38
   },
   {
     "id": "Canal11TuTV.sv",
@@ -3848,8 +3824,8 @@
     "city": "Canal 11 Tu",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 46.6989055,
-    "geo_long": 11.8584539
+    "latitude": 46.6989055,
+    "longitude": 11.8584539
   },
   {
     "id": "Canal12.sv",
@@ -3860,8 +3836,8 @@
     "city": "Canal 12 220p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -36
+    "latitude": 42,
+    "longitude": -36
   },
   {
     "id": "Canal13Esquipulas.gt",
@@ -3872,8 +3848,8 @@
     "city": "Canal 13 Esquipulas 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -36
+    "latitude": 44,
+    "longitude": -36
   },
   {
     "id": "Canal20.gt",
@@ -3884,8 +3860,8 @@
     "city": "Canal 20 720p Not 247",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 46,
-    "geo_long": -36
+    "latitude": 46,
+    "longitude": -36
   },
   {
     "id": "Canal21Tachira.ve",
@@ -3896,8 +3872,8 @@
     "city": "Canal 21 Tchira 360p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -36
+    "latitude": 48,
+    "longitude": -36
   },
   {
     "id": "Canal25.do@SD",
@@ -3908,8 +3884,8 @@
     "city": "Canal 25 1080p Not 247",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 50,
-    "geo_long": -36
+    "latitude": 50,
+    "longitude": -36
   },
   {
     "id": "Canal32.fr",
@@ -3920,8 +3896,8 @@
     "city": "Canal 32 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -36
+    "latitude": 52,
+    "longitude": -36
   },
   {
     "id": "Canal33Tijuana.mx",
@@ -3932,8 +3908,8 @@
     "city": "Canal 33 Tijuana 720p",
     "categories": "General;News",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -36
+    "latitude": 54,
+    "longitude": -36
   },
   {
     "id": "Canal34SanJuan.ar",
@@ -3944,8 +3920,8 @@
     "city": "Canal 34 San Juan 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 56,
-    "geo_long": -36
+    "latitude": 56,
+    "longitude": -36
   },
   {
     "id": "XHIJTDT.mx",
@@ -3956,8 +3932,8 @@
     "city": "Canal 44 Ciudad Jurez 720p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 58,
-    "geo_long": -36
+    "latitude": 58,
+    "longitude": -36
   },
   {
     "id": "Canal55TelemoriscoTV.co",
@@ -3968,8 +3944,8 @@
     "city": "Canal 55 Telemorisco",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40,
-    "geo_long": -34
+    "latitude": 40,
+    "longitude": -34
   },
   {
     "id": "CanalAmericaTV.do@SD",
@@ -3980,8 +3956,8 @@
     "city": "Canal America",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 41.6739102,
-    "geo_long": -99.4589949
+    "latitude": 41.6739102,
+    "longitude": -99.4589949
   },
   {
     "id": "CanalCatorce.do",
@@ -3992,8 +3968,8 @@
     "city": "Canal Catorce 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -34
+    "latitude": 44,
+    "longitude": -34
   },
   {
     "id": "CanalDTV.do",
@@ -4004,8 +3980,8 @@
     "city": "Canal D",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 53.2594718,
-    "geo_long": -6.6277027
+    "latitude": 53.2594718,
+    "longitude": -6.6277027
   },
   {
     "id": "CanalExtremadura.es",
@@ -4016,8 +3992,8 @@
     "city": "Canal Extremadura 576p Not 247",
     "categories": "General;Public",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -34
+    "latitude": 48,
+    "longitude": -34
   },
   {
     "id": "CanalMacau.mo",
@@ -4028,8 +4004,8 @@
     "city": "Canal Macau Ch 92 720p Not 247",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 50,
-    "geo_long": -34
+    "latitude": 50,
+    "longitude": -34
   },
   {
     "id": "CanalMalagaRTV.es",
@@ -4040,8 +4016,8 @@
     "city": "Canal Mlaga R",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -34
+    "latitude": 52,
+    "longitude": -34
   },
   {
     "id": "CanalMasTelevision.co",
@@ -4052,8 +4028,8 @@
     "city": "Canal Ms Televisin 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -34
+    "latitude": 54,
+    "longitude": -34
   },
   {
     "id": "CanalMultivision.do@SD",
@@ -4064,8 +4040,8 @@
     "city": "Canal Multivision 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 56,
-    "geo_long": -34
+    "latitude": 56,
+    "longitude": -34
   },
   {
     "id": "CanalReusTV.es",
@@ -4076,8 +4052,8 @@
     "city": "Canal Reus",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 41.1465299,
-    "geo_long": 1.1123426
+    "latitude": 41.1465299,
+    "longitude": 1.1123426
   },
   {
     "id": "CanalRicos.br",
@@ -4088,8 +4064,8 @@
     "city": "Canal Ricos 480p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40,
-    "geo_long": -32
+    "latitude": 40,
+    "longitude": -32
   },
   {
     "id": "CanalSanRoque.es",
@@ -4100,8 +4076,8 @@
     "city": "Canal San Roque 1080p Not 247",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -32
+    "latitude": 42,
+    "longitude": -32
   },
   {
     "id": "CanalSierradeCadiz.es",
@@ -4112,8 +4088,8 @@
     "city": "Canal Sierra de Cdiz 1080p Not",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -32
+    "latitude": 44,
+    "longitude": -32
   },
   {
     "id": "CanalSur2.es",
@@ -4124,8 +4100,8 @@
     "city": "Canal Sur Andaluca 2 720p",
     "categories": "General;Public",
     "type": "tv",
-    "geo_lat": 46,
-    "geo_long": -32
+    "latitude": 46,
+    "longitude": -32
   },
   {
     "id": "CanalTaronjaComarquesCentrals.es",
@@ -4136,8 +4112,8 @@
     "city": "Canal Taronja Comarques Centra",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -32
+    "latitude": 48,
+    "longitude": -32
   },
   {
     "id": "CanalTaronjaOsonaiMoianes.es",
@@ -4148,8 +4124,8 @@
     "city": "Canal Taronja Osona i Moians 1",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 50,
-    "geo_long": -32
+    "latitude": 50,
+    "longitude": -32
   },
   {
     "id": "CanalTerresdelEbre.es",
@@ -4160,8 +4136,8 @@
     "city": "Canal Terres de LEbre 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -32
+    "latitude": 52,
+    "longitude": -32
   },
   {
     "id": "CanalTRO.co",
@@ -4172,8 +4148,8 @@
     "city": "Canal TRO 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -32
+    "latitude": 54,
+    "longitude": -32
   },
   {
     "id": "CanalTROPlus.co",
@@ -4184,8 +4160,8 @@
     "city": "Canal TRO Plus 1080p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 56,
-    "geo_long": -32
+    "latitude": 56,
+    "longitude": -32
   },
   {
     "id": "CanalZoom.be",
@@ -4196,8 +4172,8 @@
     "city": "Canal Zoom Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 58,
-    "geo_long": -32
+    "latitude": 58,
+    "longitude": -32
   },
   {
     "id": "Canale2Altamura.it",
@@ -4208,8 +4184,8 @@
     "city": "Canale 2 Altamura 576p Not 247",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40,
-    "geo_long": -30
+    "latitude": 40,
+    "longitude": -30
   },
   {
     "id": "Canale7.it",
@@ -4220,8 +4196,8 @@
     "city": "Canale 7 480p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 45.0790799,
-    "geo_long": 7.6830078
+    "latitude": 45.0790799,
+    "longitude": 7.6830078
   },
   {
     "id": "CanangaTV.do",
@@ -4232,8 +4208,8 @@
     "city": "Cananga",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 0.9015369,
-    "geo_long": -79.7072298
+    "latitude": 0.9015369,
+    "longitude": -79.7072298
   },
   {
     "id": "CanelaTV.do",
@@ -4244,8 +4220,8 @@
     "city": "Canela",
     "categories": "General",
     "type": "tv",
-    "geo_lat": -29.3636094,
-    "geo_long": -50.8096844
+    "latitude": -29.3636094,
+    "longitude": -50.8096844
   },
   {
     "id": "CannesLerinsTV.fr",
@@ -4256,8 +4232,8 @@
     "city": "Cannes Lrins",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -30
+    "latitude": 48,
+    "longitude": -30
   },
   {
     "id": "CaoBangTV.vn",
@@ -4268,8 +4244,8 @@
     "city": "Cao Bang",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 34.9947164,
-    "geo_long": 135.7661527
+    "latitude": 34.9947164,
+    "longitude": 135.7661527
   },
   {
     "id": "CapeTownTV.za",
@@ -4280,8 +4256,8 @@
     "city": "Cape Town",
     "categories": "General",
     "type": "tv",
-    "geo_lat": -33.9288301,
-    "geo_long": 18.4172197
+    "latitude": -33.9288301,
+    "longitude": 18.4172197
   },
   {
     "id": "CapitalTVHD.np",
@@ -4292,8 +4268,8 @@
     "city": "Capital",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 8.97315,
-    "geo_long": 7.1820758
+    "latitude": 8.97315,
+    "longitude": 7.1820758
   },
   {
     "id": "CaprichoTV.ec",
@@ -4304,8 +4280,8 @@
     "city": "Capricho",
     "categories": "General",
     "type": "tv",
-    "geo_lat": -10.7834852,
-    "geo_long": -42.7496427
+    "latitude": -10.7834852,
+    "longitude": -42.7496427
   },
   {
     "id": "CAPSChannel6.us",
@@ -4316,8 +4292,8 @@
     "city": "CAPS Media Channel 6 Ventura C",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 58,
-    "geo_long": -30
+    "latitude": 58,
+    "longitude": -30
   },
   {
     "id": "CAPSChannel15.us",
@@ -4328,8 +4304,8 @@
     "city": "CAPS Media Channel 15 Ventura ",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 40,
-    "geo_long": -28
+    "latitude": 40,
+    "longitude": -28
   },
   {
     "id": "CAtv.pr",
@@ -4340,8 +4316,8 @@
     "city": "Caribbean Advantage",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -28
+    "latitude": 42,
+    "longitude": -28
   },
   {
     "id": "CaribbeanHot7TV.lc",
@@ -4352,8 +4328,8 @@
     "city": "Caribbean Hot 7",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -28
+    "latitude": 44,
+    "longitude": -28
   },
   {
     "id": "CaritasTV.py",
@@ -4364,8 +4340,8 @@
     "city": "Critas",
     "categories": "General;Religious",
     "type": "tv",
-    "geo_lat": 46,
-    "geo_long": -28
+    "latitude": 46,
+    "longitude": -28
   },
   {
     "id": "CityTVCarlsbad.us",
@@ -4376,8 +4352,8 @@
     "city": "Carlsbad City",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 33.6585898,
-    "geo_long": -112.4344302
+    "latitude": 33.6585898,
+    "longitude": -112.4344302
   },
   {
     "id": "CascaraTV.do@SD",
@@ -4388,8 +4364,8 @@
     "city": "Cascara",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 47.5035161,
-    "geo_long": -122.6920244
+    "latitude": 47.5035161,
+    "longitude": -122.6920244
   },
   {
     "id": "CatatumboTV.ve",
@@ -4400,8 +4376,8 @@
     "city": "Catatumbo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 4.1385318,
-    "geo_long": -73.6230275
+    "latitude": 4.1385318,
+    "longitude": -73.6230275
   },
   {
     "id": "Catve2.br",
@@ -4412,8 +4388,8 @@
     "city": "Catve2 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -28
+    "latitude": 54,
+    "longitude": -28
   },
   {
     "id": "CatveFM.br",
@@ -4424,8 +4400,8 @@
     "city": "Catve FM 720p Not 247",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 56,
-    "geo_long": -28
+    "latitude": 56,
+    "longitude": -28
   },
   {
     "id": "CatveMasterTV.br",
@@ -4436,8 +4412,8 @@
     "city": "Catve Master",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 58,
-    "geo_long": -28
+    "latitude": 58,
+    "longitude": -28
   },
   {
     "id": "CayTV.tr@SD",
@@ -4448,8 +4424,8 @@
     "city": "Cay",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 4.82068,
-    "geo_long": -52.3630528
+    "latitude": 4.82068,
+    "longitude": -52.3630528
   },
   {
     "id": "CBC.eg",
@@ -4460,8 +4436,8 @@
     "city": "CBC 1080p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -26
+    "latitude": 42,
+    "longitude": -26
   },
   {
     "id": "CBRTDT.ca",
@@ -4472,8 +4448,8 @@
     "city": "CBC Calgary CBRT",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -26
+    "latitude": 44,
+    "longitude": -26
   },
   {
     "id": "CBXTDT.ca",
@@ -4484,8 +4460,8 @@
     "city": "CBC Edmonton CBXT",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 46,
-    "geo_long": -26
+    "latitude": 46,
+    "longitude": -26
   },
   {
     "id": "CBWTDT.ca",
@@ -4496,8 +4472,8 @@
     "city": "CBC Manitoba CBWT",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -26
+    "latitude": 48,
+    "longitude": -26
   },
   {
     "id": "CBMTDT.ca",
@@ -4508,8 +4484,8 @@
     "city": "CBC Montral CBMT",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 50,
-    "geo_long": -26
+    "latitude": 50,
+    "longitude": -26
   },
   {
     "id": "CBATDT.ca",
@@ -4520,8 +4496,8 @@
     "city": "CBC New Brunswick CBAT",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 52,
-    "geo_long": -26
+    "latitude": 52,
+    "longitude": -26
   },
   {
     "id": "CBNTDT.ca",
@@ -4532,8 +4508,8 @@
     "city": "CBC Newfoundland and Labrador ",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 47.5707863,
-    "geo_long": -52.7369433
+    "latitude": 47.5707863,
+    "longitude": -52.7369433
   },
   {
     "id": "CFYKDT.ca",
@@ -4544,7 +4520,7 @@
     "city": "CBC North CFYK",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 56,
-    "geo_long": -26
+    "latitude": 56,
+    "longitude": -26
   }
 ]

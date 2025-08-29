@@ -50,23 +50,26 @@ function clusterStationsByGrid(stations, gridSize) {
       return gridCell.stations.every(station => station[field] && station[field] === first);
     };
     
+    // Get top stations
+    const topStations = gridCell.stations.slice(0, 3);
+    
     // Build cluster label using hierarchical uniformity checks
-    let clusterLabel = '';
+    let clusterName = '';
     if (isUniform('city') && isUniform('country')) {
-      clusterName = hasRadio ? isUniform('state') ?
+      clusterName = hasRadio ? (isUniform('state') ?
         `${gridCell.stations[0].city}, ${gridCell.stations[0].state}, ${gridCell.stations[0].country} (Radio)` :
-        `${gridCell.stations[0].city}, ${gridCell.stations[0].country} (Radio)` :
-        hasTV ?
+        `${gridCell.stations[0].city}, ${gridCell.stations[0].country} (Radio)`) :
+        (hasTV ?
           `${gridCell.stations[0].city}, ${gridCell.stations[0].country} (TV)` :
-          `${gridCell.stations[0].city}, ${gridCell.stations[0].country} (${gridCell.stations[0].type})`;
+          `${gridCell.stations[0].city}, ${gridCell.stations[0].country} (${gridCell.stations[0].type})`);
     } else if (isUniform('country')) {
       clusterName = hasRadio && isUniform('state') ?
         `${gridCell.stations[0].state}, ${gridCell.stations[0].country} (Radio)` :
-        hasRadio ?
+        (hasRadio ?
           `${gridCell.stations[0].country} (Radio)` :
-          hasTV ?
+          (hasTV ?
             `${gridCell.stations[0].country} (TV)` :
-            `${gridCell.stations[0].country} (${gridCell.stations[0].type})`;
+            `${gridCell.stations[0].country} (${gridCell.stations[0].type})`));
     }
     
     return {

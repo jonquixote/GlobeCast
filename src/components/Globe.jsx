@@ -52,8 +52,8 @@ const Globe = () => {
               name: station.name || station.id || 'Unknown Station',
               country: station.country || 'Unknown',
               city: station.city || 'Unknown City',
-              geo_lat: parseFloat(station.geo_lat || station.latitude),
-              geo_long: parseFloat(station.geo_long || station.longitude),
+              latitude: parseFloat(station.latitude),
+              longitude: parseFloat(station.longitude),
               type: type,
               url: station.url || '',
               tags: Array.isArray(station.tags) ? station.tags : 
@@ -69,12 +69,12 @@ const Globe = () => {
             
             return processedStation;
           }).filter(station => {
-            const isValid = station.geo_lat && 
-              station.geo_long && 
-              !isNaN(station.geo_lat) && 
-              !isNaN(station.geo_long) &&
-              station.geo_lat >= -90 && station.geo_lat <= 90 &&
-              station.geo_long >= -180 && station.geo_long <= 180 &&
+            const isValid = station.latitude && 
+              station.longitude && 
+              !isNaN(station.latitude) && 
+              !isNaN(station.longitude) &&
+              station.latitude >= -90 && station.latitude <= 90 &&
+              station.longitude >= -180 && station.longitude <= 180 &&
               station.url && 
               station.url.length > 0 && 
               !station.url.includes('radio-'); // Filter out test URLs
