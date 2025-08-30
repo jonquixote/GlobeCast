@@ -137,7 +137,8 @@ async function geocodeLocation(query) {
 function isInvalidLocation(station) {
     const lat = parseFloat(station.geo_lat);
     const lon = parseFloat(station.geo_long);
-    if (isNaN(lat) || isNaN(lon) || (lat === 0 && lon === 0) || (lat > 20 && lat < 70 && lon > -100 && lon < -10) ) {
+    const inAtlanticBox = lat > 20 && lat < 70 && lon > -100 && lon < -10; // Bounding box for incorrectly placed stations
+    if (isNaN(lat) || isNaN(lon) || (lat === 0 && lon === 0) || inAtlanticBox) {
         return true;
     }
     if (station.country === 'Unknown') {
