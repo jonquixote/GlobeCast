@@ -15,7 +15,7 @@
     "process-radio-data": "node scripts/processRadioData.js",
     "start-server": "node server.js",
     "dev-server": "nodemon server.js",
-    "update-station-coordinates": "node updateStationCoordinates.js",
+    "update-station-coordinates": "node fixAndGeocodeStations.js",
     "fix-station-coordinates": "node fixStationCoordinatesFinal.js",
     "verify-station-coordinates": "node verifyStationCoordinates.js",
     "maintain-station-coordinates": "node maintainStationCoordinates.js",
