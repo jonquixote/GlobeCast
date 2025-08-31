@@ -1,6 +1,25 @@
 import fs from 'fs/promises';
 import axios from 'axios';
 
+// Function to extract country from station ID
+function getCountryFromId(stationId) {
+  const parts = stationId.split('.');
+  if (parts.length > 1) {
+    const countryCode = parts[parts.length - 1].split('@')[0];
+    // Simple mapping for some common codes
+    const countryMap = {
+      'uk': 'United Kingdom',
+      'cr': 'Costa Rica',
+      'do': 'Dominican Republic',
+      'be': 'Belgium',
+      'pr': 'Puerto Rico',
+      'gt': 'Guatemala',
+    };
+    return countryMap[countryCode.toLowerCase()] || null;
+  }
+  return null;
+}
+
 // Function to geocode a location using OpenStreetMap Nominatim
 async function geocodeLocation(city, country) {
   try {
@@ -76,17 +95,20 @@ async function fixTVStations() {
         (station.geo_lat === 42 && station.geo_long === -100) ||
         (station.geo_lat === 12.4989994 && station.geo_long === 124.6746741) ||
         (station.geo_lat === 0 && station.geo_long === 0) ||
+        (station.geo_lat > 20 && station.geo_lat < 60 && station.geo_long > -80 && station.geo_long < -20) ||
         (station.geo_lat >= -90 && station.geo_lat <= 90 && station.geo_long >= -180 && station.geo_long <= 180) === false;
       
-      // Check if we have valid country information
-      const hasValidCountry = station.country && station.country !== 'Unknown' && station.country.trim() !== '';
-      
-      // Try to geocode if coordinates are placeholders and we have a valid country
-      if (isPlaceholderCoord && hasValidCountry) {
+      // Try to geocode if coordinates are placeholders
+      if (isPlaceholderCoord) {
         stationsToGeocode++;
         
+        let country = station.country;
+        if (country === 'Unknown') {
+          country = getCountryFromId(station.id);
+        }
+
         // Create a cache key using country (and city if available)
-        const cacheKey = `${station.city || ''}|${station.country}`;
+        const cacheKey = `${station.city || ''}|${country}`;
         
         // Check if we already have this location geocoded
         if (geocodedCache.has(cacheKey)) {
@@ -99,28 +121,28 @@ async function fixTVStations() {
           }
         } else {
           // Try to geocode this location
-          const coords = await geocodeLocation(station.city, station.country);
+          const coords = await geocodeLocation(station.city, country);
           geocodedCache.set(cacheKey, coords);
           
           if (coords) {
             station.geo_lat = coords.latitude;
             station.geo_long = coords.longitude;
             geocodedStations++;
-            console.log(`Geocoded ${station.city || 'Unknown City'}, ${station.country}: ${coords.latitude}, ${coords.longitude}`);
+            console.log(`Geocoded ${station.city || 'Unknown City'}, ${country}: ${coords.latitude}, ${coords.longitude}`);
           } else {
             // If we failed to geocode with city+country, try just the country
-            if (station.country && station.country !== 'Unknown') {
-              const countryCoords = await geocodeLocation(null, station.country);
+            if (country && country !== 'Unknown') {
+              const countryCoords = await geocodeLocation(null, country);
               if (countryCoords) {
                 station.geo_lat = countryCoords.latitude;
                 station.geo_long = countryCoords.longitude;
                 geocodedStations++;
-                console.log(`Geocoded country ${station.country}: ${countryCoords.latitude}, ${countryCoords.longitude}`);
+                console.log(`Geocoded country ${country}: ${countryCoords.latitude}, ${countryCoords.longitude}`);
               } else {
-                console.log(`Failed to geocode ${station.city || 'Unknown City'}, ${station.country}`);
+                console.log(`Failed to geocode ${station.city || 'Unknown City'}, ${country}`);
               }
             } else {
-              console.log(`Failed to geocode ${station.city || 'Unknown City'}, ${station.country}`);
+              console.log(`Failed to geocode ${station.city || 'Unknown City'}, ${country}`);
             }
           }
           
@@ -134,9 +156,9 @@ async function fixTVStations() {
     console.log(`Successfully geocoded: ${geocodedStations}`);
     
     // Write the fixed data back to the file
-    await fs.writeFile('./src/data/tvStationsWithUrlsFixed.json', JSON.stringify(tvStations, null, 2));
+    await fs.writeFile('./src/data/tvStationsWithUrls.json', JSON.stringify(tvStations, null, 2));
     
-    console.log('Fixed TV stations data saved to tvStationsWithUrlsFixed.json');
+    console.log('Fixed TV stations data saved to tvStationsWithUrls.json');
   } catch (error) {
     console.error('Error fixing TV station coordinates:', error);
   }
@@ -162,35 +184,18 @@ async function fixRadioStations() {
     for (let i = 0; i < radioStations.length; i++) {
       const station = radioStations[i];
       
-      // Check if coordinates are placeholder values (0,0) or other common placeholders
-      const isPlaceholderCoord = 
-        (station.geo_lat == 0 && station.geo_long == 0) ||
-        (station.geo_lat === 40 && station.geo_long === -100) ||
-        (station.geo_lat === 42 && station.geo_long === -100) ||
-        (station.geo_lat === 12.4989994 && station.geo_long === 124.6746741) ||
-        (station.geo_lat >= -90 && station.geo_lat <= 90 && station.geo_long >= -180 && station.geo_long <= 180) === false;
+      // Check if coordinates are placeholder values (0,0)
+      const isPlaceholderCoord = station.geo_lat == 0 && station.geo_long == 0;
       
-      // Check if we have valid location information
-      const hasValidLocation = 
-        (station.country && station.country !== 'Unknown' && station.country.trim() !== '') ||
-        (station.state && station.state !== 'Unknown' && station.state.trim() !== '') ||
-        (station.city && station.city !== 'Unknown' && station.city.trim() !== '');
-      
-      // Try to geocode if coordinates are placeholders and we have valid location info
-      if (isPlaceholderCoord && hasValidLocation) {
+      // If we have city/country info and coordinates are placeholders, try to geocode
+      if ((station.city || station.state || station.country) && isPlaceholderCoord) {
         stationsToGeocode++;
         
-        // Create a cache key using available location information
+        // Create a cache key
         const locationParts = [];
-        if (station.city && station.city !== 'Unknown') {
-          locationParts.push(station.city);
-        }
-        if (station.state && station.state !== 'Unknown') {
-          locationParts.push(station.state);
-        }
-        if (station.country && station.country !== 'Unknown') {
-          locationParts.push(station.country);
-        }
+        if (station.city) locationParts.push(station.city);
+        if (station.state) locationParts.push(station.state);
+        if (station.country) locationParts.push(station.country);
         const cacheKey = locationParts.join('|');
         
         // Check if we already have this location geocoded
@@ -204,34 +209,7 @@ async function fixRadioStations() {
           }
         } else {
           // Try to geocode this location
-          // Try different combinations of location information
-          let coords = null;
-          
-          // Try city + country first
-          if (station.city && station.city !== 'Unknown' && station.country && station.country !== 'Unknown') {
-            coords = await geocodeLocation(station.city, station.country);
-          }
-          
-          // Try state + country if that failed
-          if (!coords && station.state && station.state !== 'Unknown' && station.country && station.country !== 'Unknown') {
-            coords = await geocodeLocation(station.state, station.country);
-          }
-          
-          // Try just city if that failed
-          if (!coords && station.city && station.city !== 'Unknown') {
-            coords = await geocodeLocation(station.city, null);
-          }
-          
-          // Try just state if that failed
-          if (!coords && station.state && station.state !== 'Unknown') {
-            coords = await geocodeLocation(station.state, null);
-          }
-          
-          // Try just country if that failed
-          if (!coords && station.country && station.country !== 'Unknown') {
-            coords = await geocodeLocation(null, station.country);
-          }
-          
+          const coords = await geocodeLocation(station.city || station.state, station.country);
           geocodedCache.set(cacheKey, coords);
           
           if (coords) {
@@ -244,7 +222,7 @@ async function fixRadioStations() {
           }
           
           // Add a small delay to respect API rate limits
-          await new Promise(resolve => setTimeout(resolve, 500));
+          await new Promise(resolve => setTimeout(resolve, 1000));
         }
       }
     }
@@ -253,9 +231,9 @@ async function fixRadioStations() {
     console.log(`Successfully geocoded: ${geocodedStations}`);
     
     // Write the fixed data back to the file
-    await fs.writeFile('./src/data/radioStationsFixed.json', JSON.stringify(radioStations, null, 2));
+    await fs.writeFile('./src/data/radioStations.json', JSON.stringify(radioStations, null, 2));
     
-    console.log('Fixed radio stations data saved to radioStationsFixed.json');
+    console.log('Fixed radio stations data saved to radioStations.json');
   } catch (error) {
     console.error('Error fixing radio station coordinates:', error);
   }
