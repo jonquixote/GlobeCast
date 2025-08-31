@@ -16,14 +16,7 @@
     "start-server": "node server.js",
     "dev-server": "nodemon server.js",
     "update-station-coordinates": "node fixAndGeocodeStations.js",
-    "fix-station-coordinates": "node fixStationCoordinatesFinal.js",
-    "verify-station-coordinates": "node verifyStationCoordinates.js",
-    "maintain-station-coordinates": "node maintainStationCoordinates.js",
-    "check-invalid-stations": "node checkForInvalidStations.js",
-    "fix-all-station-coordinates": "node fixAllStationCoordinatesComprehensive.js",
-    "enhanced-fix-stations": "node enhancedFixTVStations.js",
-    "enhanced-verify-stations": "node enhancedFixTVStations.js --verify",
-    "find-atlantic-stations": "node findAtlanticStations.js"
+    "verify-station-coordinates": "node fixAndGeocodeStations.js --verify"
   },
   "dependencies": {
     "@floating-ui/react": "^0.26.0",
