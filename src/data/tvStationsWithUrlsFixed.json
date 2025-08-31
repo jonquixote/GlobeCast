@@ -47,13 +47,13 @@
     "url": "https://tv.cdn.xsg.ge/gpb-1tv/index.m3u8",
     "logo": "https://i.imgur.com/FSkYLPK.png",
     "country": "Georgia",
-    "city": "Unknown",
+    "city": "Tbilisi",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 32.3293809,
-    "geo_long": -83.1137366,
-    "latitude": 32.3293809,
-    "longitude": -83.1137366
+    "geo_lat": 41.7151,
+    "geo_long": 44.8271,
+    "latitude": 41.7151,
+    "longitude": 44.8271
   },
   {
     "id": "1TwenteTV.nl@SD",
@@ -117,13 +117,13 @@
     "url": "https://tv.cdn.xsg.ge/gpb-2tv/index.m3u8",
     "logo": "https://i.imgur.com/FJBL6zI.png",
     "country": "Georgia",
-    "city": "Unknown",
+    "city": "Tbilisi",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 32.3293809,
-    "geo_long": -83.1137366,
-    "latitude": 32.3293809,
-    "longitude": -83.1137366
+    "geo_lat": 41.7151,
+    "geo_long": 44.8271,
+    "latitude": 41.7151,
+    "longitude": 44.8271
   },
   {
     "id": "3HD.th",
@@ -592,14 +592,14 @@
     "name": "ABC 3 Lafayette LA (KATC) (720p)",
     "url": "https://aegis-cloudfront-1.tubi.video/28467730-4b65-4c85-8151-4c7d162c0896/playlist.m3u8",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/2/27/WWAY_logo.png",
-    "country": "Unknown",
-    "city": "ABC 3 Lafayette LA KATC 720p",
+    "country": "United States",
+    "city": "Lafayette",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 30.2262187,
-    "geo_long": -92.0178202,
-    "latitude": 30.2241,
-    "longitude": -92.0198
+    "geo_lat": 30.20806,
+    "geo_long": -92.03250,
+    "latitude": 30.20806,
+    "longitude": -92.03250
   },
   {
     "id": "KRGVDT1.us",
@@ -1166,14 +1166,14 @@
     "name": "Ajyal TV (720p)",
     "url": "http://htvmada.mada.ps:8888/ajyal/index.m3u8",
     "logo": "https://i.imgur.com/i6Y7beR.jpg",
-    "country": "Unknown",
-    "city": "Ajyal",
+    "country": "Palestine",
+    "city": "Gaza",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 31.7621153,
-    "geo_long": -95.6307891,
-    "latitude": 32.2174363,
-    "longitude": 35.2567915
+    "geo_lat": 31.517,
+    "geo_long": 34.450,
+    "latitude": 31.517,
+    "longitude": 34.450
   },
   {
     "id": "Akaku53.us",
@@ -1292,14 +1292,14 @@
     "name": "Al Aqsa Channel (416p) [Not 24/7]",
     "url": "http://167.172.161.13/hls/feedspare/6udfi7v8a3eof6nlps6e9ovfrs65c7l7.m3u8",
     "logo": "https://i.imgur.com/Z2rfrQ8.png",
-    "country": "Unknown",
-    "city": "Al Aqsa Channel 416p Not 247",
+    "country": "Palestine",
+    "city": "Gaza",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 31.7621153,
-    "geo_long": -95.6307891,
-    "latitude": 31.5017,
-    "longitude": 34.4668
+    "geo_lat": 31.517,
+    "geo_long": 34.450,
+    "latitude": 31.517,
+    "longitude": 34.450
   },
   {
     "id": "AlDafrahTV.ae",
