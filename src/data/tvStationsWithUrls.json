@@ -3548,8 +3548,8 @@
     "city": "Canaf54",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 50,
-    "geo_long": -42
+    "geo_lat": 54.7023545,
+    "geo_long": -3.2765753
   },
   {
     "id": "Canal1.co",
@@ -3572,8 +3572,8 @@
     "city": "Canal 1 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -42
+    "geo_lat": 10.2735633,
+    "geo_long": -84.0739102
   },
   {
     "id": "Canal2.sv",
@@ -3644,8 +3644,8 @@
     "city": "Canal 4 720p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 46,
-    "geo_long": -40
+    "geo_lat": 10.2735633,
+    "geo_long": -84.0739102
   },
   {
     "id": "Canal4Catalunya.es",
@@ -3692,8 +3692,8 @@
     "city": "Canal 6 720p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 54,
-    "geo_long": -40
+    "geo_lat": 10.2735633,
+    "geo_long": -84.0739102
   },
   {
     "id": "Canal6.sv",
@@ -3740,8 +3740,8 @@
     "city": "Canal 8 720p Not 247",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -38
+    "geo_lat": 10.2735633,
+    "geo_long": -84.0739102
   },
   {
     "id": "Canal8Catacaos.pe",
@@ -3776,8 +3776,8 @@
     "city": "Canal 9 720p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 48,
-    "geo_long": -38
+    "geo_lat": 10.2735633,
+    "geo_long": -84.0739102
   },
   {
     "id": "BarbeTV.gt",
@@ -3836,8 +3836,8 @@
     "city": "Canal 11 720p Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 58,
-    "geo_long": -38
+    "geo_lat": 10.2735633,
+    "geo_long": -84.0739102
   },
   {
     "id": "Canal11TuTV.sv",
@@ -3884,8 +3884,8 @@
     "city": "Canal 20 720p Not 247",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 46,
-    "geo_long": -36
+    "geo_lat": 15.5855545,
+    "geo_long": -90.345759
   },
   {
     "id": "Canal21Tachira.ve",
@@ -3992,8 +3992,8 @@
     "city": "Canal Catorce 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 44,
-    "geo_long": -34
+    "geo_lat": 19.0974031,
+    "geo_long": -70.3028026
   },
   {
     "id": "CanalDTV.do",
@@ -4064,8 +4064,8 @@
     "city": "Canal Multivision 720p",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 56,
-    "geo_long": -34
+    "geo_lat": 19.0974031,
+    "geo_long": -70.3028026
   },
   {
     "id": "CanalReusTV.es",
@@ -4196,8 +4196,8 @@
     "city": "Canal Zoom Geo",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 58,
-    "geo_long": -32
+    "geo_lat": 50.6402809,
+    "geo_long": 4.6667145
   },
   {
     "id": "Canale2Altamura.it",
@@ -4340,8 +4340,8 @@
     "city": "Caribbean Advantage",
     "categories": "General",
     "type": "tv",
-    "geo_lat": 42,
-    "geo_long": -28
+    "geo_lat": 18.2247706,
+    "geo_long": -66.4858295
   },
   {
     "id": "CaribbeanHot7TV.lc",
